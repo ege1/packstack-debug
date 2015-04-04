@@ -1,0 +1,230 @@
+2015-04-03 19:51:24::INFO::shell::94::root:: [localhost] Executing script:
+rm -rf /var/tmp/packstack/20150403-195123-rBO_5m/manifests/*pp
+2015-04-03 19:51:24::INFO::shell::94::root:: [10.145.96.11] Executing script:
+mkdir -p ~/.ssh
+chmod 500 ~/.ssh
+grep 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3Qv3hR6KLarrCJZPJLNTqlcR+V22rK1qDBjWhgFrZXyP6ZNa8mAbw0rA8BJKvwYmo+CD9j7BaP2d1g6XSbkeedwxd3zXmuXbNKbgo+RPOXsG8jJMvw4TSj7TL/atd6xP2dxF6+cv1SmKwOE5f004MlqmTEME8COEfXh/Q76o0ZE3M9wOGyaUwjRxpL5L0F4pCMh2aFDfXbr5vZhheyZMmhGw3t/aBDDXzsLwbU/HcoTxv5snadQCDTZ6e62ptCgs2XxK6mqNyFcczr6laxe4s9/pv4hu6MbOHAHibvjRO9edxEl858BgX/EXDUhj4Vq42eShXaORvXfHovv4lUA3h ansible@cloud10' ~/.ssh/authorized_keys > /dev/null 2>&1 || echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3Qv3hR6KLarrCJZPJLNTqlcR+V22rK1qDBjWhgFrZXyP6ZNa8mAbw0rA8BJKvwYmo+CD9j7BaP2d1g6XSbkeedwxd3zXmuXbNKbgo+RPOXsG8jJMvw4TSj7TL/atd6xP2dxF6+cv1SmKwOE5f004MlqmTEME8COEfXh/Q76o0ZE3M9wOGyaUwjRxpL5L0F4pCMh2aFDfXbr5vZhheyZMmhGw3t/aBDDXzsLwbU/HcoTxv5snadQCDTZ6e62ptCgs2XxK6mqNyFcczr6laxe4s9/pv4hu6MbOHAHibvjRO9edxEl858BgX/EXDUhj4Vq42eShXaORvXfHovv4lUA3h ansible@cloud10 >> ~/.ssh/authorized_keys
+chmod 400 ~/.ssh/authorized_keys
+restorecon -r ~/.ssh
+2015-04-03 19:51:29::INFO::shell::94::root:: [10.145.96.13] Executing script:
+mkdir -p ~/.ssh
+chmod 500 ~/.ssh
+grep 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3Qv3hR6KLarrCJZPJLNTqlcR+V22rK1qDBjWhgFrZXyP6ZNa8mAbw0rA8BJKvwYmo+CD9j7BaP2d1g6XSbkeedwxd3zXmuXbNKbgo+RPOXsG8jJMvw4TSj7TL/atd6xP2dxF6+cv1SmKwOE5f004MlqmTEME8COEfXh/Q76o0ZE3M9wOGyaUwjRxpL5L0F4pCMh2aFDfXbr5vZhheyZMmhGw3t/aBDDXzsLwbU/HcoTxv5snadQCDTZ6e62ptCgs2XxK6mqNyFcczr6laxe4s9/pv4hu6MbOHAHibvjRO9edxEl858BgX/EXDUhj4Vq42eShXaORvXfHovv4lUA3h ansible@cloud10' ~/.ssh/authorized_keys > /dev/null 2>&1 || echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3Qv3hR6KLarrCJZPJLNTqlcR+V22rK1qDBjWhgFrZXyP6ZNa8mAbw0rA8BJKvwYmo+CD9j7BaP2d1g6XSbkeedwxd3zXmuXbNKbgo+RPOXsG8jJMvw4TSj7TL/atd6xP2dxF6+cv1SmKwOE5f004MlqmTEME8COEfXh/Q76o0ZE3M9wOGyaUwjRxpL5L0F4pCMh2aFDfXbr5vZhheyZMmhGw3t/aBDDXzsLwbU/HcoTxv5snadQCDTZ6e62ptCgs2XxK6mqNyFcczr6laxe4s9/pv4hu6MbOHAHibvjRO9edxEl858BgX/EXDUhj4Vq42eShXaORvXfHovv4lUA3h ansible@cloud10 >> ~/.ssh/authorized_keys
+chmod 400 ~/.ssh/authorized_keys
+restorecon -r ~/.ssh
+2015-04-03 19:51:29::INFO::shell::94::root:: [10.145.96.12] Executing script:
+mkdir -p ~/.ssh
+chmod 500 ~/.ssh
+grep 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3Qv3hR6KLarrCJZPJLNTqlcR+V22rK1qDBjWhgFrZXyP6ZNa8mAbw0rA8BJKvwYmo+CD9j7BaP2d1g6XSbkeedwxd3zXmuXbNKbgo+RPOXsG8jJMvw4TSj7TL/atd6xP2dxF6+cv1SmKwOE5f004MlqmTEME8COEfXh/Q76o0ZE3M9wOGyaUwjRxpL5L0F4pCMh2aFDfXbr5vZhheyZMmhGw3t/aBDDXzsLwbU/HcoTxv5snadQCDTZ6e62ptCgs2XxK6mqNyFcczr6laxe4s9/pv4hu6MbOHAHibvjRO9edxEl858BgX/EXDUhj4Vq42eShXaORvXfHovv4lUA3h ansible@cloud10' ~/.ssh/authorized_keys > /dev/null 2>&1 || echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3Qv3hR6KLarrCJZPJLNTqlcR+V22rK1qDBjWhgFrZXyP6ZNa8mAbw0rA8BJKvwYmo+CD9j7BaP2d1g6XSbkeedwxd3zXmuXbNKbgo+RPOXsG8jJMvw4TSj7TL/atd6xP2dxF6+cv1SmKwOE5f004MlqmTEME8COEfXh/Q76o0ZE3M9wOGyaUwjRxpL5L0F4pCMh2aFDfXbr5vZhheyZMmhGw3t/aBDDXzsLwbU/HcoTxv5snadQCDTZ6e62ptCgs2XxK6mqNyFcczr6laxe4s9/pv4hu6MbOHAHibvjRO9edxEl858BgX/EXDUhj4Vq42eShXaORvXfHovv4lUA3h ansible@cloud10 >> ~/.ssh/authorized_keys
+chmod 400 ~/.ssh/authorized_keys
+restorecon -r ~/.ssh
+2015-04-03 19:51:30::INFO::shell::94::root:: [10.145.96.11] Executing script:
+cat /etc/redhat-release
+2015-04-03 19:51:35::INFO::shell::94::root:: [10.145.96.11] Executing script:
+mkdir -p /var/tmp/packstack
+mkdir --mode 0700 /var/tmp/packstack/97d66569c2124127870bfe214d8020eb
+mkdir --mode 0700 /var/tmp/packstack/97d66569c2124127870bfe214d8020eb/modules
+mkdir --mode 0700 /var/tmp/packstack/97d66569c2124127870bfe214d8020eb/resources
+2015-04-03 19:51:40::INFO::shell::94::root:: [10.145.96.13] Executing script:
+cat /etc/redhat-release
+2015-04-03 19:51:41::INFO::shell::94::root:: [10.145.96.13] Executing script:
+mkdir -p /var/tmp/packstack
+mkdir --mode 0700 /var/tmp/packstack/88aa307d868a4a239f99d81f4d9cfd55
+mkdir --mode 0700 /var/tmp/packstack/88aa307d868a4a239f99d81f4d9cfd55/modules
+mkdir --mode 0700 /var/tmp/packstack/88aa307d868a4a239f99d81f4d9cfd55/resources
+2015-04-03 19:51:41::INFO::shell::94::root:: [10.145.96.12] Executing script:
+cat /etc/redhat-release
+2015-04-03 19:51:41::INFO::shell::94::root:: [10.145.96.12] Executing script:
+mkdir -p /var/tmp/packstack
+mkdir --mode 0700 /var/tmp/packstack/43bc070947ca4bbe9bee1b83af453af3
+mkdir --mode 0700 /var/tmp/packstack/43bc070947ca4bbe9bee1b83af453af3/modules
+mkdir --mode 0700 /var/tmp/packstack/43bc070947ca4bbe9bee1b83af453af3/resources
+2015-04-03 19:51:41::INFO::shell::94::root:: [10.145.96.11] Executing script:
+rpm -q --whatprovides yum-utils || yum install -y yum-utils
+2015-04-03 19:51:47::INFO::shell::48::root:: Executing command:
+rpm -q rdo-release --qf='%{version}-%{release}.%{arch}
+'
+2015-04-03 19:51:47::INFO::shell::94::root:: [10.145.96.11] Executing script:
+(rpm -q 'rdo-release-juno' || yum install -y --nogpg http://rdo.fedorapeople.org/openstack/openstack-juno/rdo-release-juno-1.noarch.rpm) || true
+2015-04-03 19:51:52::INFO::shell::94::root:: [10.145.96.11] Executing script:
+yum-config-manager --enable openstack-juno
+2015-04-03 19:51:58::INFO::shell::94::root:: [10.145.96.11] Executing script:
+REPOFILE=$(mktemp)
+cat /etc/yum.conf > $REPOFILE
+echo -e '[packstack-epel]
+name=packstack-epel
+enabled=1
+mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch' >> $REPOFILE
+( rpm -q --whatprovides epel-release || yum install -y --nogpg -c $REPOFILE epel-release ) || true
+rm -rf $REPOFILE
+2015-04-03 19:52:03::INFO::shell::94::root:: [10.145.96.11] Executing script:
+rpm -q yum-utils || yum -y install yum-utils
+yum-config-manager --enable epel
+2015-04-03 19:52:09::INFO::shell::94::root:: [10.145.96.11] Executing script:
+yum install -y yum-plugin-priorities || true
+rpm -q epel-release && yum-config-manager --setopt="rhel-server-ost-6-4-rpms.priority=1" --save rhel-server-ost-6-4-rpms
+yum clean metadata
+2015-04-03 19:52:36::INFO::shell::94::root:: [10.145.96.13] Executing script:
+rpm -q --whatprovides yum-utils || yum install -y yum-utils
+2015-04-03 19:52:36::INFO::shell::48::root:: Executing command:
+rpm -q rdo-release --qf='%{version}-%{release}.%{arch}
+'
+2015-04-03 19:52:36::INFO::shell::94::root:: [10.145.96.13] Executing script:
+(rpm -q 'rdo-release-juno' || yum install -y --nogpg http://rdo.fedorapeople.org/openstack/openstack-juno/rdo-release-juno-1.noarch.rpm) || true
+2015-04-03 19:52:36::INFO::shell::94::root:: [10.145.96.13] Executing script:
+yum-config-manager --enable openstack-juno
+2015-04-03 19:52:36::INFO::shell::94::root:: [10.145.96.13] Executing script:
+REPOFILE=$(mktemp)
+cat /etc/yum.conf > $REPOFILE
+echo -e '[packstack-epel]
+name=packstack-epel
+enabled=1
+mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch' >> $REPOFILE
+( rpm -q --whatprovides epel-release || yum install -y --nogpg -c $REPOFILE epel-release ) || true
+rm -rf $REPOFILE
+2015-04-03 19:52:37::INFO::shell::94::root:: [10.145.96.13] Executing script:
+rpm -q yum-utils || yum -y install yum-utils
+yum-config-manager --enable epel
+2015-04-03 19:52:37::INFO::shell::94::root:: [10.145.96.13] Executing script:
+yum install -y yum-plugin-priorities || true
+rpm -q epel-release && yum-config-manager --setopt="rhel-server-ost-6-4-rpms.priority=1" --save rhel-server-ost-6-4-rpms
+yum clean metadata
+2015-04-03 19:52:58::INFO::shell::94::root:: [10.145.96.12] Executing script:
+rpm -q --whatprovides yum-utils || yum install -y yum-utils
+2015-04-03 19:52:58::INFO::shell::48::root:: Executing command:
+rpm -q rdo-release --qf='%{version}-%{release}.%{arch}
+'
+2015-04-03 19:52:58::INFO::shell::94::root:: [10.145.96.12] Executing script:
+(rpm -q 'rdo-release-juno' || yum install -y --nogpg http://rdo.fedorapeople.org/openstack/openstack-juno/rdo-release-juno-1.noarch.rpm) || true
+2015-04-03 19:52:58::INFO::shell::94::root:: [10.145.96.12] Executing script:
+yum-config-manager --enable openstack-juno
+2015-04-03 19:52:59::INFO::shell::94::root:: [10.145.96.12] Executing script:
+REPOFILE=$(mktemp)
+cat /etc/yum.conf > $REPOFILE
+echo -e '[packstack-epel]
+name=packstack-epel
+enabled=1
+mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch' >> $REPOFILE
+( rpm -q --whatprovides epel-release || yum install -y --nogpg -c $REPOFILE epel-release ) || true
+rm -rf $REPOFILE
+2015-04-03 19:52:59::INFO::shell::94::root:: [10.145.96.12] Executing script:
+rpm -q yum-utils || yum -y install yum-utils
+yum-config-manager --enable epel
+2015-04-03 19:52:59::INFO::shell::94::root:: [10.145.96.12] Executing script:
+yum install -y yum-plugin-priorities || true
+rpm -q epel-release && yum-config-manager --setopt="rhel-server-ost-6-4-rpms.priority=1" --save rhel-server-ost-6-4-rpms
+yum clean metadata
+2015-04-03 19:53:20::INFO::shell::94::root:: [10.145.96.11] Executing script:
+vgdisplay cinder-volumes
+2015-04-03 19:53:26::INFO::shell::94::root:: [localhost] Executing script:
+ssh-keygen -t rsa -b 2048 -f "/var/tmp/packstack/20150403-195123-rBO_5m/nova_migration_key" -N ""
+2015-04-03 19:53:26::INFO::shell::94::root:: [localhost] Executing script:
+ssh-keyscan 10.145.96.13
+2015-04-03 19:53:26::INFO::shell::94::root:: [localhost] Executing script:
+ssh-keyscan 10.145.96.12
+2015-04-03 19:53:26::INFO::shell::94::root:: [10.145.96.11] Executing script:
+systemctl
+2015-04-03 19:53:31::INFO::shell::94::root:: [10.145.96.11] Executing script:
+systemctl is-enabled NetworkManager
+2015-04-03 19:53:37::INFO::shell::94::root:: [10.145.96.11] Executing script:
+systemctl is-active NetworkManager
+2015-04-03 19:53:42::INFO::shell::94::root:: [10.145.96.13] Executing script:
+systemctl
+2015-04-03 19:53:42::INFO::shell::94::root:: [10.145.96.13] Executing script:
+systemctl is-enabled NetworkManager
+2015-04-03 19:53:42::INFO::shell::94::root:: [10.145.96.13] Executing script:
+systemctl is-active NetworkManager
+2015-04-03 19:53:43::INFO::shell::94::root:: [10.145.96.12] Executing script:
+systemctl
+2015-04-03 19:53:43::INFO::shell::94::root:: [10.145.96.12] Executing script:
+systemctl is-enabled NetworkManager
+2015-04-03 19:53:43::INFO::shell::94::root:: [10.145.96.12] Executing script:
+systemctl is-active NetworkManager
+2015-04-03 19:53:43::INFO::shell::94::root:: [10.145.96.11] Executing script:
+echo $HOME
+2015-04-03 19:53:48::INFO::shell::94::root:: [localhost] Executing script:
+rpm -q --requires openstack-puppet-modules | egrep -v "^(rpmlib|\/|perl)"
+2015-04-03 19:53:49::INFO::shell::94::root:: [10.145.96.11] Executing script:
+yum install -y puppet hiera openssh-clients tar nc rubygem-json
+yum update -y puppet hiera openssh-clients tar nc rubygem-json
+rpm -q --whatprovides puppet
+rpm -q --whatprovides hiera
+rpm -q --whatprovides openssh-clients
+rpm -q --whatprovides tar
+rpm -q --whatprovides nc
+rpm -q --whatprovides rubygem-json
+[[ ! -L /etc/puppet/hiera.yaml ]] && ln -s /etc/hiera.yaml /etc/puppet/hiera.yaml || echo "hiera.yaml symlink already created"
+sed -i 's;:datadir:.*;:datadir: /var/tmp/packstack/97d66569c2124127870bfe214d8020eb/hieradata;g' /etc/puppet/hiera.yaml
+2015-04-03 19:55:13::INFO::shell::94::root:: [10.145.96.13] Executing script:
+yum install -y puppet hiera openssh-clients tar nc rubygem-json
+yum update -y puppet hiera openssh-clients tar nc rubygem-json
+rpm -q --whatprovides puppet
+rpm -q --whatprovides hiera
+rpm -q --whatprovides openssh-clients
+rpm -q --whatprovides tar
+rpm -q --whatprovides nc
+rpm -q --whatprovides rubygem-json
+[[ ! -L /etc/puppet/hiera.yaml ]] && ln -s /etc/hiera.yaml /etc/puppet/hiera.yaml || echo "hiera.yaml symlink already created"
+sed -i 's;:datadir:.*;:datadir: /var/tmp/packstack/88aa307d868a4a239f99d81f4d9cfd55/hieradata;g' /etc/puppet/hiera.yaml
+2015-04-03 19:56:19::INFO::shell::94::root:: [10.145.96.12] Executing script:
+yum install -y puppet hiera openssh-clients tar nc rubygem-json
+yum update -y puppet hiera openssh-clients tar nc rubygem-json
+rpm -q --whatprovides puppet
+rpm -q --whatprovides hiera
+rpm -q --whatprovides openssh-clients
+rpm -q --whatprovides tar
+rpm -q --whatprovides nc
+rpm -q --whatprovides rubygem-json
+[[ ! -L /etc/puppet/hiera.yaml ]] && ln -s /etc/hiera.yaml /etc/puppet/hiera.yaml || echo "hiera.yaml symlink already created"
+sed -i 's;:datadir:.*;:datadir: /var/tmp/packstack/43bc070947ca4bbe9bee1b83af453af3/hieradata;g' /etc/puppet/hiera.yaml
+2015-04-03 19:57:34::INFO::shell::94::root:: [localhost] Executing script:
+cd /var/tmp/packstack/20150403-195123-rBO_5m/hieradata
+tar --dereference -cpzf - ../hieradata | ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@10.145.96.11 tar -C /var/tmp/packstack/97d66569c2124127870bfe214d8020eb -xpzf -
+cd /usr/lib/python2.7/site-packages/packstack/puppet
+cd /var/tmp/packstack/20150403-195123-rBO_5m/manifests
+tar --dereference -cpzf - ../manifests | ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@10.145.96.11 tar -C /var/tmp/packstack/97d66569c2124127870bfe214d8020eb -xpzf -
+cd /usr/share/openstack-puppet/modules
+tar --dereference -cpzf - apache ceilometer certmonger cinder concat firewall glance heat horizon inifile ironic keystone memcached mongodb mysql neutron nova nssdb openstack packstack qpid rabbitmq redis remote rsync sahara ssh stdlib swift sysctl tempest trove vcsrepo vlan vswitch xinetd openstacklib | ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@10.145.96.11 tar -C /var/tmp/packstack/97d66569c2124127870bfe214d8020eb/modules -xpzf -
+cd /var/tmp/packstack/20150403-195123-rBO_5m/hieradata
+tar --dereference -cpzf - ../hieradata | ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@10.145.96.13 tar -C /var/tmp/packstack/88aa307d868a4a239f99d81f4d9cfd55 -xpzf -
+cd /usr/lib/python2.7/site-packages/packstack/puppet
+cd /var/tmp/packstack/20150403-195123-rBO_5m/manifests
+tar --dereference -cpzf - ../manifests | ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@10.145.96.13 tar -C /var/tmp/packstack/88aa307d868a4a239f99d81f4d9cfd55 -xpzf -
+cd /usr/share/openstack-puppet/modules
+tar --dereference -cpzf - apache ceilometer certmonger cinder concat firewall glance heat horizon inifile ironic keystone memcached mongodb mysql neutron nova nssdb openstack packstack qpid rabbitmq redis remote rsync sahara ssh stdlib swift sysctl tempest trove vcsrepo vlan vswitch xinetd openstacklib | ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@10.145.96.13 tar -C /var/tmp/packstack/88aa307d868a4a239f99d81f4d9cfd55/modules -xpzf -
+cd /var/tmp/packstack/20150403-195123-rBO_5m/hieradata
+tar --dereference -cpzf - ../hieradata | ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@10.145.96.12 tar -C /var/tmp/packstack/43bc070947ca4bbe9bee1b83af453af3 -xpzf -
+cd /usr/lib/python2.7/site-packages/packstack/puppet
+cd /var/tmp/packstack/20150403-195123-rBO_5m/manifests
+tar --dereference -cpzf - ../manifests | ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@10.145.96.12 tar -C /var/tmp/packstack/43bc070947ca4bbe9bee1b83af453af3 -xpzf -
+cd /usr/share/openstack-puppet/modules
+tar --dereference -cpzf - apache ceilometer certmonger cinder concat firewall glance heat horizon inifile ironic keystone memcached mongodb mysql neutron nova nssdb openstack packstack qpid rabbitmq redis remote rsync sahara ssh stdlib swift sysctl tempest trove vcsrepo vlan vswitch xinetd openstacklib | ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@10.145.96.12 tar -C /var/tmp/packstack/43bc070947ca4bbe9bee1b83af453af3/modules -xpzf -
+2015-04-03 20:27:38::ERROR::run_setup::1018::root:: Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/packstack/installer/run_setup.py", line 1013, in main
+    _main(options, confFile, logFile)
+  File "/usr/lib/python2.7/site-packages/packstack/installer/run_setup.py", line 655, in _main
+    runSequences()
+  File "/usr/lib/python2.7/site-packages/packstack/installer/run_setup.py", line 626, in runSequences
+    controller.runAllSequences()
+  File "/usr/lib/python2.7/site-packages/packstack/installer/setup_controller.py", line 81, in runAllSequences
+    sequence.run(config=self.CONF, messages=self.MESSAGES)
+  File "/usr/lib/python2.7/site-packages/packstack/installer/core/sequences.py", line 109, in run
+    step.run(config=config, messages=messages)
+  File "/usr/lib/python2.7/site-packages/packstack/installer/core/sequences.py", line 50, in run
+    self.function(config, messages)
+  File "/usr/lib/python2.7/site-packages/packstack/plugins/puppet_950.py", line 254, in apply_puppet_manifest
+    wait_for_puppet(currently_running, messages)
+  File "/usr/lib/python2.7/site-packages/packstack/plugins/puppet_950.py", line 126, in wait_for_puppet
+    validate_logfile(log)
+  File "/usr/lib/python2.7/site-packages/packstack/modules/puppet.py", line 107, in validate_logfile
+    raise PuppetError(message)
+PuppetError: Error appeared during Puppet run: 10.145.96.11_nagios.pp
+Error: Could not start Service[httpd]: Execution of '/usr/bin/systemctl start httpd' returned 1: Job for httpd.service failed. See 'systemctl status httpd.service' and 'journalctl -xn' for details.
+You will find full trace in log /var/tmp/packstack/20150403-195123-rBO_5m/manifests/10.145.96.11_nagios.pp.log
+
+2015-04-03 20:27:38::INFO::shell::94::root:: [10.145.96.11] Executing script:
+rm -rf /var/tmp/packstack/97d66569c2124127870bfe214d8020eb
+2015-04-03 20:27:44::INFO::shell::94::root:: [10.145.96.12] Executing script:
+rm -rf /var/tmp/packstack/43bc070947ca4bbe9bee1b83af453af3
+2015-04-03 20:27:44::INFO::shell::94::root:: [10.145.96.13] Executing script:
+rm -rf /var/tmp/packstack/88aa307d868a4a239f99d81f4d9cfd55

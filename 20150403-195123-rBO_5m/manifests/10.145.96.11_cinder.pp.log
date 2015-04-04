@@ -1,0 +1,6 @@
+Error: NetworkManager is not running.
+[mNotice: Compiled catalog for controller in environment production in 1.48 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Main/Cinder::Type[iscsi]/Cinder::Type_set[lvm]/Exec[cinder type-key iscsi set volume_backend_name=lvm]/returns: executed successfully[0m
+[mNotice: Finished catalog run in 3.37 seconds[0m

@@ -1,0 +1,47 @@
+Error: NetworkManager is not running.
+[1;31mWarning: Scope(Class[Concat::Setup]): concat::setup is deprecated as a public API of the concat module and should no longer be directly included in the manifest.[0m
+[mNotice: Compiled catalog for controller in environment production in 2.35 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Main/Package[nagios-plugins-nrpe]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Firewall[001 nagios incoming]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Package[nagios]/ensure: created[0m
+[mNotice: /Stage[main]/Nagios_configs/Nagios_host[10.145.96.12]/ensure: created[0m
+[mNotice: /Stage[main]/Nagios_configs/File[/usr/lib64/nagios/plugins/keystone-user-list]/ensure: defined content as '{md5}57e9751c3ad36d258a02308cbf66e548'[0m
+[mNotice: /Stage[main]/Nagios_configs/Nagios_command[cinder-list]/ensure: created[0m
+[mNotice: /Stage[main]/Nagios_configs/Exec[nagiospasswd]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Nagios_configs/Nagios_host[10.145.96.13]/ensure: created[0m
+[mNotice: /Stage[main]/Nagios_configs/File[/etc/nagios/nagios_host.cfg]/owner: owner changed 'root' to 'nagios'[0m
+[mNotice: /Stage[main]/Nagios_configs/File[/etc/nagios/nagios_host.cfg]/group: group changed 'root' to 'nagios'[0m
+[mNotice: /Stage[main]/Nagios_configs/File[/etc/nagios/nagios_host.cfg]/mode: mode changed '0600' to '0644'[0m
+[mNotice: /Stage[main]/Nagios_configs/Nagios_command[swift-list]/ensure: created[0m
+[mNotice: /Stage[main]/Nagios_configs/Nagios_command[keystone-user-list]/ensure: created[0m
+[mNotice: /Stage[main]/Nagios_configs/Nagios_host[10.145.96.11]/ensure: created[0m
+[mNotice: /Stage[main]/Nagios_configs/File[/usr/lib64/nagios/plugins/swift-list]/ensure: defined content as '{md5}e4704237eb2f0db7f284386c81cf5775'[0m
+[mNotice: /Stage[main]/Nagios_configs/File_line[nagios_service]/ensure: created[0m
+[mNotice: /Stage[main]/Nagios_configs/File[/etc/nagios/objects/localhost.cfg]/content: content changed '{md5}d480109d4b46fc8fcf035f0656f8f4ee' to '{md5}d41d8cd98f00b204e9800998ecf8427e'[0m
+[mNotice: /Stage[main]/Nagios_configs/Nagios_command[check_nrpe]/ensure: created[0m
+[mNotice: /Stage[main]/Nagios_configs/Nagios_command[nova-list]/ensure: created[0m
+[mNotice: /Stage[main]/Nagios_configs/File_line[nagios_host]/ensure: created[0m
+[mNotice: /Stage[main]/Nagios_configs/Nagios_command[glance-index]/ensure: created[0m
+[mNotice: /Stage[main]/Nagios_configs/File_line[nagios_command]/ensure: created[0m
+[mNotice: /Stage[main]/Nagios_configs/File[/usr/lib64/nagios/plugins/nova-list]/ensure: defined content as '{md5}4820b2412587a6cd884022e75c99bda3'[0m
+[mNotice: /Stage[main]/Nagios_configs/File[/etc/nagios/nagios_command.cfg]/owner: owner changed 'root' to 'nagios'[0m
+[mNotice: /Stage[main]/Nagios_configs/File[/etc/nagios/nagios_command.cfg]/group: group changed 'root' to 'nagios'[0m
+[mNotice: /Stage[main]/Nagios_configs/File[/etc/nagios/nagios_command.cfg]/mode: mode changed '0600' to '0644'[0m
+[mNotice: /Stage[main]/Apache::Mod::Php/Apache::Mod[php5]/File[php5.load]/ensure: defined content as '{md5}5aabed26d29e38135b5157acff80a2a6'[0m
+[mNotice: /Stage[main]/Apache::Mod::Php/File[php5.conf]/ensure: defined content as '{md5}49e2d214790835c141fcaf6d74b5a96d'[0m
+[mNotice: /Stage[main]/Nagios_configs/File[/usr/lib64/nagios/plugins/cinder-list]/ensure: defined content as '{md5}cede810f64caa41f2c7867bec1ec31b5'[0m
+[mNotice: /Stage[main]/Main/Apache::Listen[443]/Concat::Fragment[Listen 443]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf/fragments/10_Listen 443]/mode: mode changed '0750' to '0640'[0m
+[mNotice: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/Exec[concat_/etc/httpd/conf/ports.conf]: Triggered 'refresh' from 1 events[0m
+[mNotice: /Stage[main]/Nagios_configs/File[/etc/nagios/nagios_service.cfg]/ensure: created[0m
+[mNotice: /Stage[main]/Nagios_configs/File[/usr/lib64/nagios/plugins/glance-index]/ensure: defined content as '{md5}30365c9c6e3a3a9c73171bf468f2b9e5'[0m
+[mNotice: /Stage[main]/Nagios_configs/File[/etc/nagios/keystonerc_admin]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Service[nagios]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Apache/Apache::Vhost[default]/Concat[15-default.conf]/File[15-default.conf]/content: content changed '{md5}8a91f62e66ab21fb8687cbb8e39eb9d6' to '{md5}167f8f4bb6192e0d58438feb75cf97e0'[0m
+[1;31mError: Could not start Service[httpd]: Execution of '/usr/bin/systemctl start httpd' returned 1: Job for httpd.service failed. See 'systemctl status httpd.service' and 'journalctl -xn' for details.
+Wrapped exception:
+Execution of '/usr/bin/systemctl start httpd' returned 1: Job for httpd.service failed. See 'systemctl status httpd.service' and 'journalctl -xn' for details.[0m
+[1;31mError: /Stage[main]/Apache::Service/Service[httpd]/ensure: change from stopped to running failed: Could not start Service[httpd]: Execution of '/usr/bin/systemctl start httpd' returned 1: Job for httpd.service failed. See 'systemctl status httpd.service' and 'journalctl -xn' for details.[0m
+[mNotice: /Stage[main]/Apache::Service/Service[httpd]: Triggered 'refresh' from 5 events[0m
+[mNotice: Finished catalog run in 57.13 seconds[0m

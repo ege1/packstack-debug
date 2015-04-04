@@ -1,0 +1,52 @@
+2015-04-03 19:49:06::INFO::shell::94::root:: [localhost] Executing script:
+rm -rf /var/tmp/packstack/20150403-194906-lMs5rN/manifests/*pp
+2015-04-03 19:49:06::INFO::shell::94::root:: [10.145.96.11] Executing script:
+mkdir -p ~/.ssh
+chmod 500 ~/.ssh
+grep 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3Qv3hR6KLarrCJZPJLNTqlcR+V22rK1qDBjWhgFrZXyP6ZNa8mAbw0rA8BJKvwYmo+CD9j7BaP2d1g6XSbkeedwxd3zXmuXbNKbgo+RPOXsG8jJMvw4TSj7TL/atd6xP2dxF6+cv1SmKwOE5f004MlqmTEME8COEfXh/Q76o0ZE3M9wOGyaUwjRxpL5L0F4pCMh2aFDfXbr5vZhheyZMmhGw3t/aBDDXzsLwbU/HcoTxv5snadQCDTZ6e62ptCgs2XxK6mqNyFcczr6laxe4s9/pv4hu6MbOHAHibvjRO9edxEl858BgX/EXDUhj4Vq42eShXaORvXfHovv4lUA3h ansible@cloud10' ~/.ssh/authorized_keys > /dev/null 2>&1 || echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3Qv3hR6KLarrCJZPJLNTqlcR+V22rK1qDBjWhgFrZXyP6ZNa8mAbw0rA8BJKvwYmo+CD9j7BaP2d1g6XSbkeedwxd3zXmuXbNKbgo+RPOXsG8jJMvw4TSj7TL/atd6xP2dxF6+cv1SmKwOE5f004MlqmTEME8COEfXh/Q76o0ZE3M9wOGyaUwjRxpL5L0F4pCMh2aFDfXbr5vZhheyZMmhGw3t/aBDDXzsLwbU/HcoTxv5snadQCDTZ6e62ptCgs2XxK6mqNyFcczr6laxe4s9/pv4hu6MbOHAHibvjRO9edxEl858BgX/EXDUhj4Vq42eShXaORvXfHovv4lUA3h ansible@cloud10 >> ~/.ssh/authorized_keys
+chmod 400 ~/.ssh/authorized_keys
+restorecon -r ~/.ssh
+2015-04-03 19:49:12::INFO::shell::94::root:: [10.145.96.13] Executing script:
+mkdir -p ~/.ssh
+chmod 500 ~/.ssh
+grep 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3Qv3hR6KLarrCJZPJLNTqlcR+V22rK1qDBjWhgFrZXyP6ZNa8mAbw0rA8BJKvwYmo+CD9j7BaP2d1g6XSbkeedwxd3zXmuXbNKbgo+RPOXsG8jJMvw4TSj7TL/atd6xP2dxF6+cv1SmKwOE5f004MlqmTEME8COEfXh/Q76o0ZE3M9wOGyaUwjRxpL5L0F4pCMh2aFDfXbr5vZhheyZMmhGw3t/aBDDXzsLwbU/HcoTxv5snadQCDTZ6e62ptCgs2XxK6mqNyFcczr6laxe4s9/pv4hu6MbOHAHibvjRO9edxEl858BgX/EXDUhj4Vq42eShXaORvXfHovv4lUA3h ansible@cloud10' ~/.ssh/authorized_keys > /dev/null 2>&1 || echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3Qv3hR6KLarrCJZPJLNTqlcR+V22rK1qDBjWhgFrZXyP6ZNa8mAbw0rA8BJKvwYmo+CD9j7BaP2d1g6XSbkeedwxd3zXmuXbNKbgo+RPOXsG8jJMvw4TSj7TL/atd6xP2dxF6+cv1SmKwOE5f004MlqmTEME8COEfXh/Q76o0ZE3M9wOGyaUwjRxpL5L0F4pCMh2aFDfXbr5vZhheyZMmhGw3t/aBDDXzsLwbU/HcoTxv5snadQCDTZ6e62ptCgs2XxK6mqNyFcczr6laxe4s9/pv4hu6MbOHAHibvjRO9edxEl858BgX/EXDUhj4Vq42eShXaORvXfHovv4lUA3h ansible@cloud10 >> ~/.ssh/authorized_keys
+chmod 400 ~/.ssh/authorized_keys
+restorecon -r ~/.ssh
+2015-04-03 19:49:12::INFO::shell::94::root:: [10.145.96.12] Executing script:
+mkdir -p ~/.ssh
+chmod 500 ~/.ssh
+grep 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3Qv3hR6KLarrCJZPJLNTqlcR+V22rK1qDBjWhgFrZXyP6ZNa8mAbw0rA8BJKvwYmo+CD9j7BaP2d1g6XSbkeedwxd3zXmuXbNKbgo+RPOXsG8jJMvw4TSj7TL/atd6xP2dxF6+cv1SmKwOE5f004MlqmTEME8COEfXh/Q76o0ZE3M9wOGyaUwjRxpL5L0F4pCMh2aFDfXbr5vZhheyZMmhGw3t/aBDDXzsLwbU/HcoTxv5snadQCDTZ6e62ptCgs2XxK6mqNyFcczr6laxe4s9/pv4hu6MbOHAHibvjRO9edxEl858BgX/EXDUhj4Vq42eShXaORvXfHovv4lUA3h ansible@cloud10' ~/.ssh/authorized_keys > /dev/null 2>&1 || echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3Qv3hR6KLarrCJZPJLNTqlcR+V22rK1qDBjWhgFrZXyP6ZNa8mAbw0rA8BJKvwYmo+CD9j7BaP2d1g6XSbkeedwxd3zXmuXbNKbgo+RPOXsG8jJMvw4TSj7TL/atd6xP2dxF6+cv1SmKwOE5f004MlqmTEME8COEfXh/Q76o0ZE3M9wOGyaUwjRxpL5L0F4pCMh2aFDfXbr5vZhheyZMmhGw3t/aBDDXzsLwbU/HcoTxv5snadQCDTZ6e62ptCgs2XxK6mqNyFcczr6laxe4s9/pv4hu6MbOHAHibvjRO9edxEl858BgX/EXDUhj4Vq42eShXaORvXfHovv4lUA3h ansible@cloud10 >> ~/.ssh/authorized_keys
+chmod 400 ~/.ssh/authorized_keys
+restorecon -r ~/.ssh
+2015-04-03 19:49:12::INFO::shell::94::root:: [10.145.96.11] Executing script:
+cat /etc/redhat-release
+2015-04-03 19:49:18::INFO::shell::94::root:: [10.145.96.11] Executing script:
+mkdir -p /var/tmp/packstack
+mkdir --mode 0700 /var/tmp/packstack/50fe40e1197e4f168f6def5b04b704ec
+mkdir --mode 0700 /var/tmp/packstack/50fe40e1197e4f168f6def5b04b704ec/modules
+mkdir --mode 0700 /var/tmp/packstack/50fe40e1197e4f168f6def5b04b704ec/resources
+2015-04-03 19:49:23::INFO::shell::94::root:: [10.145.96.13] Executing script:
+cat /etc/redhat-release
+2015-04-03 19:49:23::INFO::shell::94::root:: [10.145.96.13] Executing script:
+mkdir -p /var/tmp/packstack
+mkdir --mode 0700 /var/tmp/packstack/a3d3c8b7bf0c4bdab1e28166eff98bb0
+mkdir --mode 0700 /var/tmp/packstack/a3d3c8b7bf0c4bdab1e28166eff98bb0/modules
+mkdir --mode 0700 /var/tmp/packstack/a3d3c8b7bf0c4bdab1e28166eff98bb0/resources
+2015-04-03 19:49:23::INFO::shell::94::root:: [10.145.96.12] Executing script:
+cat /etc/redhat-release
+2015-04-03 19:49:23::INFO::shell::94::root:: [10.145.96.12] Executing script:
+mkdir -p /var/tmp/packstack
+mkdir --mode 0700 /var/tmp/packstack/32c5cda8462c498faf1073fee6a13faa
+mkdir --mode 0700 /var/tmp/packstack/32c5cda8462c498faf1073fee6a13faa/modules
+mkdir --mode 0700 /var/tmp/packstack/32c5cda8462c498faf1073fee6a13faa/resources
+2015-04-03 19:49:24::INFO::shell::94::root:: [10.145.96.11] Executing script:
+rpm -q --whatprovides yum-utils || yum install -y yum-utils
+2015-04-03 19:49:29::INFO::shell::48::root:: Executing command:
+rpm -q rdo-release --qf='%{version}-%{release}.%{arch}
+'
+2015-04-03 19:49:29::INFO::shell::94::root:: [10.145.96.11] Executing script:
+(rpm -q 'rdo-release-juno' || yum install -y --nogpg http://rdo.fedorapeople.org/openstack/openstack-juno/rdo-release-juno-1.noarch.rpm) || true
+2015-04-03 19:49:35::INFO::shell::94::root:: [10.145.96.11] Executing script:
+yum-config-manager --enable openstack-juno
+2015-04-03 19:49:38::INFO::shell::94::root:: [10.145.96.11] Executing script:
+rm -rf /var/tmp/packstack/50fe40e1197e4f168f6def5b04b704ec

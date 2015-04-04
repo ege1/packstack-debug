@@ -1,0 +1,10 @@
+Error: NetworkManager is not running.
+[mNotice: Compiled catalog for compute02 in environment production in 1.66 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Main/Exec[qemu-kvm]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Main/File[/etc/nova/ssh/nova_migration_key]/content: content changed '{md5}1729ee69ed18745e333dd76cfe69dcd7' to '{md5}3d4c0a271aac3f868b1ab0b34363c941'[0m
+[mNotice: /Stage[main]/Nova/Ssh_authorized_key[nova-migration-public-key]/key: key changed 'AAAAB3NzaC1yc2EAAAADAQABAAABAQCdQcmkXDmciAxL8VlUnzBnMpXnRor7r/vZJ5D56FJeS8VohgC7e2j/8tpCU68IkmQuWt2crg3O0tHLKy2f4EBQzqpAc7c0pZstT0hn9aheVJjMYOvRoKhzgLCBLMPEXmn46vEM7ry2GRYOcfk14HexridTSJjUVIabt5PrtA+InOFMZvYyppRFy1DlMTZPsZaFONKEGPUOKLFlURzl92Hr/EFf9nUZcbQlVExFG0JlVIYdpyH1tw2MDvDOpZZ7ZxUerIrYk89+olsGUqJCCvxWrWcF6vN7MzuOBuzUGLid5v01nWMff5TT9plyF7ZleoxGtlNeWPGa1QjxlWIN7N1x' to 'AAAAB3NzaC1yc2EAAAADAQABAAABAQD/Q9ujXLjLvW7eDjRSuEwE8B6mB2W0+4UhZq+AFBGDPeeE6G/cXlAf7ik7N5uA7QxCYYe8XRdRM8kR2ZF2B8eNEm8c2Wcm7xNqMI5MPnX6+36knRRczrkoBlWEcxiCwkdEYM7QWqZ2nb/EJcaVrDtxAQodNPR3gl7MTDfbN5ADPqpvNM/AClOveFBCAF5mD+V05/YhAwfpvfIf8+gypApzBGsP8Zinn5U5sGI1nwmQcSg2FwSAXm39xgPimjJoLNGNyiTr2QfFMAtB6Mu0BYUqDdOUuc5/toUCU+lGk+zl+Wn/ELB6mJKQ0E+6+Mi86M5DASEgTn7QCwnP+AM0ir8z'[0m
+[mNotice: /Stage[main]/Nova/File[/var/lib/nova/.ssh/id_rsa]/content: content changed '{md5}1729ee69ed18745e333dd76cfe69dcd7' to '{md5}3d4c0a271aac3f868b1ab0b34363c941'[0m
+[mNotice: /Stage[main]/Nova::Compute::Libvirt/Service[messagebus]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: Finished catalog run in 10.35 seconds[0m

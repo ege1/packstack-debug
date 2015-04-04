@@ -1,0 +1,9 @@
+Error: NetworkManager is not running.
+[1;31mWarning: Scope(Class[Nova::Db]): Could not look up qualified variable '::nova::database_connection'; class ::nova has not been evaluated[0m
+[1;31mWarning: Scope(Class[Nova::Db]): Could not look up qualified variable '::nova::database_idle_timeout'; class ::nova has not been evaluated[0m
+[mNotice: Compiled catalog for controller in environment production in 1.36 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Nova/Ssh_authorized_key[nova-migration-public-key]/key: key changed 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDiY9pk3gLqkKC4KEbvzxnjuUOz88Fp5k3SXBdeH56KLpK0K3tBbj9gB0AwXVjscKNhkZwW6XGQmUxG4NSVp/cOdix1yyMD9iM4j7Md+3jFSLiElR47jvWnS2J+11ycxAf/ls7Nj+b7oUuUHBPIlksVkKL3+CsoXtsXXnO6GeNCloB0h6+2DAiCxhB+zdQU/Usor4SjX0osj/9KBHt7C+Y7Uqp2lgMXmVc0Y7S7ZLFhucqChcDIw3oletY0P2HrhDP7UXscXfxHLEHpkROQpWF0Lk7afgFlAVTN3myJY6/n7qVjBcZUD+lEANtbR8oHxogTcr6itbcuuQIKWBTjAS6R' to 'AAAAB3NzaC1yc2EAAAADAQABAAABAQCdQcmkXDmciAxL8VlUnzBnMpXnRor7r/vZJ5D56FJeS8VohgC7e2j/8tpCU68IkmQuWt2crg3O0tHLKy2f4EBQzqpAc7c0pZstT0hn9aheVJjMYOvRoKhzgLCBLMPEXmn46vEM7ry2GRYOcfk14HexridTSJjUVIabt5PrtA+InOFMZvYyppRFy1DlMTZPsZaFONKEGPUOKLFlURzl92Hr/EFf9nUZcbQlVExFG0JlVIYdpyH1tw2MDvDOpZZ7ZxUerIrYk89+olsGUqJCCvxWrWcF6vN7MzuOBuzUGLid5v01nWMff5TT9plyF7ZleoxGtlNeWPGa1QjxlWIN7N1x'[0m
+[mNotice: /Stage[main]/Nova/File[/var/lib/nova/.ssh/id_rsa]/content: content changed '{md5}b9db8ffbfbcc898d8c02dde28c1f8a24' to '{md5}1729ee69ed18745e333dd76cfe69dcd7'[0m
+[mNotice: Finished catalog run in 1.82 seconds[0m

@@ -1,0 +1,35 @@
+Error: NetworkManager is not running.
+[1;31mWarning: Scope(Class[Concat::Setup]): concat::setup is deprecated as a public API of the concat module and should no longer be directly included in the manifest.[0m
+[1;31mWarning: Variable access via 'tcp_port' is deprecated. Use '@tcp_port' instead. template[/var/tmp/packstack/1e0823ba3bc54527b92d3962b21a55f5/modules/memcached/templates/memcached_sysconfig.erb]:1
+   (at /var/tmp/packstack/1e0823ba3bc54527b92d3962b21a55f5/modules/memcached/templates/memcached_sysconfig.erb:1:in `block in result')[0m
+[1;31mWarning: Variable access via 'user' is deprecated. Use '@user' instead. template[/var/tmp/packstack/1e0823ba3bc54527b92d3962b21a55f5/modules/memcached/templates/memcached_sysconfig.erb]:2
+   (at /var/tmp/packstack/1e0823ba3bc54527b92d3962b21a55f5/modules/memcached/templates/memcached_sysconfig.erb:2:in `block in result')[0m
+[1;31mWarning: Variable access via 'max_connections' is deprecated. Use '@max_connections' instead. template[/var/tmp/packstack/1e0823ba3bc54527b92d3962b21a55f5/modules/memcached/templates/memcached_sysconfig.erb]:3
+   (at /var/tmp/packstack/1e0823ba3bc54527b92d3962b21a55f5/modules/memcached/templates/memcached_sysconfig.erb:3:in `block in result')[0m
+[1;31mWarning: Variable access via 'max_memory' is deprecated. Use '@max_memory' instead. template[/var/tmp/packstack/1e0823ba3bc54527b92d3962b21a55f5/modules/memcached/templates/memcached_sysconfig.erb]:5
+   (at /var/tmp/packstack/1e0823ba3bc54527b92d3962b21a55f5/modules/memcached/templates/memcached_sysconfig.erb:5:in `block in result')[0m
+[1;31mWarning: Variable access via 'listen_ip' is deprecated. Use '@listen_ip' instead. template[/var/tmp/packstack/1e0823ba3bc54527b92d3962b21a55f5/modules/memcached/templates/memcached_sysconfig.erb]:15
+   (at /var/tmp/packstack/1e0823ba3bc54527b92d3962b21a55f5/modules/memcached/templates/memcached_sysconfig.erb:15:in `block in result')[0m
+[1;31mWarning: Variable access via 'udp_port' is deprecated. Use '@udp_port' instead. template[/var/tmp/packstack/1e0823ba3bc54527b92d3962b21a55f5/modules/memcached/templates/memcached_sysconfig.erb]:18
+   (at /var/tmp/packstack/1e0823ba3bc54527b92d3962b21a55f5/modules/memcached/templates/memcached_sysconfig.erb:18:in `block in result')[0m
+[1;31mWarning: Variable access via 'processorcount' is deprecated. Use '@processorcount' instead. template[/var/tmp/packstack/1e0823ba3bc54527b92d3962b21a55f5/modules/memcached/templates/memcached_sysconfig.erb]:20
+   (at /var/tmp/packstack/1e0823ba3bc54527b92d3962b21a55f5/modules/memcached/templates/memcached_sysconfig.erb:20:in `block in result')[0m
+[mNotice: Compiled catalog for controller in environment production in 2.70 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Horizon/Package[horizon]/ensure: created[0m
+[mNotice: /Stage[main]/Apache/File[/etc/httpd/conf/httpd.conf]/content: content changed '{md5}f5e7449c0f17bc856e86011cb5d152ba' to '{md5}3f71c52bd8e27d47296208ec194c39a9'[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/File[/var/log/horizon]/mode: mode changed '0750' to '0751'[0m
+[mNotice: /Stage[main]/Horizon/File[/etc/openstack-dashboard/local_settings]/content: content changed '{md5}04fa97a3052c830e2bfd61e0b2fac90a' to '{md5}06c52b86f3cf07d7493e656fb4bfc515'[0m
+[mNotice: /Stage[main]/Horizon/File[/etc/openstack-dashboard/local_settings]/mode: mode changed '0640' to '0644'[0m
+[mNotice: /Stage[main]/Apache::Mod::Autoindex/File[autoindex.conf]/content: content changed '{md5}1d7d7dd9f1b4beef5a21688ededda355' to '{md5}2421a3c6df32c7e38c2a7a22afdf5728'[0m
+[mNotice: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf/fragments/10_Listen 443]/mode: mode changed '0640' to '0750'[0m
+[mNotice: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/Exec[concat_/etc/httpd/conf/ports.conf]: Triggered 'refresh' from 1 events[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat[15-horizon_vhost.conf]/File[15-horizon_vhost.conf]/content: content changed '{md5}028922d15a00b9642a4f7f427d02d2f0' to '{md5}61701793e8c5eb67c2f2122cb2b903e9'[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/File[/etc/httpd/conf.d/openstack-dashboard.conf]/content: content changed '{md5}1f8635eac7872529d7b6577424d3355c' to '{md5}3f4b1c53d0e150dae37b3ee5dcaf622d'[0m
+[1;31mError: Could not start Service[httpd]: Execution of '/usr/bin/systemctl start httpd' returned 1: Job for httpd.service failed. See 'systemctl status httpd.service' and 'journalctl -xn' for details.
+Wrapped exception:
+Execution of '/usr/bin/systemctl start httpd' returned 1: Job for httpd.service failed. See 'systemctl status httpd.service' and 'journalctl -xn' for details.[0m
+[1;31mError: /Stage[main]/Apache::Service/Service[httpd]/ensure: change from stopped to running failed: Could not start Service[httpd]: Execution of '/usr/bin/systemctl start httpd' returned 1: Job for httpd.service failed. See 'systemctl status httpd.service' and 'journalctl -xn' for details.[0m
+[mNotice: /Stage[main]/Apache::Service/Service[httpd]: Triggered 'refresh' from 5 events[0m
+[mNotice: Finished catalog run in 26.09 seconds[0m

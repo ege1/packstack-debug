@@ -1,0 +1,7 @@
+Error: NetworkManager is not running.
+[1;31mWarning: Scope(Class[Nova::Db]): Could not look up qualified variable '::nova::database_connection'; class ::nova has not been evaluated[0m
+[1;31mWarning: Scope(Class[Nova::Db]): Could not look up qualified variable '::nova::database_idle_timeout'; class ::nova has not been evaluated[0m
+[mNotice: Compiled catalog for controller in environment production in 1.23 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: Finished catalog run in 1.77 seconds[0m
