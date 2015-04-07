@@ -1,0 +1,84 @@
+Error: NetworkManager is not running.
+[mNotice: Compiled catalog for controller in environment production in 1.52 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Main/File[openstack-losetup]/ensure: defined content as '{md5}3fee7f98eb9b581c420311aed91f0aaa'[0m
+[mNotice: /Stage[main]/Main/Exec[/usr/bin/systemctl daemon-reload]: Triggered 'refresh' from 1 events[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[cinder_10.145.96.12]/Firewall[001 cinder incoming cinder_10.145.96.12]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[cinder_api]/Firewall[001 cinder-api incoming cinder_api]/ensure: created[0m
+[mNotice: /Stage[main]/Main/File_line[snapshot_autoextend_threshold]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Cinder::Backend::Iscsi[lvm]/Package[targetcli]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Cinder::Backend::Iscsi[lvm]/Service[target]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Main/File_line[snapshot_autoextend_percent]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Package[cinder]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Api/Cinder_api_paste_ini[filter:authtoken/admin_tenant_name]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/rabbit_host]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/File[/etc/cinder/cinder.conf]/owner: owner changed 'root' to 'cinder'[0m
+[mNotice: /Stage[main]/Cinder/File[/etc/cinder/cinder.conf]/mode: mode changed '0640' to '0600'[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[database/idle_timeout]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Backup::Swift/Cinder_config[DEFAULT/backup_swift_container]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Cinder::Backend::Iscsi[lvm]/Cinder_config[lvm/iscsi_helper]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/File[/etc/cinder/api-paste.ini]/owner: owner changed 'root' to 'cinder'[0m
+[mNotice: /Stage[main]/Cinder/File[/etc/cinder/api-paste.ini]/mode: mode changed '0640' to '0600'[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/use_syslog]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/api_paste_config]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Backends/Cinder_config[DEFAULT/enabled_backends]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Api/Cinder_api_paste_ini[filter:authtoken/auth_host]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Backup::Swift/Cinder_config[DEFAULT/backup_driver]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Backup::Swift/Cinder_config[DEFAULT/backup_swift_retry_backoff]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/debug]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Backup/Cinder_config[DEFAULT/backup_manager]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/storage_availability_zone]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/rabbit_userid]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/rabbit_use_ssl]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Backup::Swift/Cinder_config[DEFAULT/backup_swift_retry_attempts]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/log_dir]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Backup/Cinder_config[DEFAULT/backup_topic]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Api/Cinder_config[DEFAULT/auth_strategy]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Api/Cinder_config[DEFAULT/osapi_volume_listen]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Cinder::Backend::Iscsi[lvm]/Cinder_config[lvm/volume_group]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Api/Cinder_config[DEFAULT/osapi_volume_workers]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Api/Cinder_api_paste_ini[filter:authtoken/service_port]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[database/max_retries]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Backup/Cinder_config[DEFAULT/backup_name_template]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Api/Cinder_api_paste_ini[filter:authtoken/auth_uri]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[database/retry_interval]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Api/Cinder_api_paste_ini[filter:authtoken/auth_port]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Api/Cinder_api_paste_ini[filter:authtoken/service_host]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/rabbit_virtual_host]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/default_availability_zone]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Backup::Swift/Cinder_config[DEFAULT/backup_swift_object_size]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Api/Cinder_api_paste_ini[filter:authtoken/service_protocol]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Cinder::Backend::Iscsi[lvm]/Cinder_config[lvm/iscsi_ip_address]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Api/Cinder_api_paste_ini[filter:authtoken/admin_user]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/rabbit_hosts]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Cinder_config[DEFAULT/glance_host]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/verbose]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/control_exchange]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Cinder::Backend::Iscsi[lvm]/Cinder_config[lvm/volume_driver]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/rabbit_ha_queues]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[database/min_pool_size]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Cinder::Backend::Iscsi[lvm]/Cinder_config[lvm/volume_backend_name]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/amqp_durable_queues]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Ceilometer/Cinder_config[DEFAULT/notification_driver]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[database/connection]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/rabbit_password]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/rabbit_port]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder/Cinder_config[DEFAULT/rpc_backend]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Setup_test_volume/Exec[create_/var/lib/cinder/cinder-volumes]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Cinder::Setup_test_volume/Exec[losetup /dev/loop2 /var/lib/cinder/cinder-volumes]: Triggered 'refresh' from 1 events[0m
+[mNotice: /Stage[main]/Cinder::Setup_test_volume/Exec[pvcreate /dev/loop2]: Triggered 'refresh' from 1 events[0m
+[mNotice: /Stage[main]/Cinder::Setup_test_volume/Exec[vgcreate cinder-volumes /dev/loop2]: Triggered 'refresh' from 1 events[0m
+[mNotice: /Stage[main]/Main/Service[openstack-losetup]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Cinder::Backup::Swift/Cinder_config[DEFAULT/backup_swift_url]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Api/Cinder_api_paste_ini[filter:authtoken/auth_protocol]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Api/Cinder_api_paste_ini[filter:authtoken/admin_password]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Backup/Cinder_config[DEFAULT/backup_api_class]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Api/Service[cinder-api]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Cinder::Api/Exec[cinder-manage db_sync]: Triggered 'refresh' from 44 events[0m
+[mNotice: /Stage[main]/Cinder::Backup/Service[cinder-backup]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Main/Cinder::Type[iscsi]/Exec[cinder type-create iscsi]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Main/Cinder::Type[iscsi]/Cinder::Type_set[lvm]/Exec[cinder type-key iscsi set volume_backend_name=lvm]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Cinder::Volume/Service[cinder-volume]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Cinder::Scheduler/Service[cinder-scheduler]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: Finished catalog run in 70.10 seconds[0m

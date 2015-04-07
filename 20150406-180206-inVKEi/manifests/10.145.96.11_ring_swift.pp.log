@@ -1,0 +1,78 @@
+Error: NetworkManager is not running.
+[1;31mWarning: You cannot collect without storeconfigs being set on line 25 in file /var/tmp/packstack/66742a51378247da9e98a324f595177a/manifests/10.145.96.11_ring_swift.pp[0m
+[1;31mWarning: You cannot collect without storeconfigs being set on line 29 in file /var/tmp/packstack/66742a51378247da9e98a324f595177a/manifests/10.145.96.11_ring_swift.pp[0m
+[1;31mWarning: You cannot collect without storeconfigs being set on line 33 in file /var/tmp/packstack/66742a51378247da9e98a324f595177a/manifests/10.145.96.11_ring_swift.pp[0m
+[1;31mWarning: Variable access via 'use_chroot' is deprecated. Use '@use_chroot' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/header.erb]:7
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/header.erb:7:in `block in result')[0m
+[1;31mWarning: Variable access via 'address' is deprecated. Use '@address' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/header.erb]:11
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/header.erb:11:in `block in result')[0m
+[1;31mWarning: Variable access via 'motd_file' is deprecated. Use '@motd_file' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/header.erb]:12
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/header.erb:12:in `block in result')[0m
+[1;31mWarning: Variable access via 'name' is deprecated. Use '@name' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:4
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:4:in `block in result')[0m
+[1;31mWarning: Variable access via 'path' is deprecated. Use '@path' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:5
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:5:in `block in result')[0m
+[1;31mWarning: Variable access via 'read_only' is deprecated. Use '@read_only' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:6
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:6:in `block in result')[0m
+[1;31mWarning: Variable access via 'write_only' is deprecated. Use '@write_only' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:7
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:7:in `block in result')[0m
+[1;31mWarning: Variable access via 'list' is deprecated. Use '@list' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:8
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:8:in `block in result')[0m
+[1;31mWarning: Variable access via 'uid' is deprecated. Use '@uid' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:9
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:9:in `block in result')[0m
+[1;31mWarning: Variable access via 'gid' is deprecated. Use '@gid' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:10
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:10:in `block in result')[0m
+[1;31mWarning: Variable access via 'incoming_chmod' is deprecated. Use '@incoming_chmod' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:11
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:11:in `block in result')[0m
+[1;31mWarning: Variable access via 'outgoing_chmod' is deprecated. Use '@outgoing_chmod' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:12
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:12:in `block in result')[0m
+[1;31mWarning: Variable access via 'max_connections' is deprecated. Use '@max_connections' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:13
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:13:in `block in result')[0m
+[1;31mWarning: Variable access via 'max_connections' is deprecated. Use '@max_connections' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:14
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:14:in `block in result')[0m
+[1;31mWarning: Variable access via 'comment' is deprecated. Use '@comment' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:15
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:15:in `block in result')[0m
+[1;31mWarning: Variable access via 'secrets_file' is deprecated. Use '@secrets_file' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:16
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:16:in `block in result')[0m
+[1;31mWarning: Variable access via 'auth_users' is deprecated. Use '@auth_users' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:17
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:17:in `block in result')[0m
+[1;31mWarning: Variable access via 'hosts_allow' is deprecated. Use '@hosts_allow' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:18
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:18:in `block in result')[0m
+[1;31mWarning: Variable access via 'hosts_deny' is deprecated. Use '@hosts_deny' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:19
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:19:in `block in result')[0m
+[mNotice: Compiled catalog for controller in environment production in 1.27 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Xinetd/Package[xinetd]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Selboolean[rsync_export_all_ro]/value: value changed 'off' to 'on'[0m
+[mNotice: /Stage[main]/Xinetd/File[/etc/xinetd.conf]/content: content changed '{md5}9ff8cc688dd9f0dfc45e5afd25c427a7' to '{md5}011e3163044bef3aa02a664f3785d30c'[0m
+[mNotice: /Stage[main]/Xinetd/File[/etc/xinetd.conf]/mode: mode changed '0600' to '0644'[0m
+[mNotice: /Stage[main]/Swift/User[swift]/ensure: created[0m
+[mNotice: /Stage[main]/Swift/Package[swift]/ensure: created[0m
+[mNotice: /Stage[main]/Swift/File[/var/lib/swift]/group: group changed 'root' to 'swift'[0m
+[mNotice: /Stage[main]/Swift/File[/etc/swift]/owner: owner changed 'root' to 'swift'[0m
+[mNotice: /Stage[main]/Swift/File[/etc/swift]/group: group changed 'root' to 'swift'[0m
+[mNotice: /Stage[main]/Swift/File[/etc/swift]/mode: mode changed '0755' to '2770'[0m
+[mNotice: /Stage[main]/Swift/File[/etc/swift/swift.conf]/owner: owner changed 'root' to 'swift'[0m
+[mNotice: /Stage[main]/Swift/File[/etc/swift/swift.conf]/mode: mode changed '0640' to '0660'[0m
+[mNotice: /Stage[main]/Swift/Swift_config[swift-hash/swift_hash_path_suffix]/value: value changed '%SWIFT_HASH_PATH_SUFFIX%' to 'bc5c8b47a8fc48a1'[0m
+[mNotice: /Stage[main]/Swift/File[/var/run/swift]/group: group changed 'root' to 'swift'[0m
+[mNotice: /File[/var/run/swift]/seltype: seltype changed 'var_run_t' to 'swift_var_run_t'[0m
+[mNotice: /Stage[main]/Swift/File[/home/swift]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Ringbuilder/Swift::Ringbuilder::Create[container]/Exec[create_container]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Swift::Ringbuilder/Swift::Ringbuilder::Create[object]/Exec[create_object]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Main/Ring_object_device[10.145.96.11:6000/swiftloopback]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Ring_container_device[10.145.96.11:6001/swiftloopback]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Ringbuilder/Swift::Ringbuilder::Rebalance[container]/Exec[rebalance_container]: Triggered 'refresh' from 1 events[0m
+[mNotice: /Stage[main]/Swift::Ringbuilder/Swift::Ringbuilder::Rebalance[object]/Exec[rebalance_object]: Triggered 'refresh' from 1 events[0m
+[mNotice: /Stage[main]/Rsync::Server/File[/etc/rsync.d]/ensure: created[0m
+[mNotice: /Stage[main]/Rsync::Server/File[/etc/rsync.d/header]/ensure: defined content as '{md5}3a3f6323446123e97a3bdb28fdc913f1'[0m
+[mNotice: /Stage[main]/Swift::Ringbuilder/Swift::Ringbuilder::Create[account]/Exec[create_account]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Main/Ring_account_device[10.145.96.11:6002/swiftloopback]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Ringbuilder/Swift::Ringbuilder::Rebalance[account]/Exec[rebalance_account]: Triggered 'refresh' from 1 events[0m
+[mNotice: /Stage[main]/Swift::Ringserver/Rsync::Server::Module[swift_server]/File[/etc/rsync.d/frag-swift_server]/ensure: defined content as '{md5}7fae4818c72b8e958b2f3fcbe3c76d82'[0m
+[mNotice: /Stage[main]/Rsync::Server/Exec[compile fragments]: Triggered 'refresh' from 2 events[0m
+[mNotice: /Stage[main]/Rsync/Package[rsync]/ensure: created[0m
+[mNotice: /Stage[main]/Rsync::Server/Xinetd::Service[rsync]/File[/etc/xinetd.d/rsync]/ensure: created[0m
+[mNotice: /Stage[main]/Xinetd/Service[xinetd]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: Finished catalog run in 98.77 seconds[0m

@@ -1,0 +1,148 @@
+Error: NetworkManager is not running.
+[1;31mWarning: Scope(Class[Neutron::Agents::L3]): The neutron::l3_agent::newtork_device_mtu parameter is deprecated, use neutron::newtork_device_mtu instead.[0m
+[mNotice: Compiled catalog for controller in environment production in 1.93 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[neutron_dhcp_in_10.145.96.12]/Firewall[001 neutron dhcp in incoming neutron_dhcp_in_10.145.96.12]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Package[neutron]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/use_ssl]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/rabbit_userid]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/File[/etc/neutron]/group: group changed 'root' to 'neutron'[0m
+[mNotice: /Stage[main]/Neutron/File[/etc/neutron]/mode: mode changed '0755' to '0750'[0m
+[mNotice: /Stage[main]/Neutron::Agents::Dhcp/Neutron_dhcp_agent_config[DEFAULT/use_namespaces]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Metadata/Neutron_metadata_agent_config[DEFAULT/admin_user]/value: value changed '%SERVICE_USER%' to 'neutron'[0m
+[mNotice: /Stage[main]/Neutron::Agents::Dhcp/Neutron_dhcp_agent_config[DEFAULT/resync_interval]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/use_syslog]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Metadata/Neutron_metadata_agent_config[DEFAULT/auth_url]/value: value changed 'http://localhost:5000/v2.0' to 'http://10.145.96.11:35357/v2.0'[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/dhcp_agent_notification]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Metadata/Neutron_metadata_agent_config[DEFAULT/metadata_backlog]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/rabbit_virtual_host]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/kombu_reconnect_delay]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/log_dir]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[agent/root_helper]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/rpc_backend]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/rabbit_use_ssl]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/service_plugins]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Metadata/Neutron_metadata_agent_config[DEFAULT/metadata_workers]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/rabbit_ha_queues]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Dhcp/Neutron_dhcp_agent_config[DEFAULT/enable_metadata_network]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/control_exchange]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Dhcp/Neutron_dhcp_agent_config[DEFAULT/dhcp_delete_namespaces]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/core_plugin]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Metadata/Neutron_metadata_agent_config[DEFAULT/nova_metadata_ip]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Dhcp/Neutron_dhcp_agent_config[DEFAULT/enable_isolated_metadata]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Metadata/Neutron_metadata_agent_config[DEFAULT/debug]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Dhcp/Neutron_dhcp_agent_config[DEFAULT/debug]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[agent/report_interval]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/auth_strategy]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/allow_overlapping_ips]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/debug]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/verbose]/ensure: created[0m
+[mNotice: /Stage[main]/Packstack::Neutron::Bridge/File[bridge-module-loader]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/rabbit_port]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Metadata/Neutron_metadata_agent_config[DEFAULT/nova_metadata_port]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/bind_host]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Dhcp/Neutron_dhcp_agent_config[DEFAULT/root_helper]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/allow_sorting]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Dhcp/Neutron_dhcp_agent_config[DEFAULT/interface_driver]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/mac_generation_retries]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/dhcp_agents_per_network]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Sysctl::Value[net.ipv4.ip_forward]/Sysctl[net.ipv4.ip_forward]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server::Notifications/Neutron_config[DEFAULT/notify_nova_on_port_status_changes]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server::Notifications/Neutron_config[DEFAULT/nova_admin_auth_url]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server::Notifications/Neutron_config[DEFAULT/send_events_interval]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server::Notifications/Neutron_config[DEFAULT/nova_admin_password]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server::Notifications/Neutron_config[DEFAULT/nova_region_name]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server::Notifications/Neutron_config[DEFAULT/notify_nova_on_port_data_changes]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server::Notifications/Neutron_config[DEFAULT/nova_admin_username]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/rabbit_host]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Dhcp/Neutron_dhcp_agent_config[DEFAULT/dhcp_driver]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/allow_bulk]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/bind_port]/ensure: created[0m
+[mNotice: /Stage[main]/Vswitch::Ovs/Package[openvswitch]/ensure: created[0m
+[mNotice: /Stage[main]/Vswitch::Ovs/Service[openvswitch]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/rabbit_hosts]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Dhcp/Neutron_dhcp_agent_config[DEFAULT/state_path]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/allow_pagination]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/dhcp_lease_duration]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Ml2::Ovs/Vs_bridge[br-int]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Metadata/Neutron_metadata_agent_config[DEFAULT/cache_url]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Plugins::Ml2/Package[neutron-plugin-ml2]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Plugins::Ml2/Neutron_plugin_ml2[securitygroup/enable_security_group]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Plugins::Ml2/Neutron_plugin_ml2[ml2/type_drivers]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Plugins::Ml2/Neutron_plugin_ml2[ml2/tenant_network_types]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Plugins::Ml2/Neutron_plugin_ml2[ml2/mechanism_drivers]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server::Notifications/Neutron_config[DEFAULT/nova_url]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/rabbit_password]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[neutron_server_10.145.96.11]/Firewall[001 neutron server incoming neutron_server_10.145.96.11]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[neutron_dhcp_out_10.145.96.12]/Firewall[001 neutron dhcp out outgoing neutron_dhcp_out_10.145.96.12]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server::Notifications/Nova_admin_tenant_id_setter[nova_admin_tenant_id]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron/Neutron_config[DEFAULT/base_mac]/ensure: created[0m
+[mNotice: /Stage[main]/Packstack::Neutron::Bridge/Exec[load-bridge]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Packstack::Neutron::Bridge/File_line[/etc/sysctl.conf bridge-nf-call-ip6tables]/ensure: created[0m
+[mNotice: /Stage[main]/Packstack::Neutron::Bridge/File_line[/etc/sysctl.conf bridge-nf-call-iptables]/ensure: created[0m
+[mNotice: /Stage[main]/Packstack::Neutron::Bridge/File_line[/etc/sysctl.conf bridge-nf-call-arptables]/ensure: created[0m
+[mNotice: /Stage[main]/Packstack::Neutron::Bridge/Exec[sysctl_refresh]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Neutron::Agents::Ml2::Ovs/Package[neutron-ovs-agent]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Ml2::Ovs/Neutron_agent_ovs[agent/enable_distributed_routing]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Ml2::Ovs/Neutron_agent_ovs[ovs/enable_tunneling]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Ml2::Ovs/Neutron_agent_ovs[ovs/integration_bridge]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Ml2::Ovs/Neutron_agent_ovs[securitygroup/firewall_driver]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Ml2::Ovs/Service[ovs-cleanup-service]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Neutron::Agents::Ml2::Ovs/Neutron_agent_ovs[agent/arp_responder]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Ml2::Ovs/Neutron_agent_ovs[agent/polling_interval]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::L3/Neutron_l3_agent_config[DEFAULT/agent_mode]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::L3/Neutron_l3_agent_config[DEFAULT/periodic_fuzzy_delay]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::L3/Neutron_l3_agent_config[DEFAULT/use_namespaces]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::L3/Neutron_l3_agent_config[DEFAULT/enable_metadata_proxy]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::L3/Neutron_l3_agent_config[DEFAULT/router_delete_namespaces]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::L3/Neutron_l3_agent_config[DEFAULT/handle_internal_only_routers]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::L3/Neutron_l3_agent_config[DEFAULT/interface_driver]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::L3/Neutron_l3_agent_config[DEFAULT/debug]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::L3/Neutron_l3_agent_config[DEFAULT/send_arp_for_ha]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::L3/Neutron_l3_agent_config[DEFAULT/periodic_interval]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::L3/Neutron_l3_agent_config[DEFAULT/allow_automatic_l3agent_failover]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::L3/Neutron_l3_agent_config[DEFAULT/external_network_bridge]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::L3/Neutron_l3_agent_config[DEFAULT/metadata_port]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Sysctl::Value[net.ipv4.ip_forward]/Exec[exec_sysctl_net.ipv4.ip_forward]: Triggered 'refresh' from 1 events[0m
+[mNotice: /Stage[main]/Neutron::Agents::Metadata/Neutron_metadata_agent_config[DEFAULT/metadata_proxy_shared_secret]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Ml2::Ovs/Neutron_agent_ovs[agent/l2_population]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Ml2::Ovs/Service[neutron-ovs-agent-service]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Main/Vs_bridge[br-ex]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Plugins::Ml2/Neutron::Plugins::Ml2::Type_driver[vlan]/Neutron_plugin_ml2[ml2_type_vlan/network_vlan_ranges]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Plugins::Ml2/File[/etc/neutron/plugin.ini]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[keystone_authtoken/admin_user]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[keystone_authtoken/auth_host]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_api_config[filter:authtoken/admin_user]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[DEFAULT/router_scheduler_driver]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_api_config[filter:authtoken/auth_port]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[keystone_authtoken/auth_port]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[keystone_authtoken/admin_tenant_name]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[database/min_pool_size]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[keystone_authtoken/auth_protocol]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[keystone_authtoken/admin_password]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_api_config[filter:authtoken/admin_password]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[database/connection]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[database/max_pool_size]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[DEFAULT/rpc_workers]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[keystone_authtoken/auth_uri]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[DEFAULT/api_workers]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_api_config[filter:authtoken/auth_protocol]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[DEFAULT/agent_down_time]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[database/max_overflow]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_api_config[filter:authtoken/auth_uri]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Exec[neutron-db-manage upgrade]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[database/max_retries]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[DEFAULT/router_distributed]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[database/retry_interval]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_config[database/idle_timeout]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Dhcp/Service[neutron-dhcp-service]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Neutron::Agents::L3/Service[neutron-l3]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Neutron::Agents::Metadata/Neutron_metadata_agent_config[DEFAULT/admin_password]/value: value changed '[old secret redacted]' to '[new secret redacted]'[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_api_config[filter:authtoken/admin_tenant_name]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Agents::Metadata/Neutron_metadata_agent_config[DEFAULT/auth_insecure]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Neutron_api_config[filter:authtoken/auth_host]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Server/Service[neutron-server]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Neutron::Agents::Metadata/Neutron_metadata_agent_config[DEFAULT/admin_tenant_name]/value: value changed '%SERVICE_TENANT_NAME%' to 'services'[0m
+[mNotice: /Stage[main]/Neutron::Agents::Metadata/Service[neutron-metadata]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: Finished catalog run in 102.50 seconds[0m

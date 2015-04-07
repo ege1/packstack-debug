@@ -1,0 +1,128 @@
+Error: NetworkManager is not running.
+[mNotice: Compiled catalog for compute01 in environment production in 1.73 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Ceilometer::Agent::Compute/Package[ceilometer-agent-compute]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Sshkey[ecdsa-sha2-nistp256.10.145.96.12]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Exec[qemu-kvm]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Nova::Compute/Package[pm-utils]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Sshkey[ssh-rsa.10.145.96.12]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Package[python-cinderclient]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[nova_compute]/Firewall[001 nova compute incoming nova_compute]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[nova_qemu_migration_10.145.96.12_10.145.96.12]/Firewall[001 nova qemu migration incoming nova_qemu_migration_10.145.96.12_10.145.96.12]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute::Libvirt/Package[libvirt]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Migration::Libvirt/File_line[/etc/libvirt/libvirtd.conf auth_tcp]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Package[python-nova]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Package[nova-common]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/admin_auth_url]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[DEFAULT/network_api_class]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute/Nova_config[DEFAULT/force_raw_images]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/debug]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/log_dir]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/amqp_durable_queues]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/extension_sync_interval]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute/Nova_config[DEFAULT/vncserver_proxyclient_address]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rabbit_hosts]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Nova_config[DEFAULT/metadata_host]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/notify_api_faults]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/admin_username]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rabbit_use_ssl]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/admin_tenant_name]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/notification_driver]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute/Nova_config[DEFAULT/compute_manager]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute::Libvirt/Nova_config[libvirt/inject_partition]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rabbit_userid]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rabbit_ha_queues]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/state_path]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute::Libvirt/Nova_config[libvirt/inject_password]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rabbit_password]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/report_interval]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/verbose]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/File[/var/log/nova]/group: group changed 'root' to 'nova'[0m
+[mNotice: /Stage[main]/Nova/File[/var/log/nova]/mode: mode changed '0755' to '0750'[0m
+[mNotice: /Stage[main]/Nova::Compute::Neutron/Nova_config[libvirt/vif_driver]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[DEFAULT/security_group_api]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute/Nova_config[DEFAULT/vnc_keymap]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rabbit_host]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/url_timeout]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Nova_config[DEFAULT/sql_connection]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute/Nova_config[DEFAULT/vnc_enabled]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rabbit_virtual_host]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[glance/api_servers]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute::Neutron/Nova_config[DEFAULT/force_snat_range]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/image_service]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Nova_config[DEFAULT/volume_api_class]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[DEFAULT/firewall_driver]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rabbit_port]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Nova_config[libvirt/live_migration_uri]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/admin_password]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute::Libvirt/Nova_config[libvirt/cpu_mode]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Nova_config[DEFAULT/default_floating_pool]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute/Nova_config[DEFAULT/reserved_host_memory_mb]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer::Agent::Auth/Ceilometer_config[service_credentials/os_username]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer::Agent::Auth/Ceilometer_config[service_credentials/os_tenant_name]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer/Ceilometer_config[DEFAULT/rpc_backend]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer/Ceilometer_config[DEFAULT/rabbit_host]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer/Ceilometer_config[DEFAULT/notification_topics]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer::Agent::Auth/Ceilometer_config[service_credentials/os_auth_url]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer/Ceilometer_config[DEFAULT/use_syslog]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer/Ceilometer_config[DEFAULT/rabbit_virtual_host]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer/Ceilometer_config[DEFAULT/rabbit_userid]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer/User[ceilometer]/groups: groups changed 'nobody,ceilometer' to 'ceilometer,nobody,nova'[0m
+[mNotice: /Stage[main]/Ceilometer/File[/etc/ceilometer/]/owner: owner changed 'root' to 'ceilometer'[0m
+[mNotice: /Stage[main]/Ceilometer/File[/etc/ceilometer/]/group: group changed 'root' to 'ceilometer'[0m
+[mNotice: /Stage[main]/Ceilometer/File[/etc/ceilometer/]/mode: mode changed '0755' to '0750'[0m
+[mNotice: /Stage[main]/Ceilometer::Agent::Auth/Ceilometer_config[service_credentials/os_region_name]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer/Ceilometer_config[DEFAULT/rabbit_ha_queues]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[DEFAULT/vif_plugging_is_fatal]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute::Libvirt/Nova_config[libvirt/virt_type]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer/Ceilometer_config[DEFAULT/rabbit_hosts]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer/Ceilometer_config[DEFAULT/log_dir]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute/Nova_config[DEFAULT/novncproxy_base_url]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer/Ceilometer_config[DEFAULT/verbose]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/auth_strategy]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/default_tenant_id]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/lock_path]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/url]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer/Ceilometer_config[DEFAULT/rabbit_password]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/service_down_time]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute::Libvirt/Nova_config[DEFAULT/vncserver_listen]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Migration::Libvirt/File_line[/etc/libvirt/libvirtd.conf listen_tls]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/ovs_bridge]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer/Ceilometer_config[DEFAULT/rabbit_use_ssl]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/notification_topics]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute/Nova::Generic_service[compute]/Package[nova-compute]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Migration::Libvirt/File_line[/etc/sysconfig/libvirtd libvirtd args]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute::Libvirt/Nova_config[libvirt/inject_key]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/auth_strategy]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/region_name]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute::Libvirt/Nova_config[DEFAULT/compute_driver]/ensure: created[0m
+[mNotice: /Stage[main]/Main/File[/etc/nova/ssh]/ensure: created[0m
+[mNotice: /Stage[main]/Main/File[/etc/nova/ssh/nova_migration_key]/ensure: defined content as '{md5}a9c8f49fa6ef0453b87abfc9bc358bbe'[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rootwrap_config]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer::Agent::Auth/Ceilometer_config[service_credentials/os_password]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/File[/var/lib/nova/.ssh]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Ssh_authorized_key[nova-migration-public-key]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/File[/var/lib/nova/.ssh/id_rsa]/ensure: defined content as '{md5}a9c8f49fa6ef0453b87abfc9bc358bbe'[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rpc_backend]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[DEFAULT/vif_plugging_timeout]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Migration::Libvirt/File_line[/etc/libvirt/libvirtd.conf listen_tcp]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/use_syslog]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[DEFAULT/dhcp_domain]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer/Ceilometer_config[DEFAULT/debug]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute::Libvirt/Service[messagebus]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Nova::Compute::Libvirt/Service[libvirt]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Main/Exec[virsh-net-destroy-default]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Main/Exec[virsh-net-undefine-default]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Ceilometer/File[/etc/ceilometer/ceilometer.conf]/owner: owner changed 'root' to 'ceilometer'[0m
+[mNotice: /Stage[main]/Main/Exec[tuned-virtual-host]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Ceilometer/Ceilometer_config[publisher/metering_secret]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer/Ceilometer_config[DEFAULT/rabbit_port]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer::Agent::Compute/Service[ceilometer-agent-compute]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Nova/File[/etc/nova/nova.conf]/owner: owner changed 'root' to 'nova'[0m
+[mNotice: /Stage[main]/Ceilometer::Agent::Compute/File_line_after[nova-notification-driver-common]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Exec[post-nova_config]: Triggered 'refresh' from 63 events[0m
+[mNotice: /Stage[main]/Ceilometer::Agent::Compute/File_line_after[nova-notification-driver-ceilometer]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute/Nova::Generic_service[compute]/Service[nova-compute]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Main/File_line[libvirt-guests]/ensure: created[0m
+[mNotice: Finished catalog run in 255.74 seconds[0m

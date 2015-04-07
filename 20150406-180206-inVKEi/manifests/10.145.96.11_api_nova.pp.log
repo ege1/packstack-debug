@@ -1,0 +1,87 @@
+Error: NetworkManager is not running.
+[1;31mWarning: Scope(Class[Nova::Db]): Could not look up qualified variable '::nova::database_connection'; class ::nova has not been evaluated[0m
+[1;31mWarning: Scope(Class[Nova::Db]): Could not look up qualified variable '::nova::database_idle_timeout'; class ::nova has not been evaluated[0m
+[mNotice: Compiled catalog for controller in environment production in 1.56 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[nova_api]/Firewall[001 nova api incoming nova_api]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Package[python-nova]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Package[nova-common]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/admin_auth_url]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[DEFAULT/network_api_class]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/debug]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/log_dir]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/amqp_durable_queues]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/extension_sync_interval]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rabbit_hosts]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Nova_config[DEFAULT/metadata_host]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/notify_api_faults]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/admin_username]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rabbit_use_ssl]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/admin_tenant_name]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/notification_driver]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rabbit_userid]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rabbit_ha_queues]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/state_path]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rabbit_password]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/report_interval]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/verbose]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/File[/var/log/nova]/group: group changed 'root' to 'nova'[0m
+[mNotice: /Stage[main]/Nova/File[/var/log/nova]/mode: mode changed '0755' to '0750'[0m
+[mNotice: /Stage[main]/Nova::Compute::Neutron/Nova_config[libvirt/vif_driver]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[DEFAULT/security_group_api]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rabbit_host]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/url_timeout]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Nova_config[DEFAULT/sql_connection]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rabbit_virtual_host]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[glance/api_servers]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Compute::Neutron/Nova_config[DEFAULT/force_snat_range]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/image_service]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[DEFAULT/firewall_driver]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rabbit_port]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/admin_password]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Nova_config[DEFAULT/default_floating_pool]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[DEFAULT/vif_plugging_is_fatal]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/auth_strategy]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/default_tenant_id]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/lock_path]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/url]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/service_down_time]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/ovs_bridge]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/notification_topics]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[neutron/service_metadata_proxy]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[DEFAULT/osapi_compute_listen]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[keystone_authtoken/auth_port]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[osapi_v3/enabled]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[DEFAULT/ec2_listen]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[keystone_authtoken/admin_password]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[keystone_authtoken/admin_user]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[keystone_authtoken/auth_protocol]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[DEFAULT/enabled_apis]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[DEFAULT/volume_api_class]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[keystone_authtoken/auth_host]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[DEFAULT/ec2_workers]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[keystone_authtoken/admin_tenant_name]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[DEFAULT/use_forwarded_for]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[DEFAULT/osapi_volume_listen]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[DEFAULT/metadata_listen]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/auth_strategy]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[neutron/region_name]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[DEFAULT/osapi_compute_workers]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rootwrap_config]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/File[/var/lib/nova/.ssh]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Ssh_authorized_key[nova-migration-public-key]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/File[/var/lib/nova/.ssh/id_rsa]/ensure: defined content as '{md5}a9c8f49fa6ef0453b87abfc9bc358bbe'[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/rpc_backend]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[DEFAULT/vif_plugging_timeout]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Nova_config[DEFAULT/use_syslog]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[DEFAULT/metadata_workers]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Network::Neutron/Nova_config[DEFAULT/dhcp_domain]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[keystone_authtoken/auth_uri]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova_config[neutron/metadata_proxy_shared_secret]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Api/Nova::Generic_service[api]/Package[nova-api]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/File[/etc/nova/nova.conf]/owner: owner changed 'root' to 'nova'[0m
+[mNotice: /Stage[main]/Nova/Exec[post-nova_config]: Triggered 'refresh' from 67 events[0m
+[mNotice: /Stage[main]/Nova::Api/Exec[nova-db-sync]: Triggered 'refresh' from 1 events[0m
+[mNotice: /Stage[main]/Nova::Api/Nova::Generic_service[api]/Service[nova-api]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: Finished catalog run in 69.42 seconds[0m

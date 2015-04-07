@@ -1,0 +1,39 @@
+Error: NetworkManager is not running.
+[mNotice: Compiled catalog for controller in environment production in 1.32 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[sahara-api]/Firewall[001 sahara api incoming sahara-api]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara/Package[sahara]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Notify::Rabbitmq/Sahara_config[DEFAULT/notification_topics]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Notify::Rabbitmq/Sahara_config[DEFAULT/control_exchange]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Notify::Rabbitmq/Sahara_config[DEFAULT/rabbit_virtual_host]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara/File[/etc/sahara/]/group: group changed 'root' to 'sahara'[0m
+[mNotice: /Stage[main]/Sahara/File[/etc/sahara/]/mode: mode changed '0755' to '0750'[0m
+[mNotice: /Stage[main]/Sahara::Notify::Rabbitmq/Sahara_config[DEFAULT/rabbit_port]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Notify::Rabbitmq/Sahara_config[DEFAULT/amqp_durable_queues]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara/Sahara_config[keystone_authtoken/identity_uri]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara/Sahara_config[DEFAULT/port]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara/Sahara_config[keystone_authtoken/auth_uri]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Notify::Rabbitmq/Sahara_config[DEFAULT/rabbit_userid]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara/Sahara_config[keystone_authtoken/admin_tenant_name]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara/Sahara_config[DEFAULT/verbose]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Notify::Rabbitmq/Sahara_config[DEFAULT/rabbit_ha_queues]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara/Sahara_config[DEFAULT/debug]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Notify::Rabbitmq/Sahara_config[DEFAULT/rabbit_host]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Notify::Rabbitmq/Sahara_config[DEFAULT/rabbit_hosts]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Notify::Rabbitmq/Sahara_config[DEFAULT/rabbit_retry_backoff]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Notify::Rabbitmq/Sahara_config[DEFAULT/rabbit_retry_interval]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara/Sahara_config[DEFAULT/host]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara/Sahara_config[DEFAULT/use_floating_ips]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Notify::Rabbitmq/Sahara_config[DEFAULT/rabbit_password]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara/Sahara_config[DEFAULT/use_neutron]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Notify::Rabbitmq/Sahara_config[DEFAULT/rpc_backend]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Notify::Rabbitmq/Sahara_config[DEFAULT/rabbit_max_retries]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Notify::Rabbitmq/Sahara_config[DEFAULT/rabbit_login_method]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara/Sahara_config[database/connection]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara/Sahara_config[keystone_authtoken/admin_password]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara/Sahara_config[keystone_authtoken/admin_user]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Notify::Rabbitmq/Sahara_config[DEFAULT/rabbit_use_ssl]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara/Exec[sahara-dbmanage]: Triggered 'refresh' from 28 events[0m
+[mNotice: /Stage[main]/Sahara/Service[sahara]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: Finished catalog run in 19.70 seconds[0m

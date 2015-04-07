@@ -1,0 +1,24 @@
+Error: NetworkManager is not running.
+[1;31mWarning: Scope(Class[Nova::Db]): Could not look up qualified variable '::nova::database_connection'; class ::nova has not been evaluated[0m
+[1;31mWarning: Scope(Class[Nova::Db]): Could not look up qualified variable '::nova::database_idle_timeout'; class ::nova has not been evaluated[0m
+[mNotice: Compiled catalog for controller in environment production in 1.27 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Main/Firewall[001 novncproxy incoming]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Nova_config[DEFAULT/scheduler_default_filters]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Vncproxy/Nova_config[DEFAULT/novncproxy_host]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Consoleauth/Nova::Generic_service[consoleauth]/Package[nova-consoleauth]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Vncproxy/Nova_config[DEFAULT/novncproxy_port]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Nova_config[DEFAULT/ram_allocation_ratio]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Nova_config[DEFAULT/cpu_allocation_ratio]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Conductor/Nova::Generic_service[conductor]/Package[nova-conductor]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Vncproxy/Nova::Generic_service[vncproxy]/Package[nova-vncproxy]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Scheduler/Nova::Generic_service[scheduler]/Package[nova-scheduler]/ensure: created[0m
+[mNotice: /Stage[main]/Nova/Exec[post-nova_config]: Triggered 'refresh' from 5 events[0m
+[mNotice: /Stage[main]/Nova::Vncproxy/Nova::Generic_service[vncproxy]/Service[nova-vncproxy]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Nova::Consoleauth/Nova::Generic_service[consoleauth]/Service[nova-consoleauth]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Nova::Scheduler/Nova::Generic_service[scheduler]/Service[nova-scheduler]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Nova::Conductor/Nova::Generic_service[conductor]/Service[nova-conductor]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Nova::Cert/Nova::Generic_service[cert]/Package[nova-cert]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Cert/Nova::Generic_service[cert]/Service[nova-cert]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: Finished catalog run in 102.87 seconds[0m

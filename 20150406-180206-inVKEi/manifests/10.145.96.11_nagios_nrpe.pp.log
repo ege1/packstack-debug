@@ -1,0 +1,15 @@
+Error: NetworkManager is not running.
+[1;31mWarning: Unrecognised escape sequence '\[' in file /var/tmp/packstack/66742a51378247da9e98a324f595177a/manifests/10.145.96.11_nagios_nrpe.pp at line 35[0m
+[1;31mWarning: Unrecognised escape sequence '\]' in file /var/tmp/packstack/66742a51378247da9e98a324f595177a/manifests/10.145.96.11_nagios_nrpe.pp at line 35[0m
+[mNotice: Compiled catalog for controller in environment production in 0.80 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Main/Package[nrpe]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[nagios_nrpe]/Firewall[001 nagios-nrpe incoming nagios_nrpe]/ensure: created[0m
+[mNotice: /Stage[main]/Main/File[/etc/nagios/nrpe.cfg]/owner: owner changed 'root' to 'nagios'[0m
+[mNotice: /Stage[main]/Main/File[/etc/nagios/nrpe.cfg]/group: group changed 'root' to 'nagios'[0m
+[mNotice: /Stage[main]/Nagios_configs/File_line[df_var]/ensure: created[0m
+[mNotice: /Stage[main]/Nagios_configs/File_line[load5]/ensure: created[0m
+[mNotice: /Stage[main]/Nagios_configs/File_line[allowed_hosts]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Service[nrpe]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: Finished catalog run in 14.97 seconds[0m

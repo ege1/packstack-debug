@@ -1,0 +1,13 @@
+Error: NetworkManager is not running.
+[mNotice: Compiled catalog for controller in environment production in 1.08 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[amqp_10.145.96.12]/Firewall[001 amqp incoming amqp_10.145.96.12]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[amqp_10.145.96.11]/Firewall[001 amqp incoming amqp_10.145.96.11]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Enable_rabbitmq[rabbitmq]/Package[erlang]/ensure: created[0m
+[mNotice: /Stage[main]/Rabbitmq::Install/Package[rabbitmq-server]/ensure: created[0m
+[mNotice: /Stage[main]/Rabbitmq::Config/File[rabbitmq.config]/ensure: defined content as '{md5}d9acd5552e63a09dae584dba35aad7b7'[0m
+[mNotice: /Stage[main]/Rabbitmq::Config/File[/etc/rabbitmq/ssl]/ensure: created[0m
+[mNotice: /Stage[main]/Rabbitmq::Config/File[rabbitmq-env.config]/ensure: defined content as '{md5}6513cd3ef9805aa61b060ae020df4fd5'[0m
+[mNotice: /Stage[main]/Rabbitmq::Service/Service[rabbitmq-server]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: Finished catalog run in 77.67 seconds[0m

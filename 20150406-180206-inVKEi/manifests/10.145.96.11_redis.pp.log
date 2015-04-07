@@ -1,0 +1,12 @@
+Error: NetworkManager is not running.
+[mNotice: Compiled catalog for controller in environment production in 0.87 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[redis service from 10.145.96.12]/Firewall[001 redis service incoming redis service from 10.145.96.12]/ensure: created[0m
+[mNotice: /Stage[main]/Redis::Install/Package[redis]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[redis service from 10.145.96.11]/Firewall[001 redis service incoming redis service from 10.145.96.11]/ensure: created[0m
+[mNotice: /Stage[main]/Redis::Config/File[/etc/redis]/ensure: created[0m
+[mNotice: /Stage[main]/Redis::Config/File[/etc/redis.conf]/content: content changed '{md5}f7374a72470b577251ba0497a5a9aa7d' to '{md5}d12df7f97bf18e146eac16c236dda7e9'[0m
+[mNotice: /Stage[main]/Redis::Config/File[/etc/redis.conf]/owner: owner changed 'redis' to 'root'[0m
+[mNotice: /Stage[main]/Redis::Service/Service[redis]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: Finished catalog run in 15.66 seconds[0m

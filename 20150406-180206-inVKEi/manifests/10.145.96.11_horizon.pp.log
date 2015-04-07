@@ -1,0 +1,132 @@
+Error: NetworkManager is not running.
+[1;31mWarning: Scope(Class[Concat::Setup]): concat::setup is deprecated as a public API of the concat module and should no longer be directly included in the manifest.[0m
+[1;31mWarning: Variable access via 'tcp_port' is deprecated. Use '@tcp_port' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb]:1
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb:1:in `block in result')[0m
+[1;31mWarning: Variable access via 'user' is deprecated. Use '@user' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb]:2
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb:2:in `block in result')[0m
+[1;31mWarning: Variable access via 'max_connections' is deprecated. Use '@max_connections' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb]:3
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb:3:in `block in result')[0m
+[1;31mWarning: Variable access via 'max_memory' is deprecated. Use '@max_memory' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb]:5
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb:5:in `block in result')[0m
+[1;31mWarning: Variable access via 'listen_ip' is deprecated. Use '@listen_ip' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb]:15
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb:15:in `block in result')[0m
+[1;31mWarning: Variable access via 'udp_port' is deprecated. Use '@udp_port' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb]:18
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb:18:in `block in result')[0m
+[1;31mWarning: Variable access via 'processorcount' is deprecated. Use '@processorcount' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb]:20
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb:20:in `block in result')[0m
+[mNotice: Compiled catalog for controller in environment production in 3.18 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Main/Firewall[001 horizon 80  incoming]/ensure: created[0m
+[mNotice: /Stage[main]/Concat::Setup/File[/var/lib/puppet/concat]/ensure: created[0m
+[mNotice: /Stage[main]/Concat::Setup/File[/var/lib/puppet/concat/bin]/ensure: created[0m
+[mNotice: /Stage[main]/Concat::Setup/File[/var/lib/puppet/concat/bin/concatfragments.sh]/ensure: defined content as '{md5}7bbe7c5fce25a5ddd20415d909ba44fc'[0m
+[mNotice: /Stage[main]/Memcached/Package[memcached]/ensure: created[0m
+[mNotice: /Stage[main]/Memcached/File[/etc/sysconfig/memcached]/content: content changed '{md5}05503957e3796fbe6fddd756a7a102a0' to '{md5}a7b94afa44f80e95a46bd212e766a196'[0m
+[mNotice: /Stage[main]/Memcached/Service[memcached]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Horizon/Package[horizon]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Selboolean[httpd_can_network_connect]/value: value changed 'off' to 'on'[0m
+[mNotice: /Stage[main]/Apache::Mod::Mime/Apache::Mod[mime]/File[mime.load]/ensure: defined content as '{md5}e36257b9efab01459141d423cae57c7c'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[expires]/File[expires.load]/ensure: defined content as '{md5}f0825bad1e470de86ffabeb86dcc5d95'[0m
+[mNotice: /Stage[main]/Apache::Mod::Dav/Apache::Mod[dav]/File[dav.load]/ensure: defined content as '{md5}588e496251838c4840c14b28b5aa7881'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[authz_owner]/File[authz_owner.load]/ensure: defined content as '{md5}f30a9be1016df87f195449d9e02d1857'[0m
+[mNotice: /Stage[main]/Apache::Mod::Prefork/File[/etc/httpd/conf.d/prefork.conf]/ensure: defined content as '{md5}109c4f51dac10fc1b39373855e566d01'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[authz_groupfile]/File[authz_groupfile.load]/ensure: defined content as '{md5}ae005a36b3ac8c20af36c434561c8a75'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[authn_dbm]/File[authn_dbm.load]/ensure: defined content as '{md5}90ee8f8ef1a017cacadfda4225e10651'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[authn_core]/File[authn_core.load]/ensure: defined content as '{md5}704d6e8b02b0eca0eba4083960d16c52'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[authz_user]/File[authz_user.load]/ensure: defined content as '{md5}63594303ee808423679b1ea13dd5a784'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[log_config]/File[log_config.load]/ensure: defined content as '{md5}785d35cb285e190d589163b45263ca89'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[logio]/File[logio.load]/ensure: defined content as '{md5}084533c7a44e9129d0e6df952e2472b6'[0m
+[mNotice: /Stage[main]/Apache::Mod::Mime/File[mime.conf]/ensure: defined content as '{md5}2fa646fe615e44d137a5d629f868c107'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[access_compat]/File[access_compat.load]/ensure: defined content as '{md5}d5feb88bec4570e2dbc41cce7e0de003'[0m
+[mNotice: /Stage[main]/Apache::Mod::Version/Apache::Mod[version]/File[version.load]/ensure: defined content as '{md5}1c9243de22ace4dc8266442c48ae0c92'[0m
+[mNotice: /Stage[main]/Apache::Mod::Setenvif/File[setenvif.conf]/ensure: defined content as '{md5}c7ede4173da1915b7ec088201f030c28'[0m
+[mNotice: /Stage[main]/Apache::Mod::Actions/Apache::Mod[actions]/File[actions.load]/ensure: defined content as '{md5}599866dfaf734f60f7e2d41ee8235515'[0m
+[mNotice: /Stage[main]/Apache::Mod::Deflate/File[deflate.conf]/ensure: defined content as '{md5}35506746efa82c4e203c8a724980bdc6'[0m
+[mNotice: /Stage[main]/Apache/File[/etc/httpd/conf/httpd.conf]/content: content changed '{md5}f5e7449c0f17bc856e86011cb5d152ba' to '{md5}3f71c52bd8e27d47296208ec194c39a9'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[authz_core]/File[authz_core.load]/ensure: defined content as '{md5}39942569bff2abdb259f9a347c7246bc'[0m
+[mNotice: /Stage[main]/Apache::Mod::Negotiation/File[negotiation.conf]/ensure: defined content as '{md5}47284b5580b986a6ba32580b6ffb9fd7'[0m
+[mNotice: /Stage[main]/Apache::Mod::Alias/Apache::Mod[alias]/File[alias.load]/ensure: defined content as '{md5}3cf2fa309ccae4c29a4b875d0894cd79'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[env]/File[env.load]/ensure: defined content as '{md5}d74184d40d0ee24ba02626a188ee7e1a'[0m
+[mNotice: /Stage[main]/Apache::Mod::Negotiation/Apache::Mod[negotiation]/File[negotiation.load]/ensure: defined content as '{md5}d262ee6a5f20d9dd7f87770638dc2ccd'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[authz_dbm]/File[authz_dbm.load]/ensure: defined content as '{md5}c1363277984d22f99b70f7dce8753b60'[0m
+[mNotice: /Stage[main]/Apache::Mod::Dir/File[dir.conf]/ensure: defined content as '{md5}c741d8ea840e6eb999d739eed47c69d7'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[usertrack]/File[usertrack.load]/ensure: defined content as '{md5}e95fbbf030fabec98b948f8dc217775c'[0m
+[mNotice: /Stage[main]/Apache::Mod::Vhost_alias/Apache::Mod[vhost_alias]/File[vhost_alias.load]/ensure: defined content as '{md5}eca907865997d50d5130497665c3f82e'[0m
+[mNotice: /Stage[main]/Apache::Mod::Setenvif/Apache::Mod[setenvif]/File[setenvif.load]/ensure: defined content as '{md5}ec6c99f7cc8e35bdbcf8028f652c9f6d'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[unixd]/File[unixd.load]/ensure: defined content as '{md5}0e8468ecc1265f8947b8725f4d1be9c0'[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/File[/var/log/horizon]/mode: mode changed '0750' to '0751'[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/File[/var/log/horizon/horizon.log]/ensure: created[0m
+[mNotice: /Stage[main]/Apache::Mod::Wsgi/Apache::Mod[wsgi]/File[wsgi.load]/ensure: defined content as '{md5}e1795e051e7aae1f865fde0d3b86a507'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[auth_basic]/File[auth_basic.load]/ensure: defined content as '{md5}494bcf4b843f7908675d663d8dc1bdc8'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[authn_file]/File[authn_file.load]/ensure: defined content as '{md5}d41656680003d7b890267bb73621c60b'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[ext_filter]/File[ext_filter.load]/ensure: defined content as '{md5}76d5e0ac3411a4be57ac33ebe2e52ac8'[0m
+[mNotice: /Stage[main]/Apache::Mod::Wsgi/File[wsgi.conf]/ensure: defined content as '{md5}8b3feb3fc2563de439920bb2c52cbd11'[0m
+[mNotice: /Stage[main]/Apache::Mod::Speling/Apache::Mod[speling]/File[speling.load]/ensure: defined content as '{md5}f82e9e6b871a276c324c9eeffcec8a61'[0m
+[mNotice: /Stage[main]/Apache::Mod::Dir/Apache::Mod[dir]/File[dir.load]/ensure: defined content as '{md5}1bfb1c2a46d7351fc9eb47c659dee068'[0m
+[mNotice: /Stage[main]/Apache::Mod::Dav_fs/Apache::Mod[dav_fs]/File[dav_fs.load]/ensure: defined content as '{md5}2996277c73b1cd684a9a3111c355e0d3'[0m
+[mNotice: /Stage[main]/Apache/Apache::Vhost[default]/Concat[15-default.conf]/File[/var/lib/puppet/concat/15-default.conf]/ensure: created[0m
+[mNotice: /Stage[main]/Apache/Apache::Vhost[default]/Concat[15-default.conf]/File[/var/lib/puppet/concat/15-default.conf/fragments]/ensure: created[0m
+[mNotice: /Stage[main]/Apache/Apache::Vhost[default]/Concat::Fragment[default-file_footer]/File[/var/lib/puppet/concat/15-default.conf/fragments/999_default-file_footer]/ensure: defined content as '{md5}e27b2525783e590ca1820f1e2118285d'[0m
+[mNotice: /Stage[main]/Apache/Apache::Vhost[default]/Concat::Fragment[default-serversignature]/File[/var/lib/puppet/concat/15-default.conf/fragments/90_default-serversignature]/ensure: defined content as '{md5}9bf5a458783ab459e5043e1cdf671fa7'[0m
+[mNotice: /Stage[main]/Apache/Apache::Vhost[default]/Concat::Fragment[default-directories]/File[/var/lib/puppet/concat/15-default.conf/fragments/60_default-directories]/ensure: defined content as '{md5}5e2a84875965faa5e3df0e222301ba37'[0m
+[mNotice: /Stage[main]/Apache/Apache::Vhost[default]/Concat::Fragment[default-docroot]/File[/var/lib/puppet/concat/15-default.conf/fragments/10_default-docroot]/ensure: defined content as '{md5}6faaccbc7ca8bc885ebf139223885d52'[0m
+[mNotice: /Stage[main]/Apache/Apache::Vhost[default]/Concat::Fragment[default-apache-header]/File[/var/lib/puppet/concat/15-default.conf/fragments/0_default-apache-header]/ensure: defined content as '{md5}c46eea5ff4d7874403fa7a9228888f0e'[0m
+[mNotice: /Stage[main]/Apache/Apache::Vhost[default]/Concat[15-default.conf]/File[/var/lib/puppet/concat/15-default.conf/fragments.concat]/ensure: created[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat[15-horizon_vhost.conf]/File[/var/lib/puppet/concat/15-horizon_vhost.conf]/ensure: created[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat[15-horizon_vhost.conf]/File[/var/lib/puppet/concat/15-horizon_vhost.conf/fragments.concat.out]/ensure: created[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat[15-horizon_vhost.conf]/File[/var/lib/puppet/concat/15-horizon_vhost.conf/fragments.concat]/ensure: created[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat[15-horizon_vhost.conf]/File[/var/lib/puppet/concat/15-horizon_vhost.conf/fragments]/ensure: created[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat::Fragment[horizon_vhost-directories]/File[/var/lib/puppet/concat/15-horizon_vhost.conf/fragments/60_horizon_vhost-directories]/ensure: defined content as '{md5}18b24971675e526c8e3b1ea92849b1f4'[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat::Fragment[horizon_vhost-file_footer]/File[/var/lib/puppet/concat/15-horizon_vhost.conf/fragments/999_horizon_vhost-file_footer]/ensure: defined content as '{md5}e27b2525783e590ca1820f1e2118285d'[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat::Fragment[horizon_vhost-logging]/File[/var/lib/puppet/concat/15-horizon_vhost.conf/fragments/80_horizon_vhost-logging]/ensure: defined content as '{md5}c931b57a272eb434464ceab7ebeffaff'[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat::Fragment[horizon_vhost-serversignature]/File[/var/lib/puppet/concat/15-horizon_vhost.conf/fragments/90_horizon_vhost-serversignature]/ensure: defined content as '{md5}9bf5a458783ab459e5043e1cdf671fa7'[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat::Fragment[horizon_vhost-docroot]/File[/var/lib/puppet/concat/15-horizon_vhost.conf/fragments/10_horizon_vhost-docroot]/ensure: defined content as '{md5}bfbae283264d47e1c117f32689f18d79'[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat::Fragment[horizon_vhost-apache-header]/File[/var/lib/puppet/concat/15-horizon_vhost.conf/fragments/0_horizon_vhost-apache-header]/ensure: defined content as '{md5}741434cf648ed6727e72c579a66d4b69'[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat::Fragment[horizon_vhost-redirect]/File[/var/lib/puppet/concat/15-horizon_vhost.conf/fragments/160_horizon_vhost-redirect]/ensure: defined content as '{md5}356ab43cb27ce407ef8cc6b3a88d9dad'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[include]/File[include.load]/ensure: defined content as '{md5}88095a914eedc3c2c184dd5d74c3954c'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[systemd]/File[systemd.load]/ensure: defined content as '{md5}26e5d44aae258b3e9d821cbbbd3e2826'[0m
+[mNotice: /Stage[main]/Apache::Mod::Alias/File[alias.conf]/ensure: defined content as '{md5}577036df2ea320d90752bf96b5d768dd'[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat::Fragment[horizon_vhost-access_log]/File[/var/lib/puppet/concat/15-horizon_vhost.conf/fragments/100_horizon_vhost-access_log]/ensure: defined content as '{md5}71b265bfd597beb672e2c925edad6ff4'[0m
+[mNotice: /Stage[main]/Apache/Apache::Vhost[default]/Concat[15-default.conf]/File[/var/lib/puppet/concat/15-default.conf/fragments.concat.out]/ensure: created[0m
+[mNotice: /Stage[main]/Apache::Mod::Prefork/Apache::Mpm[prefork]/File[/etc/httpd/conf.d/prefork.load]/ensure: defined content as '{md5}157529aafcf03fa491bc924103e4608e'[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat::Fragment[horizon_vhost-aliases]/File[/var/lib/puppet/concat/15-horizon_vhost.conf/fragments/20_horizon_vhost-aliases]/ensure: defined content as '{md5}cda97013d5880bff887ac7de0f4cbcf8'[0m
+[mNotice: /Stage[main]/Apache::Mod::Suexec/Apache::Mod[suexec]/File[suexec.load]/ensure: defined content as '{md5}c7d5c61c534ba423a79b0ae78ff9be35'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[substitute]/File[substitute.load]/ensure: defined content as '{md5}8077c34a71afcf41c8fc644830935915'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[auth_digest]/File[auth_digest.load]/ensure: defined content as '{md5}df9e85f8da0b239fe8e698ae7ead4f60'[0m
+[mNotice: /Stage[main]/Horizon/File[/etc/openstack-dashboard/local_settings]/content: content changed '{md5}04fa97a3052c830e2bfd61e0b2fac90a' to '{md5}44b13054addf4753c4a4c5d7b1f97cd4'[0m
+[mNotice: /Stage[main]/Horizon/File[/etc/openstack-dashboard/local_settings]/mode: mode changed '0640' to '0644'[0m
+[mNotice: /Stage[main]/Apache::Mod::Deflate/Apache::Mod[deflate]/File[deflate.load]/ensure: defined content as '{md5}2d1a1afcae0c70557251829a8586eeaf'[0m
+[mNotice: /Stage[main]/Apache::Mod::Autoindex/Apache::Mod[autoindex]/File[autoindex.load]/ensure: defined content as '{md5}515cdf5b573e961a60d2931d39248648'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[authn_anon]/File[authn_anon.load]/ensure: defined content as '{md5}bf57b94b5aec35476fc2a2dc3861f132'[0m
+[mNotice: /Stage[main]/Apache::Mod::Autoindex/File[autoindex.conf]/content: content changed '{md5}1d7d7dd9f1b4beef5a21688ededda355' to '{md5}2421a3c6df32c7e38c2a7a22afdf5728'[0m
+[mNotice: /Stage[main]/Apache::Mod::Cache/Apache::Mod[cache]/File[cache.load]/ensure: defined content as '{md5}01e4d392225b518a65b0f7d6c4e21d29'[0m
+[mNotice: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf]/ensure: created[0m
+[mNotice: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf/fragments.concat.out]/ensure: created[0m
+[mNotice: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf/fragments]/ensure: created[0m
+[mNotice: /Stage[main]/Apache/Concat::Fragment[Apache ports header]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf/fragments/10_Apache ports header]/ensure: defined content as '{md5}afe35cb5747574b700ebaa0f0b3a626e'[0m
+[mNotice: /Stage[main]/Apache/Apache::Vhost[default]/Apache::Listen[80]/Concat::Fragment[Listen 80]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf/fragments/10_Listen 80]/ensure: defined content as '{md5}d5fcefc335117f400d451de47efeca87'[0m
+[mNotice: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/File[/var/lib/puppet/concat/_etc_httpd_conf_ports.conf/fragments.concat]/ensure: created[0m
+[mNotice: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/Exec[concat_/etc/httpd/conf/ports.conf]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/Exec[concat_/etc/httpd/conf/ports.conf]: Triggered 'refresh' from 4 events[0m
+[mNotice: /Stage[main]/Apache/Concat[/etc/httpd/conf/ports.conf]/File[/etc/httpd/conf/ports.conf]/ensure: defined content as '{md5}334fa5cddbf9a408ea1ca7a1666b1fc4'[0m
+[mNotice: /Stage[main]/Apache::Mod::Rewrite/Apache::Mod[rewrite]/File[rewrite.load]/ensure: defined content as '{md5}26e2683352fc1599f29573ff0d934e79'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[authz_host]/File[authz_host.load]/ensure: defined content as '{md5}d1045f54d2798499ca0f030ca0eef920'[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat::Fragment[horizon_vhost-wsgi]/File[/var/lib/puppet/concat/15-horizon_vhost.conf/fragments/260_horizon_vhost-wsgi]/ensure: defined content as '{md5}3f1e888993d05222c5a79ee4baa35cde'[0m
+[mNotice: /Stage[main]/Apache::Default_mods/Apache::Mod[filter]/File[filter.load]/ensure: defined content as '{md5}66a1e2064a140c3e7dca7ac33877700e'[0m
+[mNotice: /Stage[main]/Apache/Apache::Vhost[default]/Concat::Fragment[default-access_log]/File[/var/lib/puppet/concat/15-default.conf/fragments/100_default-access_log]/ensure: defined content as '{md5}5e04878f71ab3811add55bcbb93b4d1c'[0m
+[mNotice: /Stage[main]/Apache::Mod::Mime_magic/File[mime_magic.conf]/ensure: defined content as '{md5}b258529b332429e2ff8344f726a95457'[0m
+[mNotice: /Stage[main]/Apache::Mod::Mime_magic/Apache::Mod[mime_magic]/File[mime_magic.load]/ensure: defined content as '{md5}cb8670bb2fb352aac7ebf3a85d52094c'[0m
+[mNotice: /Stage[main]/Apache/Apache::Vhost[default]/Concat::Fragment[default-logging]/File[/var/lib/puppet/concat/15-default.conf/fragments/80_default-logging]/ensure: defined content as '{md5}f202203ce2fe5d885160be988ff36151'[0m
+[mNotice: /Stage[main]/Apache/Apache::Vhost[default]/Concat[15-default.conf]/Exec[concat_15-default.conf]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Apache/Apache::Vhost[default]/Concat[15-default.conf]/Exec[concat_15-default.conf]: Triggered 'refresh' from 9 events[0m
+[mNotice: /Stage[main]/Apache::Mod::Dav_fs/File[dav_fs.conf]/ensure: defined content as '{md5}899a57534f3d84efa81887ec93c90c9b'[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat::Fragment[horizon_vhost-serveralias]/File[/var/lib/puppet/concat/15-horizon_vhost.conf/fragments/190_horizon_vhost-serveralias]/ensure: defined content as '{md5}6750a66ea1b94d99c0022bec69d1f56d'[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat[15-horizon_vhost.conf]/Exec[concat_15-horizon_vhost.conf]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat[15-horizon_vhost.conf]/Exec[concat_15-horizon_vhost.conf]: Triggered 'refresh' from 13 events[0m
+[mNotice: /Stage[main]/Apache::Mod::Cgi/Apache::Mod[cgi]/File[cgi.load]/ensure: defined content as '{md5}ac20c5c5779b37ab06b480d6485a0881'[0m
+[mNotice: /Stage[main]/Apache/Apache::Vhost[default]/Concat[15-default.conf]/File[15-default.conf]/ensure: defined content as '{md5}167f8f4bb6192e0d58438feb75cf97e0'[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/Apache::Vhost[horizon_vhost]/Concat[15-horizon_vhost.conf]/File[15-horizon_vhost.conf]/ensure: defined content as '{md5}61701793e8c5eb67c2f2122cb2b903e9'[0m
+[mNotice: /Stage[main]/Horizon::Wsgi::Apache/File[/etc/httpd/conf.d/openstack-dashboard.conf]/content: content changed '{md5}1f8635eac7872529d7b6577424d3355c' to '{md5}3f4b1c53d0e150dae37b3ee5dcaf622d'[0m
+[mNotice: /Stage[main]/Apache::Service/Service[httpd]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: Finished catalog run in 80.28 seconds[0m

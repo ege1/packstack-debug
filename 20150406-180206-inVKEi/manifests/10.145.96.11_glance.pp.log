@@ -1,0 +1,80 @@
+Error: NetworkManager is not running.
+[mNotice: Compiled catalog for controller in environment production in 1.48 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Glance/Package[openstack-glance]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Notify::Rabbitmq/Glance_api_config[DEFAULT/rabbit_host]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Notify::Rabbitmq/Glance_api_config[DEFAULT/rabbit_use_ssl]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[glance_api]/Firewall[001 glance incoming glance_api]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Notify::Rabbitmq/Glance_api_config[DEFAULT/rabbit_notification_topic]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Notify::Rabbitmq/Glance_api_config[DEFAULT/rabbit_port]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Notify::Rabbitmq/Glance_api_config[DEFAULT/rabbit_ha_queues]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Notify::Rabbitmq/Glance_api_config[DEFAULT/rabbit_password]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Notify::Rabbitmq/Glance_api_config[DEFAULT/rabbit_virtual_host]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Notify::Rabbitmq/Glance_api_config[DEFAULT/rabbit_userid]/ensure: created[0m
+[mNotice: /Stage[main]/Glance/File[/etc/glance/]/owner: owner changed 'root' to 'glance'[0m
+[mNotice: /Stage[main]/Glance/File[/etc/glance/]/mode: mode changed '0755' to '0770'[0m
+[mNotice: /Stage[main]/Glance::Notify::Rabbitmq/Glance_api_config[DEFAULT/rabbit_hosts]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Notify::Rabbitmq/Glance_api_config[DEFAULT/amqp_durable_queues]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Notify::Rabbitmq/Glance_api_config[DEFAULT/notification_driver]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Notify::Rabbitmq/Glance_api_config[DEFAULT/rabbit_notification_exchange]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/File[/etc/glance/glance-cache.conf]/owner: owner changed 'root' to 'glance'[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[database/idle_timeout]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[DEFAULT/registry_port]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/File[/etc/glance/glance-api-paste.ini]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/File[/etc/glance/glance-api.conf]/owner: owner changed 'root' to 'glance'[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[DEFAULT/log_dir]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[DEFAULT/show_image_direct_url]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_cache_config[DEFAULT/registry_port]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[DEFAULT/debug]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_cache_config[DEFAULT/admin_user]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[DEFAULT/os_region_name]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[DEFAULT/image_cache_dir]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[DEFAULT/bind_host]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[keystone_authtoken/auth_port]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/Glance_registry_config[keystone_authtoken/auth_host]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/Glance_registry_config[DEFAULT/bind_host]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/File[/etc/glance/glance-registry.conf]/owner: owner changed 'root' to 'glance'[0m
+[mNotice: /Stage[main]/Glance::Registry/Glance_registry_config[DEFAULT/log_dir]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/Glance_registry_config[keystone_authtoken/admin_password]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[paste_deploy/flavor]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/Glance_registry_config[DEFAULT/bind_port]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[keystone_authtoken/auth_host]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/Glance_registry_config[DEFAULT/use_syslog]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_cache_config[DEFAULT/verbose]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/Glance_registry_config[keystone_authtoken/auth_port]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[keystone_authtoken/admin_password]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_cache_config[DEFAULT/admin_tenant_name]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[keystone_authtoken/admin_tenant_name]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/Glance_registry_config[database/idle_timeout]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[database/connection]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[DEFAULT/backlog]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[DEFAULT/log_file]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[keystone_authtoken/auth_protocol]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/Glance_registry_config[database/connection]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[DEFAULT/registry_client_protocol]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/Glance_registry_config[paste_deploy/flavor]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[DEFAULT/workers]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_cache_config[DEFAULT/admin_password]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[DEFAULT/use_syslog]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[DEFAULT/registry_host]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[DEFAULT/bind_port]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_cache_config[DEFAULT/os_region_name]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[keystone_authtoken/auth_uri]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/Glance_registry_config[DEFAULT/log_file]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/Glance_registry_config[keystone_authtoken/auth_protocol]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[keystone_authtoken/admin_user]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/File[/etc/glance/glance-registry-paste.ini]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/Glance_registry_config[keystone_authtoken/auth_uri]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_cache_config[DEFAULT/registry_host]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/Glance_registry_config[DEFAULT/debug]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_cache_config[DEFAULT/debug]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_api_config[DEFAULT/verbose]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/Glance_registry_config[DEFAULT/verbose]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/Glance_registry_config[keystone_authtoken/admin_tenant_name]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/Glance_registry_config[keystone_authtoken/admin_user]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Api/Glance_cache_config[DEFAULT/auth_url]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Registry/Exec[glance-manage db_sync]: Triggered 'refresh' from 65 events[0m
+[mNotice: /Stage[main]/Glance::Registry/Service[glance-registry]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Glance::Api/Service[glance-api]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: Finished catalog run in 29.34 seconds[0m

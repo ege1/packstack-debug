@@ -1,0 +1,61 @@
+Error: NetworkManager is not running.
+[mNotice: Compiled catalog for controller in environment production in 1.72 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Heat::Keystone::Auth/Keystone_user[heat]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Keystone::Auth/Keystone_user_role[heat@services]/roles: roles changed ['_member_'] to 'admin'[0m
+[mNotice: /Stage[main]/Heat::Keystone::Auth/Keystone_service[heat]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Keystone::Auth/Keystone_endpoint[RegionOne/heat]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Keystone::Auth/Keystone_role[heat_stack_user]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Keystone::Auth/Keystone_role[heat_stack_owner]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Engine/Package[heat-engine]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Api/Package[heat-api]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[heat]/Firewall[001 heat incoming heat]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[DEFAULT/log_dir]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[DEFAULT/rabbit_use_ssl]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[DEFAULT/rabbit_hosts]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[DEFAULT/verbose]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Keystone::Domain/Exec[heat_domain_create]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Heat::Api/Heat_config[heat_api/bind_host]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Engine/Heat_config[DEFAULT/heat_metadata_server_url]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Engine/Heat_config[DEFAULT/heat_waitcondition_server_url]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[keystone_authtoken/auth_port]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[keystone_authtoken/admin_user]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[DEFAULT/rabbit_ha_queues]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[database/idle_timeout]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Engine/Heat_config[DEFAULT/engine_life_check_timeout]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[DEFAULT/use_syslog]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Engine/Heat_config[DEFAULT/heat_watch_server_url]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Engine/Heat_config[DEFAULT/heat_stack_user_role]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Api/Heat_config[heat_api/bind_port]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[keystone_authtoken/auth_host]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[DEFAULT/rabbit_virtual_host]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[DEFAULT/debug]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Keystone::Domain/Heat_config[DEFAULT/stack_domain_admin_password]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Engine/Heat_config[DEFAULT/deferred_auth_method]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[database/connection]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Keystone::Domain/Heat_config[DEFAULT/stack_domain_admin]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[keystone_authtoken/admin_password]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[keystone_authtoken/admin_tenant_name]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[DEFAULT/amqp_durable_queues]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[DEFAULT/rabbit_password]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Engine/Heat_config[DEFAULT/trusts_delegated_roles]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[DEFAULT/rabbit_host]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[DEFAULT/rpc_backend]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[keystone_authtoken/auth_uri]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[DEFAULT/rabbit_port]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Api/Heat_config[heat_api/workers]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[ec2authtoken/auth_uri]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[keystone_authtoken/auth_protocol]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Keystone::Domain/Heat_domain_id_setter[heat_domain_id]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Engine/Heat_config[DEFAULT/auth_encryption_key]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/Heat_config[DEFAULT/rabbit_userid]/ensure: created[0m
+[mNotice: /Stage[main]/Heat/User[heat]/groups: groups changed '' to 'heat'[0m
+[mNotice: /Stage[main]/Heat/Exec[heat-dbsync]: Triggered 'refresh' from 2 events[0m
+[mNotice: /Stage[main]/Heat::Api/Service[heat-api]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Heat/File[/etc/heat/]/group: group changed 'root' to 'heat'[0m
+[mNotice: /Stage[main]/Heat/File[/etc/heat/]/mode: mode changed '0755' to '0750'[0m
+[mNotice: /Stage[main]/Heat/File[/etc/heat/heat.conf]/owner: owner changed 'root' to 'heat'[0m
+[mNotice: /Stage[main]/Heat::Engine/Service[heat-engine]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Main/Keystone_user_role[admin@admin]/roles: roles changed ['admin'] to 'admin _member_ heat_stack_owner'[0m
+[mNotice: Finished catalog run in 68.53 seconds[0m

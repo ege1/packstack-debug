@@ -1,0 +1,5 @@
+Error: NetworkManager is not running.
+[mNotice: Compiled catalog for controller in environment production in 0.21 seconds[0m
+[mNotice: /Stage[main]/Main/Exec[update-selinux-policy]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Main/File[/etc/sysconfig/network-scripts/ifcfg-br-ex]/ensure: defined content as '{md5}93a3365f8572e44673b1aadf8091869f'[0m
+[mNotice: Finished catalog run in 4.43 seconds[0m

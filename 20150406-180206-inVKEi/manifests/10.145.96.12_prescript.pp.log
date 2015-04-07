@@ -1,0 +1,17 @@
+Error: NetworkManager is not running.
+[mNotice: Compiled catalog for compute01 in environment production in 0.77 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Main/Package[sos]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Package[openstack-selinux]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Sysctl::Value[net.ipv4.tcp_keepalive_intvl]/Sysctl[net.ipv4.tcp_keepalive_intvl]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Sysctl::Value[net.ipv4.tcp_keepalive_intvl]/Exec[exec_sysctl_net.ipv4.tcp_keepalive_intvl]: Triggered 'refresh' from 1 events[0m
+[mNotice: /Stage[main]/Main/Sysctl::Value[net.ipv4.tcp_keepalive_time]/Sysctl[net.ipv4.tcp_keepalive_time]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Sysctl::Value[net.ipv4.tcp_keepalive_time]/Exec[exec_sysctl_net.ipv4.tcp_keepalive_time]: Triggered 'refresh' from 1 events[0m
+[mNotice: /Stage[main]/Firewall::Linux::Redhat/File[/etc/sysconfig/iptables]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Sysctl::Value[net.ipv4.tcp_keepalive_probes]/Sysctl[net.ipv4.tcp_keepalive_probes]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Sysctl::Value[net.ipv4.tcp_keepalive_probes]/Exec[exec_sysctl_net.ipv4.tcp_keepalive_probes]: Triggered 'refresh' from 1 events[0m
+[mNotice: /Stage[main]/Firewall::Linux::Redhat/Service[firewalld]/ensure: ensure changed 'running' to 'stopped'[0m
+[mNotice: /Stage[main]/Firewall::Linux::Redhat/Package[iptables-services]/ensure: created[0m
+[mNotice: /Stage[main]/Firewall::Linux::Redhat/Service[iptables]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: Finished catalog run in 203.89 seconds[0m

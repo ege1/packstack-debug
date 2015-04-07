@@ -1,0 +1,42 @@
+Error: NetworkManager is not running.
+[mNotice: Compiled catalog for controller in environment production in 1.74 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[mariadb_10.145.96.11]/Firewall[001 mariadb incoming mariadb_10.145.96.11]/ensure: created[0m
+[mNotice: /Stage[main]/Mysql::Client::Install/Package[mysql_client]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[mariadb_10.145.96.12]/Firewall[001 mariadb incoming mariadb_10.145.96.12]/ensure: created[0m
+[mNotice: /Stage[main]/Mysql::Server::Install/Package[mysql-server]/ensure: created[0m
+[mNotice: /Stage[main]/Mysql::Server::Config/File[mysql-config-file]/content: content changed '{md5}e15579698c69a9373a88696e342f6fd4' to '{md5}028206fd84dfe5a3f1f49f47baa80af3'[0m
+[mNotice: /Stage[main]/Mysql::Server::Service/File[/var/log/mariadb/mariadb.log]/ensure: created[0m
+[mNotice: /Stage[main]/Mysql::Server::Service/Service[mysqld]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Mysql::Server::Root_password/Mysql_user[root@localhost]/password_hash: defined 'password_hash' as '*58F46D70537995DAA0AFC60D70ACE42CCC713A7B'[0m
+[mNotice: /Stage[main]/Mysql::Server::Root_password/File[/root/.my.cnf]/ensure: defined content as '{md5}f147f684017194a0788d7a739a63cee8'[0m
+[mNotice: /Stage[main]/Neutron::Db::Mysql/Openstacklib::Db::Mysql[neutron]/Mysql_database[neutron]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Db::Mysql/Openstacklib::Db::Mysql[glance]/Mysql_database[glance]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Mysql_user[@controller]/ensure: removed[0m
+[mNotice: /Stage[main]/Heat::Db::Mysql/Openstacklib::Db::Mysql[heat]/Mysql_database[heat]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Db::Mysql/Openstacklib::Db::Mysql[heat]/Openstacklib::Db::Mysql::Host_access[heat_%]/Mysql_user[heat@%]/ensure: created[0m
+[mNotice: /Stage[main]/Heat::Db::Mysql/Openstacklib::Db::Mysql[heat]/Openstacklib::Db::Mysql::Host_access[heat_%]/Mysql_grant[heat@%/heat.*]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Db::Mysql/Openstacklib::Db::Mysql[glance]/Openstacklib::Db::Mysql::Host_access[glance_%]/Mysql_user[glance@%]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Mysql_user[root@controller]/ensure: removed[0m
+[mNotice: /Stage[main]/Glance::Db::Mysql/Openstacklib::Db::Mysql[glance]/Openstacklib::Db::Mysql::Host_access[glance_%]/Mysql_grant[glance@%/glance.*]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Db::Mysql/Openstacklib::Db::Mysql[sahara]/Mysql_database[sahara]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Db::Mysql/Openstacklib::Db::Mysql[cinder]/Mysql_database[cinder]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone::Db::Mysql/Openstacklib::Db::Mysql[keystone]/Mysql_database[keystone]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Db::Mysql/Openstacklib::Db::Mysql[cinder]/Openstacklib::Db::Mysql::Host_access[cinder_%]/Mysql_user[cinder@%]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Db::Mysql/Openstacklib::Db::Mysql[sahara]/Openstacklib::Db::Mysql::Host_access[sahara_%]/Mysql_user[sahara@%]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Db::Mysql/Openstacklib::Db::Mysql[nova]/Mysql_database[nova]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Db::Mysql/Openstacklib::Db::Mysql[nova]/Openstacklib::Db::Mysql::Host_access[nova_%]/Mysql_user[nova@%]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Db::Mysql/Openstacklib::Db::Mysql[nova]/Openstacklib::Db::Mysql::Host_access[nova_%]/Mysql_grant[nova@%/nova.*]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Db::Mysql/Openstacklib::Db::Mysql[neutron]/Openstacklib::Db::Mysql::Host_access[neutron_%]/Mysql_user[neutron@%]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone::Db::Mysql/Openstacklib::Db::Mysql[keystone]/Openstacklib::Db::Mysql::Host_access[keystone_%]/Mysql_user[keystone_admin@%]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone::Db::Mysql/Openstacklib::Db::Mysql[keystone]/Openstacklib::Db::Mysql::Host_access[keystone_%]/Mysql_grant[keystone_admin@%/keystone.*]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Mysql_user[root@::1]/ensure: removed[0m
+[mNotice: /Stage[main]/Main/Mysql_user[@localhost]/ensure: removed[0m
+[mNotice: /Stage[main]/Neutron::Db::Mysql/Openstacklib::Db::Mysql[neutron]/Openstacklib::Db::Mysql::Host_access[neutron_%]/Mysql_grant[neutron@%/neutron.*]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Mysql_user[root@127.0.0.1]/ensure: removed[0m
+[mNotice: /Stage[main]/Sahara::Db::Mysql/Openstacklib::Db::Mysql[sahara]/Openstacklib::Db::Mysql::Host_access[sahara_%]/Mysql_grant[sahara@%/sahara.*]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Db::Mysql/Openstacklib::Db::Mysql[cinder]/Openstacklib::Db::Mysql::Host_access[cinder_%]/Mysql_grant[cinder@%/cinder.*]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone::Db::Mysql/Openstacklib::Db::Mysql[keystone]/Openstacklib::Db::Mysql::Host_access[keystone_127.0.0.1]/Mysql_user[keystone_admin@127.0.0.1]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone::Db::Mysql/Openstacklib::Db::Mysql[keystone]/Openstacklib::Db::Mysql::Host_access[keystone_127.0.0.1]/Mysql_grant[keystone_admin@127.0.0.1/keystone.*]/ensure: created[0m
+[mNotice: Finished catalog run in 50.52 seconds[0m

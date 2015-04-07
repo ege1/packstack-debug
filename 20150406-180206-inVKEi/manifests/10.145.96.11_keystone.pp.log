@@ -1,0 +1,95 @@
+Error: NetworkManager is not running.
+[mNotice: Compiled catalog for controller in environment production in 2.17 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[keystone]/Firewall[001 keystone incoming keystone]/ensure: created[0m
+[mNotice: /Stage[main]/Mysql::Bindings::Python/Package[python-mysqldb]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/File[/var/cache/keystone]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Package[python-openstackclient]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Package[keystone]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/File[/var/lib/keystone]/mode: mode changed '0755' to '0750'[0m
+[mNotice: /Stage[main]/Main/Cron[token-flush]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/File[/etc/keystone]/owner: owner changed 'root' to 'keystone'[0m
+[mNotice: /Stage[main]/Keystone/File[/etc/keystone/keystone.conf]/owner: owner changed 'root' to 'keystone'[0m
+[mNotice: /Stage[main]/Keystone/File[/etc/keystone/keystone.conf]/mode: mode changed '0640' to '0600'[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/rabbit_hosts]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/rabbit_virtual_host]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[signing/keyfile]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[catalog/driver]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[ssl/enable]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[token/provider]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/rabbit_password]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/rabbit_host]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[signing/key_size]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/public_port]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/rabbit_userid]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[signing/ca_certs]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[signing/ca_key]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/use_syslog]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/compute_port]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/debug]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[signing/certfile]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/admin_bind_host]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[catalog/template_file]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/rabbit_ha_queues]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[token/driver]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/public_bind_host]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/rabbit_use_ssl]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/admin_token]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/log_dir]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/admin_port]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/rabbit_port]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[signing/cert_subject]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[token/expiration]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[database/connection]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[database/idle_timeout]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone/Keystone_config[DEFAULT/verbose]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone::Db::Sync/Exec[keystone-manage db_sync]: Triggered 'refresh' from 34 events[0m
+[mNotice: /Stage[main]/Keystone/Exec[keystone-manage pki_setup]: Triggered 'refresh' from 33 events[0m
+[mNotice: /Stage[main]/Keystone::Service/Service[keystone]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Sahara::Keystone::Auth/Keystone::Resource::Service_identity[sahara]/Keystone_service[sahara]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Keystone::Auth/Keystone_service[neutron]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer::Keystone::Auth/Keystone_service[ceilometer]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Keystone::Auth/Keystone::Resource::Service_identity[sahara]/Keystone_endpoint[RegionOne/sahara]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone::Roles::Admin/Keystone_tenant[admin]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer::Keystone::Auth/Keystone_role[ResellerAdmin]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Keystone::Auth/Keystone_service[nova_ec2]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Keystone::Auth/Keystone_service[cinderv2]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Keystone::Auth/Keystone_role[SwiftOperator]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Keystone::Auth/Keystone_service[novav3]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer::Keystone::Auth/Keystone_endpoint[RegionOne/ceilometer]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone::Roles::Admin/Keystone_tenant[services]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Keystone::Auth/Keystone_user[neutron]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Keystone::Auth/Keystone_user[nova]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Keystone::Auth/Keystone_user[glance]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone::Roles::Admin/Keystone_role[admin]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Keystone::Auth/Keystone_user_role[glance@services]/roles: roles changed ['_member_'] to 'admin'[0m
+[mNotice: /Stage[main]/Main/Keystone::Resource::Service_identity[keystone]/Keystone_service[keystone]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Keystone::Resource::Service_identity[keystone]/Keystone_endpoint[RegionOne/keystone]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Keystone::Auth/Keystone::Resource::Service_identity[sahara]/Keystone_user[sahara]/ensure: created[0m
+[mNotice: /Stage[main]/Sahara::Keystone::Auth/Keystone::Resource::Service_identity[sahara]/Keystone_user_role[sahara@services]/roles: roles changed ['_member_'] to 'admin'[0m
+[mNotice: /Stage[main]/Nova::Keystone::Auth/Keystone_endpoint[RegionOne/novav3]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer::Keystone::Auth/Keystone_user[ceilometer]/ensure: created[0m
+[mNotice: /Stage[main]/Ceilometer::Keystone::Auth/Keystone_user_role[ceilometer@services]/roles: roles changed ['_member_'] to 'admin ResellerAdmin'[0m
+[mNotice: /Stage[main]/Cinder::Keystone::Auth/Keystone_service[cinder]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Keystone::Auth/Keystone_endpoint[RegionOne/cinder]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Keystone::Auth/Keystone_service[glance]/ensure: created[0m
+[mNotice: /Stage[main]/Glance::Keystone::Auth/Keystone_endpoint[RegionOne/glance]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Keystone::Auth/Keystone_user_role[nova@services]/roles: roles changed ['_member_'] to 'admin'[0m
+[mNotice: /Stage[main]/Keystone::Roles::Admin/Keystone_user[admin]/ensure: created[0m
+[mNotice: /Stage[main]/Keystone::Roles::Admin/Keystone_user_role[admin@admin]/roles: roles changed ['_member_'] to 'admin'[0m
+[mNotice: /Stage[main]/Cinder::Keystone::Auth/Keystone_user[cinder]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Keystone::Auth/Keystone_endpoint[RegionOne/nova_ec2]/ensure: created[0m
+[mNotice: /Stage[main]/Cinder::Keystone::Auth/Keystone_endpoint[RegionOne/cinderv2]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Keystone::Auth/Keystone_service[swift_s3]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Keystone::Auth/Keystone_endpoint[RegionOne/swift_s3]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Keystone::Auth/Keystone_service[nova]/ensure: created[0m
+[mNotice: /Stage[main]/Nova::Keystone::Auth/Keystone_endpoint[RegionOne/nova]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Keystone::Auth/Keystone_user_role[neutron@services]/roles: roles changed ['_member_'] to 'admin'[0m
+[mNotice: /Stage[main]/Swift::Keystone::Auth/Keystone_service[swift]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Keystone::Auth/Keystone_endpoint[RegionOne/swift]/ensure: created[0m
+[mNotice: /Stage[main]/Neutron::Keystone::Auth/Keystone_endpoint[RegionOne/neutron]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Keystone::Auth/Keystone_user[swift]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Keystone::Auth/Keystone_user_role[swift@services]/roles: roles changed ['_member_'] to 'admin'[0m
+[mNotice: /Stage[main]/Cinder::Keystone::Auth/Keystone_user_role[cinder@services]/roles: roles changed ['_member_'] to 'admin'[0m
+[mNotice: Finished catalog run in 191.67 seconds[0m

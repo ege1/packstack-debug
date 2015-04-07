@@ -1,0 +1,150 @@
+Error: NetworkManager is not running.
+[1;31mWarning: Variable access via 'tcp_port' is deprecated. Use '@tcp_port' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb]:1
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb:1:in `block in result')[0m
+[1;31mWarning: Variable access via 'user' is deprecated. Use '@user' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb]:2
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb:2:in `block in result')[0m
+[1;31mWarning: Variable access via 'max_connections' is deprecated. Use '@max_connections' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb]:3
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb:3:in `block in result')[0m
+[1;31mWarning: Variable access via 'max_memory' is deprecated. Use '@max_memory' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb]:5
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb:5:in `block in result')[0m
+[1;31mWarning: Variable access via 'listen_ip' is deprecated. Use '@listen_ip' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb]:15
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb:15:in `block in result')[0m
+[1;31mWarning: Variable access via 'udp_port' is deprecated. Use '@udp_port' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb]:18
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb:18:in `block in result')[0m
+[1;31mWarning: Variable access via 'processorcount' is deprecated. Use '@processorcount' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb]:20
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/memcached/templates/memcached_sysconfig.erb:20:in `block in result')[0m
+[1;31mWarning: Scope(Class[Concat::Setup]): concat::setup is deprecated as a public API of the concat module and should no longer be directly included in the manifest.[0m
+[1;31mWarning: Variable access via 'use_chroot' is deprecated. Use '@use_chroot' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/header.erb]:7
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/header.erb:7:in `block in result')[0m
+[1;31mWarning: Variable access via 'address' is deprecated. Use '@address' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/header.erb]:11
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/header.erb:11:in `block in result')[0m
+[1;31mWarning: Variable access via 'motd_file' is deprecated. Use '@motd_file' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/header.erb]:12
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/header.erb:12:in `block in result')[0m
+[1;31mWarning: Variable access via 'name' is deprecated. Use '@name' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:4
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:4:in `block in result')[0m
+[1;31mWarning: Variable access via 'path' is deprecated. Use '@path' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:5
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:5:in `block in result')[0m
+[1;31mWarning: Variable access via 'read_only' is deprecated. Use '@read_only' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:6
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:6:in `block in result')[0m
+[1;31mWarning: Variable access via 'write_only' is deprecated. Use '@write_only' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:7
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:7:in `block in result')[0m
+[1;31mWarning: Variable access via 'list' is deprecated. Use '@list' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:8
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:8:in `block in result')[0m
+[1;31mWarning: Variable access via 'uid' is deprecated. Use '@uid' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:9
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:9:in `block in result')[0m
+[1;31mWarning: Variable access via 'gid' is deprecated. Use '@gid' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:10
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:10:in `block in result')[0m
+[1;31mWarning: Variable access via 'incoming_chmod' is deprecated. Use '@incoming_chmod' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:11
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:11:in `block in result')[0m
+[1;31mWarning: Variable access via 'outgoing_chmod' is deprecated. Use '@outgoing_chmod' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:12
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:12:in `block in result')[0m
+[1;31mWarning: Variable access via 'max_connections' is deprecated. Use '@max_connections' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:13
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:13:in `block in result')[0m
+[1;31mWarning: Variable access via 'max_connections' is deprecated. Use '@max_connections' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:14
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:14:in `block in result')[0m
+[1;31mWarning: Variable access via 'comment' is deprecated. Use '@comment' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:15
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:15:in `block in result')[0m
+[1;31mWarning: Variable access via 'secrets_file' is deprecated. Use '@secrets_file' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:16
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:16:in `block in result')[0m
+[1;31mWarning: Variable access via 'auth_users' is deprecated. Use '@auth_users' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:17
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:17:in `block in result')[0m
+[1;31mWarning: Variable access via 'hosts_allow' is deprecated. Use '@hosts_allow' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:18
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:18:in `block in result')[0m
+[1;31mWarning: Variable access via 'hosts_deny' is deprecated. Use '@hosts_deny' instead. template[/var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb]:19
+   (at /var/tmp/packstack/66742a51378247da9e98a324f595177a/modules/rsync/templates/module.erb:19:in `block in result')[0m
+[mNotice: Compiled catalog for controller in environment production in 1.98 seconds[0m
+[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
+   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[swift_proxy]/Firewall[001 swift proxy incoming swift_proxy]/ensure: created[0m
+[mNotice: /Stage[main]/Main/File[/srv/node]/ensure: created[0m
+[mNotice: /File[/var/run/swift]/seltype: seltype changed 'swift_var_run_t' to 'var_run_t'[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[swift_storage_and_rsync_10.145.96.11]/Firewall[001 swift storage and rsync incoming swift_storage_and_rsync_10.145.96.11]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Swift::Storage::Loopback[swiftloopback]/File[/srv/loopback-device]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Swift::Storage::Loopback[swiftloopback]/Exec[create_partition-swiftloopback]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Main/Swift::Storage::Loopback[swiftloopback]/Swift::Storage::Ext4[swiftloopback]/Exec[mkfs-swiftloopback]: Triggered 'refresh' from 1 events[0m
+[mNotice: /Stage[main]/Main/Swift::Storage::Loopback[swiftloopback]/Swift::Storage::Ext4[swiftloopback]/Swift::Storage::Mount[swiftloopback]/File[/srv/node/swiftloopback]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Swift::Storage::Loopback[swiftloopback]/Swift::Storage::Ext4[swiftloopback]/Swift::Storage::Mount[swiftloopback]/Mount[/srv/node/swiftloopback]/ensure: defined 'ensure' as 'defined'[0m
+[mNotice: /Stage[main]/Main/Swift::Storage::Loopback[swiftloopback]/Swift::Storage::Ext4[swiftloopback]/Swift::Storage::Mount[swiftloopback]/Mount[/srv/node/swiftloopback]: Triggered 'refresh' from 2 events[0m
+[mNotice: /Stage[main]/Main/Swift::Storage::Loopback[swiftloopback]/Swift::Storage::Ext4[swiftloopback]/Swift::Storage::Mount[swiftloopback]/Exec[mount_swiftloopback]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Main/Swift::Storage::Loopback[swiftloopback]/Swift::Storage::Ext4[swiftloopback]/Swift::Storage::Mount[swiftloopback]/Exec[mount_swiftloopback]: Triggered 'refresh' from 1 events[0m
+[mNotice: /Stage[main]/Main/Swift::Storage::Loopback[swiftloopback]/Swift::Storage::Ext4[swiftloopback]/Swift::Storage::Mount[swiftloopback]/Exec[restorecon_mount_swiftloopback]: Triggered 'refresh' from 3 events[0m
+[mNotice: /Stage[main]/Main/Swift::Storage::Loopback[swiftloopback]/Swift::Storage::Ext4[swiftloopback]/Swift::Storage::Mount[swiftloopback]/Exec[fix_mount_permissions_swiftloopback]: Triggered 'refresh' from 3 events[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6001]/Concat[/etc/swift/container-server.conf]/File[/var/lib/puppet/concat/_etc_swift_container-server.conf]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6001]/Concat[/etc/swift/container-server.conf]/File[/var/lib/puppet/concat/_etc_swift_container-server.conf/fragments]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6001]/Concat[/etc/swift/container-server.conf]/File[/var/lib/puppet/concat/_etc_swift_container-server.conf/fragments.concat]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6001]/Rsync::Server::Module[container]/File[/etc/rsync.d/frag-container]/ensure: defined content as '{md5}f34ae17bc92c6dac2f9e4535cc52d6f4'[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6002]/Concat[/etc/swift/account-server.conf]/File[/var/lib/puppet/concat/_etc_swift_account-server.conf]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6002]/Concat[/etc/swift/account-server.conf]/File[/var/lib/puppet/concat/_etc_swift_account-server.conf/fragments.concat]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6002]/Concat[/etc/swift/account-server.conf]/File[/var/lib/puppet/concat/_etc_swift_account-server.conf/fragments.concat.out]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6002]/Concat[/etc/swift/account-server.conf]/File[/var/lib/puppet/concat/_etc_swift_account-server.conf/fragments]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6002]/Concat::Fragment[swift-account-6002]/File[/var/lib/puppet/concat/_etc_swift_account-server.conf/fragments/00_swift-account-6002]/ensure: defined content as '{md5}d2edabdb710f27f2c28f1ae1b8c5a175'[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6001]/Concat[/etc/swift/container-server.conf]/File[/var/lib/puppet/concat/_etc_swift_container-server.conf/fragments.concat.out]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6000]/Concat[/etc/swift/object-server.conf]/File[/var/lib/puppet/concat/_etc_swift_object-server.conf]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6000]/Concat[/etc/swift/object-server.conf]/File[/var/lib/puppet/concat/_etc_swift_object-server.conf/fragments]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6000]/Concat[/etc/swift/object-server.conf]/File[/var/lib/puppet/concat/_etc_swift_object-server.conf/fragments.concat.out]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6000]/Concat::Fragment[swift-object-6000]/File[/var/lib/puppet/concat/_etc_swift_object-server.conf/fragments/00_swift-object-6000]/ensure: defined content as '{md5}aea2414696cedca1860bf3ad0d18219e'[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6000]/Rsync::Server::Module[object]/File[/etc/rsync.d/frag-object]/ensure: defined content as '{md5}6599fe18f7573876515cdb791157facc'[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6001]/Concat::Fragment[swift-container-6001]/File[/var/lib/puppet/concat/_etc_swift_container-server.conf/fragments/00_swift-container-6001]/ensure: defined content as '{md5}a075b4741c2c15cfd8350ef40722cee5'[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6001]/Concat[/etc/swift/container-server.conf]/Exec[concat_/etc/swift/container-server.conf]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6001]/Concat[/etc/swift/container-server.conf]/Exec[concat_/etc/swift/container-server.conf]: Triggered 'refresh' from 3 events[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6001]/Concat[/etc/swift/container-server.conf]/File[/etc/swift/container-server.conf]/ensure: defined content as '{md5}a075b4741c2c15cfd8350ef40722cee5'[0m
+[mNotice: /Stage[main]/Main/Packstack::Firewall[swift_storage_and_rsync_10.145.96.12]/Firewall[001 swift storage and rsync incoming swift_storage_and_rsync_10.145.96.12]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::Object/Swift::Storage::Generic[object]/File[/etc/swift/object-server/]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::Account/Swift::Storage::Generic[account]/File[/etc/swift/account-server/]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::Account/Swift::Storage::Generic[account]/Package[swift-account]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::Account/Service[swift-account-reaper]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Swift::Storage::Account/Service[swift-account-auditor]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Swift::Storage::Container/Swift::Storage::Generic[container]/Package[swift-container]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::Container/Swift::Storage::Generic[container]/Service[swift-container-replicator]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Swift::Storage::Container/Service[swift-container-auditor]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Swift::Storage::Container/Swift::Storage::Generic[container]/File[/etc/swift/container-server/]/owner: owner changed 'root' to 'swift'[0m
+[mNotice: /Stage[main]/Swift::Storage::Container/Swift::Storage::Generic[container]/File[/etc/swift/container-server/]/group: group changed 'root' to 'swift'[0m
+[mNotice: /Stage[main]/Swift::Storage::Object/Swift::Storage::Generic[object]/Package[swift-object]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::Object/Service[swift-object-auditor]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Swift::Storage::Object/Service[swift-object-updater]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Swift::Storage::Container/Swift::Storage::Generic[container]/Service[swift-container]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Swift::Proxy/Package[swift-proxy]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Proxy/Concat[/etc/swift/proxy-server.conf]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Proxy/Concat[/etc/swift/proxy-server.conf]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments.concat]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Proxy/Concat[/etc/swift/proxy-server.conf]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments.concat.out]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Proxy/Concat[/etc/swift/proxy-server.conf]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Proxy/Concat::Fragment[swift_proxy]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments/00_swift_proxy]/ensure: defined content as '{md5}70737d957aa64b0a143fafc5e0fa437b'[0m
+[mNotice: /Stage[main]/Swift::Proxy::Container_quotas/Concat::Fragment[swift_container_quotas]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments/81_swift_container_quotas]/ensure: defined content as '{md5}eeedfb062ded84296f0b553c6f8d75f9'[0m
+[mNotice: /Stage[main]/Swift::Proxy::Catch_errors/Concat::Fragment[swift_catch_errors]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments/24_swift_catch_errors]/ensure: defined content as '{md5}a6199f60fed26eb9bbbbc8f1357b2599'[0m
+[mNotice: /Stage[main]/Swift::Proxy::Healthcheck/Concat::Fragment[swift_healthcheck]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments/25_swift_healthcheck]/ensure: defined content as '{md5}4c8cd2d18bcd82e4052642d0d45fe6f0'[0m
+[mNotice: /Stage[main]/Swift::Proxy::Account_quotas/Concat::Fragment[swift_account_quotas]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments/80_swift_account_quotas]/ensure: defined content as '{md5}30949ed37750b1cdf8e944bc76e84a27'[0m
+[mNotice: /Stage[main]/Swift::Proxy::Cache/Concat::Fragment[swift_cache]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments/23_swift_cache]/ensure: defined content as '{md5}dedb1de617146e2f4ec780a6bce93112'[0m
+[mNotice: /Stage[main]/Swift::Proxy::Tempurl/Concat::Fragment[swift-proxy-tempurl]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments/29_swift-proxy-tempurl]/ensure: defined content as '{md5}957e09199678c49631a6614c357c389d'[0m
+[mNotice: /Stage[main]/Swift::Proxy::Formpost/Concat::Fragment[swift-proxy-formpost]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments/31_swift-proxy-formpost]/ensure: defined content as '{md5}5f7ff8b059ec81b895d9df33942c2b7f'[0m
+[mNotice: /Stage[main]/Swift::Proxy::Keystone/Concat::Fragment[swift_keystone]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments/79_swift_keystone]/ensure: defined content as '{md5}5a87d1a0c3d705816062d9fa1776ecc5'[0m
+[mNotice: /Stage[main]/Swift::Proxy::Ratelimit/Concat::Fragment[swift_ratelimit]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments/26_swift_ratelimit]/ensure: defined content as '{md5}fe274fcee3bc43dc238276b4d6cf259a'[0m
+[mNotice: /Stage[main]/Swift::Proxy::Crossdomain/Concat::Fragment[swift_crossdomain]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments/35_swift_crossdomain]/ensure: defined content as '{md5}9711d6c51d1e1061a08a79e7ae5d8d25'[0m
+[mNotice: /Stage[main]/Swift::Proxy::Staticweb/Concat::Fragment[swift-proxy-staticweb]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments/32_swift-proxy-staticweb]/ensure: defined content as '{md5}c00ba1287d860e8a04a30c5913821e7f'[0m
+[mNotice: /Stage[main]/Swift::Proxy::Slo/Concat::Fragment[swift_slo]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments/35_swift_slo]/ensure: defined content as '{md5}be230d210ed34147b0367f31891801c2'[0m
+[mNotice: /Stage[main]/Swift::Proxy::Authtoken/File[/var/cache/swift]/group: group changed 'root' to 'swift'[0m
+[mNotice: /Stage[main]/Swift::Proxy::Authtoken/File[/var/cache/swift]/mode: mode changed '0755' to '0700'[0m
+[mNotice: /Stage[main]/Swift::Proxy::Authtoken/Concat::Fragment[swift_authtoken]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments/22_swift_authtoken]/ensure: defined content as '{md5}332e97a7e7bdf8f37992124174c7ffd0'[0m
+[mNotice: /Stage[main]/Swift::Proxy::Bulk/Concat::Fragment[swift_bulk]/File[/var/lib/puppet/concat/_etc_swift_proxy-server.conf/fragments/21_swift_bulk]/ensure: defined content as '{md5}ca5894a9f1657f36cd44717c129246c7'[0m
+[mNotice: /Stage[main]/Swift::Proxy/Concat[/etc/swift/proxy-server.conf]/Exec[concat_/etc/swift/proxy-server.conf]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Swift::Proxy/Concat[/etc/swift/proxy-server.conf]/Exec[concat_/etc/swift/proxy-server.conf]: Triggered 'refresh' from 17 events[0m
+[mNotice: /Stage[main]/Swift::Proxy/Concat[/etc/swift/proxy-server.conf]/File[/etc/swift/proxy-server.conf]/content: content changed '{md5}cd347a2631d48647d000f5d34985704c' to '{md5}960e4a889acf085d5055ce5aac511100'[0m
+[mNotice: /Stage[main]/Swift::Proxy/Concat[/etc/swift/proxy-server.conf]/File[/etc/swift/proxy-server.conf]/owner: owner changed 'root' to 'swift'[0m
+[mNotice: /Stage[main]/Swift::Proxy/Concat[/etc/swift/proxy-server.conf]/File[/etc/swift/proxy-server.conf]/mode: mode changed '0640' to '0660'[0m
+[mNotice: /Stage[main]/Swift::Proxy/Service[swift-proxy]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6002]/Concat[/etc/swift/account-server.conf]/Exec[concat_/etc/swift/account-server.conf]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6002]/Concat[/etc/swift/account-server.conf]/Exec[concat_/etc/swift/account-server.conf]: Triggered 'refresh' from 3 events[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6002]/Concat[/etc/swift/account-server.conf]/File[/etc/swift/account-server.conf]/content: content changed '{md5}07e5a1a1e5a0ab83d745e20680eb32c1' to '{md5}d2edabdb710f27f2c28f1ae1b8c5a175'[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6002]/Concat[/etc/swift/account-server.conf]/File[/etc/swift/account-server.conf]/owner: owner changed 'root' to 'swift'[0m
+[mNotice: /Stage[main]/Swift::Storage::Account/Swift::Storage::Generic[account]/Service[swift-account-replicator]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Swift::Storage::Account/Swift::Storage::Generic[account]/Service[swift-account]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6002]/Rsync::Server::Module[account]/File[/etc/rsync.d/frag-account]/ensure: defined content as '{md5}5c536b07e578ed18d4c7eedd2d76a225'[0m
+[mNotice: /Stage[main]/Rsync::Server/Exec[compile fragments]: Triggered 'refresh' from 3 events[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6000]/Concat[/etc/swift/object-server.conf]/File[/var/lib/puppet/concat/_etc_swift_object-server.conf/fragments.concat]/ensure: created[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6000]/Concat[/etc/swift/object-server.conf]/Exec[concat_/etc/swift/object-server.conf]/returns: executed successfully[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6000]/Concat[/etc/swift/object-server.conf]/Exec[concat_/etc/swift/object-server.conf]: Triggered 'refresh' from 3 events[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6000]/Concat[/etc/swift/object-server.conf]/File[/etc/swift/object-server.conf]/content: content changed '{md5}43f14d676b28bc8111d6100e06e9a8bf' to '{md5}aea2414696cedca1860bf3ad0d18219e'[0m
+[mNotice: /Stage[main]/Swift::Storage::All/Swift::Storage::Server[6000]/Concat[/etc/swift/object-server.conf]/File[/etc/swift/object-server.conf]/owner: owner changed 'root' to 'swift'[0m
+[mNotice: /Stage[main]/Swift::Storage::Object/Swift::Storage::Generic[object]/Service[swift-object]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Swift::Storage::Object/Swift::Storage::Generic[object]/Service[swift-object-replicator]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: /Stage[main]/Swift::Storage::Container/Service[swift-container-updater]/ensure: ensure changed 'stopped' to 'running'[0m
+[mNotice: Finished catalog run in 93.34 seconds[0m
