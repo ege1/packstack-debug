@@ -1,0 +1,6 @@
+[root@controller ~]# source keystonerc_admin
+[root@controller ~(keystone_admin)]# neutron net-create public --router:external=True
+Service Unavailable (HTTP 503) (Request-ID: req-14673e64-beed-48df-9e4a-ae9a1ba5f8de)
+[root@controller ~(keystone_admin)]# neutron subnet-create public 192.168.1.0/24 --name vlan --enable_dhcp=False --allocation_pool start=10.145.96.100,end=10.145.96.249 --gateway 10.145.96.1
+Unable to find network with name 'public'
+

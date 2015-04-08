@@ -1,6 +1,0 @@
-Error: NetworkManager is not running.
-[mNotice: Compiled catalog for compute01 in environment production in 0.73 seconds[0m
-[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
-   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
-[mNotice: /File[/etc/sysconfig/iptables]/seluser: seluser changed 'unconfined_u' to 'system_u'[0m
-[mNotice: Finished catalog run in 0.31 seconds[0m

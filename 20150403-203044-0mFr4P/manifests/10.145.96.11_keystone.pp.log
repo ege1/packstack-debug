@@ -1,6 +1,0 @@
-Error: NetworkManager is not running.
-[mNotice: Compiled catalog for controller in environment production in 2.20 seconds[0m
-[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
-   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
-[mNotice: /Stage[main]/Keystone::Roles::Admin/Keystone_user_role[admin@admin]/roles: roles changed ['heat_stack_owner', 'admin', '_member_'] to 'admin'[0m
-[mNotice: Finished catalog run in 98.77 seconds[0m

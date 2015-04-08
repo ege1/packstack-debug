@@ -1,9 +1,0 @@
-Error: NetworkManager is not running.
-[1;31mWarning: Scope(Class[Neutron::Agents::L3]): The neutron::l3_agent::newtork_device_mtu parameter is deprecated, use neutron::newtork_device_mtu instead.[0m
-[mNotice: Compiled catalog for controller in environment production in 2.15 seconds[0m
-[1;31mWarning: The package type's allow_virtual parameter will be changing its default value from false to true in a future release. If you do not want to allow virtual packages, please explicitly set allow_virtual to false.
-   (at /usr/share/ruby/vendor_ruby/puppet/type.rb:816:in `set_default')[0m
-[mNotice: /Stage[main]/Packstack::Neutron::Bridge/Exec[load-bridge]/returns: executed successfully[0m
-[mNotice: /Stage[main]/Packstack::Neutron::Bridge/Exec[sysctl_refresh]/returns: executed successfully[0m
-[mNotice: /Stage[main]/Main/Exec[neutron-db-manage upgrade]/returns: executed successfully[0m
-[mNotice: Finished catalog run in 2.89 seconds[0m
