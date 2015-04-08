@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#update yum repo and install packstack
+yum update
+yum install https://repos.fedorapeople.org/repos/openstack/openstack-juno/rdo-release-juno-1.noarch.rpm
+yum install -y openstack-packstack
+
+#set SELINUX to permissive
+sed -e 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
+
+#disable Network Manager
+service NetworkManager stop
+chkconfig NetworkManager off
+echo "NM_CONTROLLED=no" >> /etc/sysconfig/network-scripts/ifcfg-em1
+echo "NM_CONTROLLED=no" >> /etc/sysconfig/network-scripts/ifcfg-em2
+echo "NM_CONTROLLED=no" >> /etc/sysconfig/network-scripts/ifcfg-em3
+echo "NM_CONTROLLED=no" >> /etc/sysconfig/network-scripts/ifcfg-em4
+
+service network start
+chkconfig network on
+

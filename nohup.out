@@ -1,6 +1,6 @@
 Welcome to the Packstack setup utility
 
-The installation log file is available at: /var/tmp/packstack/20150403-131420-onvSF8/openstack-setup.log
+The installation log file is available at: /var/tmp/packstack/20150406-180206-inVKEi/openstack-setup.log
 
 Installing:
 Clean Up                                             [ [32mDONE[0m ]
@@ -45,177 +45,6 @@ Adding Swift proxy manifest entries                  [ [32mDONE[0m ]
 Adding Swift storage manifest entries                [ [32mDONE[0m ]
 Adding Swift common manifest entries                 [ [32mDONE[0m ]
 Adding Heat manifest entries                         [ [32mDONE[0m ]
-Adding Provisioning Demo manifest entries            [ [32mDONE[0m ]
-Adding Provisioning Tempest manifest entries         [ [32mDONE[0m ]
-Adding Provisioning Glance manifest entries          [ [32mDONE[0m ]
-Adding MongoDB manifest entries                      [ [32mDONE[0m ]
-Adding Redis manifest entries                        [ [32mDONE[0m ]
-Adding Ceilometer manifest entries                   [ [32mDONE[0m ]
-Adding Ceilometer Keystone manifest entries          [ [32mDONE[0m ]
-Adding Nagios server manifest entries                [ [32mDONE[0m ]
-Adding Nagios host manifest entries                  [ [32mDONE[0m ]
-Adding post install manifest entries                 [ [32mDONE[0m ]
-Installing Dependencies                              [ [32mDONE[0m ]
-Copying Puppet modules and manifests                 [ [32mDONE[0m ]
-Applying 10.145.96.11_prescript.pp
-Applying 10.145.96.12_prescript.pp
-10.145.96.12_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.11_prescript.pp:                           [ [32mDONE[0m ]
-Applying 10.145.96.11_amqp.pp
-Applying 10.145.96.11_mariadb.pp
-10.145.96.11_amqp.pp:                                [ [32mDONE[0m ]
-10.145.96.11_mariadb.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_keystone.pp
-Applying 10.145.96.11_glance.pp
-Applying 10.145.96.11_cinder.pp
-10.145.96.11_keystone.pp:                         [ [0;31mERROR[0m ]
-Applying Puppet manifests                         [ [0;31mERROR[0m ]
-
-[0;31mERROR : Error appeared during Puppet run: 10.145.96.11_keystone.pp
-Error: Could not start Service[httpd]: Execution of '/usr/bin/systemctl start httpd' returned 1: Job for httpd.service failed. See 'systemctl status httpd.service' and 'journalctl -xn' for details.
-You will find full trace in log /var/tmp/packstack/20150403-131420-onvSF8/manifests/10.145.96.11_keystone.pp.log[0m
-Please check log file /var/tmp/packstack/20150403-131420-onvSF8/openstack-setup.log for more information
-Additional information:
- * Time synchronization installation was skipped. Please note that unsynchronized time on server instances might be problem for some OpenStack components.
- * File /root/keystonerc_admin has been created on OpenStack client host 10.145.96.11. To use the command line tools you need to source the file.
- * [0;31mNOTE[0m : A certificate was generated to be used for ssl, You should change the ssl certificate configured in /etc/httpd/conf.d/ssl.conf on 10.145.96.11 to use a CA signed cert.
- * To access the OpenStack Dashboard browse to https://10.145.96.11/dashboard .
-Please, find your login credentials stored in the keystonerc_admin in your home directory.
- * To use Nagios, browse to http://10.145.96.11/nagios username: nagiosadmin, password: Huawei!@#
-Welcome to the Packstack setup utility
-
-The installation log file is available at: /var/tmp/packstack/20150403-134003-BJy5cJ/openstack-setup.log
-
-Installing:
-Clean Up                                             [ [32mDONE[0m ]
-Setting up ssh keys                                  [ [32mDONE[0m ]
-Discovering hosts' details                           [ [32mDONE[0m ]
-Adding pre install manifest entries                  [ [32mDONE[0m ]
-Preparing servers                                    [ [32mDONE[0m ]
-Adding AMQP manifest entries                         [ [32mDONE[0m ]
-Adding MariaDB manifest entries                      [ [32mDONE[0m ]
-Fixing Keystone LDAP config parameters to be undef if empty[ [32mDONE[0m ]
-Adding Keystone manifest entries                     [ [32mDONE[0m ]
-Adding Glance Keystone manifest entries              [ [32mDONE[0m ]
-Adding Glance manifest entries                       [ [32mDONE[0m ]
-Adding Cinder Keystone manifest entries              [ [32mDONE[0m ]
-Checking if the Cinder server has a cinder-volumes vg[ [32mDONE[0m ]
-Adding Cinder manifest entries                       [ [32mDONE[0m ]
-Adding Nova API manifest entries                     [ [32mDONE[0m ]
-Adding Nova Keystone manifest entries                [ [32mDONE[0m ]
-Adding Nova Cert manifest entries                    [ [32mDONE[0m ]
-Adding Nova Conductor manifest entries               [ [32mDONE[0m ]
-Creating ssh keys for Nova migration                 [ [32mDONE[0m ]
-Gathering ssh host keys for Nova migration           [ [32mDONE[0m ]
-Adding Nova Compute manifest entries                 [ [32mDONE[0m ]
-Adding Nova Scheduler manifest entries               [ [32mDONE[0m ]
-Adding Nova VNC Proxy manifest entries               [ [32mDONE[0m ]
-Adding OpenStack Network-related Nova manifest entries[ [32mDONE[0m ]
-Adding Nova Common manifest entries                  [ [32mDONE[0m ]
-Adding Neutron API manifest entries                  [ [32mDONE[0m ]
-Adding Neutron Keystone manifest entries             [ [32mDONE[0m ]
-Adding Neutron L3 manifest entries                   [ [32mDONE[0m ]
-Adding Neutron L2 Agent manifest entries             [ [32mDONE[0m ]
-Adding Neutron DHCP Agent manifest entries           [ [32mDONE[0m ]
-Adding Neutron LBaaS Agent manifest entries          [ [32mDONE[0m ]
-Adding Neutron Metering Agent manifest entries       [ [32mDONE[0m ]
-Adding Neutron Metadata Agent manifest entries       [ [32mDONE[0m ]
-Checking if NetworkManager is enabled and running    [ [32mDONE[0m ]
-Adding OpenStack Client manifest entries             [ [32mDONE[0m ]
-Adding Horizon manifest entries                      [ [32mDONE[0m ]
-Adding Swift Keystone manifest entries               [ [32mDONE[0m ]
-Adding Swift builder manifest entries                [ [32mDONE[0m ]
-Adding Swift proxy manifest entries                  [ [32mDONE[0m ]
-Adding Swift storage manifest entries                [ [32mDONE[0m ]
-Adding Swift common manifest entries                 [ [32mDONE[0m ]
-Adding Heat manifest entries                         [ [32mDONE[0m ]
-Adding Provisioning Demo manifest entries            [ [32mDONE[0m ]
-Adding Provisioning Tempest manifest entries         [ [32mDONE[0m ]
-Adding Provisioning Glance manifest entries          [ [32mDONE[0m ]
-Adding MongoDB manifest entries                      [ [32mDONE[0m ]
-Adding Redis manifest entries                        [ [32mDONE[0m ]
-Adding Ceilometer manifest entries                   [ [32mDONE[0m ]
-Adding Ceilometer Keystone manifest entries          [ [32mDONE[0m ]
-Adding Nagios server manifest entries                [ [32mDONE[0m ]
-Adding Nagios host manifest entries                  [ [32mDONE[0m ]
-Adding post install manifest entries                 [ [32mDONE[0m ]
-Installing Dependencies                              [ [32mDONE[0m ]
-Copying Puppet modules and manifests                 [ [32mDONE[0m ]
-Applying 10.145.96.11_prescript.pp
-Applying 10.145.96.12_prescript.pp
-10.145.96.12_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.11_prescript.pp:                           [ [32mDONE[0m ]
-Applying 10.145.96.11_amqp.pp
-Applying 10.145.96.11_mariadb.pp
-10.145.96.11_amqp.pp:                                [ [32mDONE[0m ]
-10.145.96.11_mariadb.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_keystone.pp
-Applying 10.145.96.11_glance.pp
-Applying 10.145.96.11_cinder.pp
-10.145.96.11_keystone.pp:                         [ [0;31mERROR[0m ]
-Applying Puppet manifests                         [ [0;31mERROR[0m ]
-
-[0;31mERROR : Error appeared during Puppet run: 10.145.96.11_keystone.pp
-Error: Could not start Service[httpd]: Execution of '/usr/bin/systemctl start httpd' returned 1: Job for httpd.service failed. See 'systemctl status httpd.service' and 'journalctl -xn' for details.
-You will find full trace in log /var/tmp/packstack/20150403-134003-BJy5cJ/manifests/10.145.96.11_keystone.pp.log[0m
-Please check log file /var/tmp/packstack/20150403-134003-BJy5cJ/openstack-setup.log for more information
-Additional information:
- * Time synchronization installation was skipped. Please note that unsynchronized time on server instances might be problem for some OpenStack components.
- * File /root/keystonerc_admin has been created on OpenStack client host 10.145.96.11. To use the command line tools you need to source the file.
- * [0;31mNOTE[0m : A certificate was generated to be used for ssl, You should change the ssl certificate configured in /etc/httpd/conf.d/ssl.conf on 10.145.96.11 to use a CA signed cert.
- * To access the OpenStack Dashboard browse to https://10.145.96.11/dashboard .
-Please, find your login credentials stored in the keystonerc_admin in your home directory.
- * To use Nagios, browse to http://10.145.96.11/nagios username: nagiosadmin, password: Huawei!@#
-Welcome to the Packstack setup utility
-
-The installation log file is available at: /var/tmp/packstack/20150403-140643-khfehP/openstack-setup.log
-
-Installing:
-Clean Up                                             [ [32mDONE[0m ]
-Setting up ssh keys                                  [ [32mDONE[0m ]
-Discovering hosts' details                           [ [32mDONE[0m ]
-Adding pre install manifest entries                  [ [32mDONE[0m ]
-Preparing servers                                    [ [32mDONE[0m ]
-Adding AMQP manifest entries                         [ [32mDONE[0m ]
-Adding MariaDB manifest entries                      [ [32mDONE[0m ]
-Fixing Keystone LDAP config parameters to be undef if empty[ [32mDONE[0m ]
-Adding Keystone manifest entries                     [ [32mDONE[0m ]
-Adding Glance Keystone manifest entries              [ [32mDONE[0m ]
-Adding Glance manifest entries                       [ [32mDONE[0m ]
-Adding Cinder Keystone manifest entries              [ [32mDONE[0m ]
-Checking if the Cinder server has a cinder-volumes vg[ [32mDONE[0m ]
-Adding Cinder manifest entries                       [ [32mDONE[0m ]
-Adding Nova API manifest entries                     [ [32mDONE[0m ]
-Adding Nova Keystone manifest entries                [ [32mDONE[0m ]
-Adding Nova Cert manifest entries                    [ [32mDONE[0m ]
-Adding Nova Conductor manifest entries               [ [32mDONE[0m ]
-Creating ssh keys for Nova migration                 [ [32mDONE[0m ]
-Gathering ssh host keys for Nova migration           [ [32mDONE[0m ]
-Adding Nova Compute manifest entries                 [ [32mDONE[0m ]
-Adding Nova Scheduler manifest entries               [ [32mDONE[0m ]
-Adding Nova VNC Proxy manifest entries               [ [32mDONE[0m ]
-Adding OpenStack Network-related Nova manifest entries[ [32mDONE[0m ]
-Adding Nova Common manifest entries                  [ [32mDONE[0m ]
-Adding Neutron API manifest entries                  [ [32mDONE[0m ]
-Adding Neutron Keystone manifest entries             [ [32mDONE[0m ]
-Adding Neutron L3 manifest entries                   [ [32mDONE[0m ]
-Adding Neutron L2 Agent manifest entries             [ [32mDONE[0m ]
-Adding Neutron DHCP Agent manifest entries           [ [32mDONE[0m ]
-Adding Neutron LBaaS Agent manifest entries          [ [32mDONE[0m ]
-Adding Neutron Metering Agent manifest entries       [ [32mDONE[0m ]
-Adding Neutron Metadata Agent manifest entries       [ [32mDONE[0m ]
-Checking if NetworkManager is enabled and running    [ [32mDONE[0m ]
-Adding OpenStack Client manifest entries             [ [32mDONE[0m ]
-Adding Horizon manifest entries                      [ [32mDONE[0m ]
-Adding Swift Keystone manifest entries               [ [32mDONE[0m ]
-Adding Swift builder manifest entries                [ [32mDONE[0m ]
-Adding Swift proxy manifest entries                  [ [32mDONE[0m ]
-Adding Swift storage manifest entries                [ [32mDONE[0m ]
-Adding Swift common manifest entries                 [ [32mDONE[0m ]
-Adding Heat manifest entries                         [ [32mDONE[0m ]
-Adding Provisioning Demo manifest entries            [ [32mDONE[0m ]
-Adding Provisioning Tempest manifest entries         [ [32mDONE[0m ]
-Adding Provisioning Glance manifest entries          [ [32mDONE[0m ]
 Adding MongoDB manifest entries                      [ [32mDONE[0m ]
 Adding Redis manifest entries                        [ [32mDONE[0m ]
 Adding Ceilometer manifest entries                   [ [32mDONE[0m ]
@@ -228,11 +57,9 @@ Adding post install manifest entries                 [ [32mDONE[0m ]
 Installing Dependencies                              [ [32mDONE[0m ]
 Copying Puppet modules and manifests                 [ [32mDONE[0m ]
 Applying 10.145.96.11_prescript.pp
-Applying 10.145.96.13_prescript.pp
 Applying 10.145.96.12_prescript.pp
 10.145.96.11_prescript.pp:                           [ [32mDONE[0m ]
 10.145.96.12_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.13_prescript.pp:                           [ [32mDONE[0m ]
 Applying 10.145.96.11_amqp.pp
 Applying 10.145.96.11_mariadb.pp
 10.145.96.11_amqp.pp:                                [ [32mDONE[0m ]
@@ -246,1012 +73,17 @@ Applying 10.145.96.11_cinder.pp
 Applying 10.145.96.11_api_nova.pp
 10.145.96.11_api_nova.pp:                            [ [32mDONE[0m ]
 Applying 10.145.96.11_nova.pp
-Applying 10.145.96.13_nova.pp
 Applying 10.145.96.12_nova.pp
 10.145.96.11_nova.pp:                                [ [32mDONE[0m ]
 10.145.96.12_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.13_nova.pp:                                [ [32mDONE[0m ]
 Applying 10.145.96.11_neutron.pp
-Applying 10.145.96.13_neutron.pp
 Applying 10.145.96.12_neutron.pp
 10.145.96.12_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.13_neutron.pp:                             [ [32mDONE[0m ]
 10.145.96.11_neutron.pp:                             [ [32mDONE[0m ]
 Applying 10.145.96.11_osclient.pp
 Applying 10.145.96.11_horizon.pp
 10.145.96.11_osclient.pp:                            [ [32mDONE[0m ]
-10.145.96.11_horizon.pp:                          [ [0;31mERROR[0m ]
-Applying Puppet manifests                         [ [0;31mERROR[0m ]
-
-[0;31mERROR : Error appeared during Puppet run: 10.145.96.11_horizon.pp
-Error: Could not start Service[httpd]: Execution of '/usr/bin/systemctl start httpd' returned 1: Job for httpd.service failed. See 'systemctl status httpd.service' and 'journalctl -xn' for details.
-You will find full trace in log /var/tmp/packstack/20150403-140643-khfehP/manifests/10.145.96.11_horizon.pp.log[0m
-Please check log file /var/tmp/packstack/20150403-140643-khfehP/openstack-setup.log for more information
-Additional information:
- * Time synchronization installation was skipped. Please note that unsynchronized time on server instances might be problem for some OpenStack components.
- * [33mWarning: NetworkManager is active on 10.145.96.13. OpenStack networking currently does not work on systems that have the Network Manager service enabled.[0m
- * File /root/keystonerc_admin has been created on OpenStack client host 10.145.96.11. To use the command line tools you need to source the file.
- * [0;31mNOTE[0m : A certificate was generated to be used for ssl, You should change the ssl certificate configured in /etc/httpd/conf.d/ssl.conf on 10.145.96.11 to use a CA signed cert.
- * To access the OpenStack Dashboard browse to https://10.145.96.11/dashboard .
-Please, find your login credentials stored in the keystonerc_admin in your home directory.
- * To use Nagios, browse to http://10.145.96.11/nagios username: nagiosadmin, password: Huawei!@#
-Welcome to the Packstack setup utility
-
-The installation log file is available at: /var/tmp/packstack/20150403-145950-pcyt6y/openstack-setup.log
-
-Installing:
-Clean Up                                             [ [32mDONE[0m ]
-Setting up ssh keys                                  [ [32mDONE[0m ]
-Discovering hosts' details                           [ [32mDONE[0m ]
-Adding pre install manifest entries                  [ [32mDONE[0m ]
-Preparing servers                                    [ [32mDONE[0m ]
-Adding AMQP manifest entries                         [ [32mDONE[0m ]
-Adding MariaDB manifest entries                      [ [32mDONE[0m ]
-Fixing Keystone LDAP config parameters to be undef if empty[ [32mDONE[0m ]
-Adding Keystone manifest entries                     [ [32mDONE[0m ]
-Adding Glance Keystone manifest entries              [ [32mDONE[0m ]
-Adding Glance manifest entries                       [ [32mDONE[0m ]
-Adding Cinder Keystone manifest entries              [ [32mDONE[0m ]
-Checking if the Cinder server has a cinder-volumes vg[ [32mDONE[0m ]
-Adding Cinder manifest entries                       [ [32mDONE[0m ]
-Adding Nova API manifest entries                     [ [32mDONE[0m ]
-Adding Nova Keystone manifest entries                [ [32mDONE[0m ]
-Adding Nova Cert manifest entries                    [ [32mDONE[0m ]
-Adding Nova Conductor manifest entries               [ [32mDONE[0m ]
-Creating ssh keys for Nova migration                 [ [32mDONE[0m ]
-Gathering ssh host keys for Nova migration           [ [32mDONE[0m ]
-Adding Nova Compute manifest entries                 [ [32mDONE[0m ]
-Adding Nova Scheduler manifest entries               [ [32mDONE[0m ]
-Adding Nova VNC Proxy manifest entries               [ [32mDONE[0m ]
-Adding OpenStack Network-related Nova manifest entries[ [32mDONE[0m ]
-Adding Nova Common manifest entries                  [ [32mDONE[0m ]
-Adding Neutron API manifest entries                  [ [32mDONE[0m ]
-Adding Neutron Keystone manifest entries             [ [32mDONE[0m ]
-Adding Neutron L3 manifest entries                   [ [32mDONE[0m ]
-Adding Neutron L2 Agent manifest entries             [ [32mDONE[0m ]
-Adding Neutron DHCP Agent manifest entries           [ [32mDONE[0m ]
-Adding Neutron LBaaS Agent manifest entries          [ [32mDONE[0m ]
-Adding Neutron Metering Agent manifest entries       [ [32mDONE[0m ]
-Adding Neutron Metadata Agent manifest entries       [ [32mDONE[0m ]
-Checking if NetworkManager is enabled and running    [ [32mDONE[0m ]
-Adding OpenStack Client manifest entries             [ [32mDONE[0m ]
-Adding Horizon manifest entries                      [ [32mDONE[0m ]
-Adding Swift Keystone manifest entries               [ [32mDONE[0m ]
-Adding Swift builder manifest entries                [ [32mDONE[0m ]
-Adding Swift proxy manifest entries                  [ [32mDONE[0m ]
-Adding Swift storage manifest entries                [ [32mDONE[0m ]
-Adding Swift common manifest entries                 [ [32mDONE[0m ]
-Adding Heat manifest entries                         [ [32mDONE[0m ]
-Adding Provisioning Demo manifest entries            [ [32mDONE[0m ]
-Adding Provisioning Tempest manifest entries         [ [32mDONE[0m ]
-Adding Provisioning Glance manifest entries          [ [32mDONE[0m ]
-Adding MongoDB manifest entries                      [ [32mDONE[0m ]
-Adding Redis manifest entries                        [ [32mDONE[0m ]
-Adding Ceilometer manifest entries                   [ [32mDONE[0m ]
-Adding Ceilometer Keystone manifest entries          [ [32mDONE[0m ]
-Adding Sahara Keystone manifest entries              [ [32mDONE[0m ]
-Adding Sahara manifest entries                       [ [32mDONE[0m ]
-Adding Nagios server manifest entries                [ [32mDONE[0m ]
-Adding Nagios host manifest entries                  [ [32mDONE[0m ]
-Adding post install manifest entries                 [ [32mDONE[0m ]
-Installing Dependencies                              [ [32mDONE[0m ]
-Copying Puppet modules and manifests                 [ [32mDONE[0m ]
-Applying 10.145.96.11_prescript.pp
-Applying 10.145.96.13_prescript.pp
-Applying 10.145.96.12_prescript.pp
-10.145.96.13_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.11_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.12_prescript.pp:                           [ [32mDONE[0m ]
-Applying 10.145.96.11_amqp.pp
-Applying 10.145.96.11_mariadb.pp
-10.145.96.11_amqp.pp:                                [ [32mDONE[0m ]
-10.145.96.11_mariadb.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_keystone.pp
-Applying 10.145.96.11_glance.pp
-Applying 10.145.96.11_cinder.pp
-10.145.96.11_keystone.pp:                            [ [32mDONE[0m ]
-10.145.96.11_cinder.pp:                              [ [32mDONE[0m ]
-10.145.96.11_glance.pp:                              [ [32mDONE[0m ]
-Applying 10.145.96.11_api_nova.pp
-10.145.96.11_api_nova.pp:                            [ [32mDONE[0m ]
-Applying 10.145.96.11_nova.pp
-Applying 10.145.96.13_nova.pp
-Applying 10.145.96.12_nova.pp
-10.145.96.11_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.12_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.13_nova.pp:                                [ [32mDONE[0m ]
-Applying 10.145.96.11_neutron.pp
-Applying 10.145.96.13_neutron.pp
-Applying 10.145.96.12_neutron.pp
-10.145.96.13_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.11_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.12_neutron.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_osclient.pp
-Applying 10.145.96.11_horizon.pp
-10.145.96.11_osclient.pp:                            [ [32mDONE[0m ]
-10.145.96.11_horizon.pp:                          [ [0;31mERROR[0m ]
-Applying Puppet manifests                         [ [0;31mERROR[0m ]
-
-[0;31mERROR : Error appeared during Puppet run: 10.145.96.11_horizon.pp
-Error: Could not start Service[httpd]: Execution of '/usr/bin/systemctl start httpd' returned 1: Job for httpd.service failed. See 'systemctl status httpd.service' and 'journalctl -xn' for details.
-You will find full trace in log /var/tmp/packstack/20150403-145950-pcyt6y/manifests/10.145.96.11_horizon.pp.log[0m
-Please check log file /var/tmp/packstack/20150403-145950-pcyt6y/openstack-setup.log for more information
-Additional information:
- * Time synchronization installation was skipped. Please note that unsynchronized time on server instances might be problem for some OpenStack components.
- * File /root/keystonerc_admin has been created on OpenStack client host 10.145.96.11. To use the command line tools you need to source the file.
- * To access the OpenStack Dashboard browse to http://10.145.96.11/dashboard .
-Please, find your login credentials stored in the keystonerc_admin in your home directory.
- * To use Nagios, browse to http://10.145.96.11/nagios username: nagiosadmin, password: Huawei!@#
-Welcome to the Packstack setup utility
-
-The installation log file is available at: /var/tmp/packstack/20150403-153814-FmhOsr/openstack-setup.log
-
-Installing:
-Clean Up                                             [ [32mDONE[0m ]
-Setting up ssh keys                                  [ [32mDONE[0m ]
-Discovering hosts' details                           [ [32mDONE[0m ]
-Adding pre install manifest entries                  [ [32mDONE[0m ]
-Preparing servers                                    [ [32mDONE[0m ]
-Adding AMQP manifest entries                         [ [32mDONE[0m ]
-Adding MariaDB manifest entries                      [ [32mDONE[0m ]
-Fixing Keystone LDAP config parameters to be undef if empty[ [32mDONE[0m ]
-Adding Keystone manifest entries                     [ [32mDONE[0m ]
-Adding Glance Keystone manifest entries              [ [32mDONE[0m ]
-Adding Glance manifest entries                       [ [32mDONE[0m ]
-Adding Cinder Keystone manifest entries              [ [32mDONE[0m ]
-Checking if the Cinder server has a cinder-volumes vg[ [32mDONE[0m ]
-Adding Cinder manifest entries                       [ [32mDONE[0m ]
-Adding Nova API manifest entries                     [ [32mDONE[0m ]
-Adding Nova Keystone manifest entries                [ [32mDONE[0m ]
-Adding Nova Cert manifest entries                    [ [32mDONE[0m ]
-Adding Nova Conductor manifest entries               [ [32mDONE[0m ]
-Creating ssh keys for Nova migration                 [ [32mDONE[0m ]
-Gathering ssh host keys for Nova migration           [ [32mDONE[0m ]
-Adding Nova Compute manifest entries                 [ [32mDONE[0m ]
-Adding Nova Scheduler manifest entries               [ [32mDONE[0m ]
-Adding Nova VNC Proxy manifest entries               [ [32mDONE[0m ]
-Adding OpenStack Network-related Nova manifest entries[ [32mDONE[0m ]
-Adding Nova Common manifest entries                  [ [32mDONE[0m ]
-Adding Neutron API manifest entries                  [ [32mDONE[0m ]
-Adding Neutron Keystone manifest entries             [ [32mDONE[0m ]
-Adding Neutron L3 manifest entries                   [ [32mDONE[0m ]
-Adding Neutron L2 Agent manifest entries             [ [32mDONE[0m ]
-Adding Neutron DHCP Agent manifest entries           [ [32mDONE[0m ]
-Adding Neutron LBaaS Agent manifest entries          [ [32mDONE[0m ]
-Adding Neutron Metering Agent manifest entries       [ [32mDONE[0m ]
-Adding Neutron Metadata Agent manifest entries       [ [32mDONE[0m ]
-Checking if NetworkManager is enabled and running    [ [32mDONE[0m ]
-Adding OpenStack Client manifest entries             [ [32mDONE[0m ]
-Adding Horizon manifest entries                      [ [32mDONE[0m ]
-Adding Swift Keystone manifest entries               [ [32mDONE[0m ]
-Adding Swift builder manifest entries                [ [32mDONE[0m ]
-Adding Swift proxy manifest entries                  [ [32mDONE[0m ]
-Adding Swift storage manifest entries                [ [32mDONE[0m ]
-Adding Swift common manifest entries                 [ [32mDONE[0m ]
-Adding Heat manifest entries                         [ [32mDONE[0m ]
-Adding Provisioning Demo manifest entries            [ [32mDONE[0m ]
-Adding Provisioning Tempest manifest entries         [ [32mDONE[0m ]
-Adding Provisioning Glance manifest entries          [ [32mDONE[0m ]
-Adding MongoDB manifest entries                      [ [32mDONE[0m ]
-Adding Redis manifest entries                        [ [32mDONE[0m ]
-Adding Ceilometer manifest entries                   [ [32mDONE[0m ]
-Adding Ceilometer Keystone manifest entries          [ [32mDONE[0m ]
-Adding Sahara Keystone manifest entries              [ [32mDONE[0m ]
-Adding Sahara manifest entries                       [ [32mDONE[0m ]
-Adding Nagios server manifest entries                [ [32mDONE[0m ]
-Adding Nagios host manifest entries                  [ [32mDONE[0m ]
-Adding post install manifest entries                 [ [32mDONE[0m ]
-Installing Dependencies                              [ [32mDONE[0m ]
-Copying Puppet modules and manifests                 [ [32mDONE[0m ]
-Applying 10.145.96.11_prescript.pp
-Applying 10.145.96.13_prescript.pp
-Applying 10.145.96.12_prescript.pp
-10.145.96.13_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.11_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.12_prescript.pp:                           [ [32mDONE[0m ]
-Applying 10.145.96.11_amqp.pp
-Applying 10.145.96.11_mariadb.pp
-10.145.96.11_amqp.pp:                                [ [32mDONE[0m ]
-10.145.96.11_mariadb.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_keystone.pp
-Applying 10.145.96.11_glance.pp
-Applying 10.145.96.11_cinder.pp
-10.145.96.11_keystone.pp:                            [ [32mDONE[0m ]
-10.145.96.11_cinder.pp:                              [ [32mDONE[0m ]
-10.145.96.11_glance.pp:                              [ [32mDONE[0m ]
-Applying 10.145.96.11_api_nova.pp
-10.145.96.11_api_nova.pp:                            [ [32mDONE[0m ]
-Applying 10.145.96.11_nova.pp
-Applying 10.145.96.13_nova.pp
-Applying 10.145.96.12_nova.pp
-10.145.96.11_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.12_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.13_nova.pp:                                [ [32mDONE[0m ]
-Applying 10.145.96.11_neutron.pp
-Applying 10.145.96.13_neutron.pp
-Applying 10.145.96.12_neutron.pp
-10.145.96.13_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.11_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.12_neutron.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_osclient.pp
-Applying 10.145.96.11_horizon.pp
-10.145.96.11_osclient.pp:                            [ [32mDONE[0m ]
-10.145.96.11_horizon.pp:                          [ [0;31mERROR[0m ]
-Applying Puppet manifests                         [ [0;31mERROR[0m ]
-
-[0;31mERROR : Error appeared during Puppet run: 10.145.96.11_horizon.pp
-Error: Could not start Service[httpd]: Execution of '/usr/bin/systemctl start httpd' returned 1: Job for httpd.service failed. See 'systemctl status httpd.service' and 'journalctl -xn' for details.
-You will find full trace in log /var/tmp/packstack/20150403-153814-FmhOsr/manifests/10.145.96.11_horizon.pp.log[0m
-Please check log file /var/tmp/packstack/20150403-153814-FmhOsr/openstack-setup.log for more information
-Additional information:
- * Time synchronization installation was skipped. Please note that unsynchronized time on server instances might be problem for some OpenStack components.
- * File /root/keystonerc_admin has been created on OpenStack client host 10.145.96.11. To use the command line tools you need to source the file.
- * To access the OpenStack Dashboard browse to http://10.145.96.11/dashboard .
-Please, find your login credentials stored in the keystonerc_admin in your home directory.
- * To use Nagios, browse to http://10.145.96.11/nagios username: nagiosadmin, password: Huawei!@#
-Welcome to the Packstack setup utility
-
-The installation log file is available at: /var/tmp/packstack/20150403-160539-BWMdV5/openstack-setup.log
-
-Installing:
-Clean Up                                             [ [32mDONE[0m ]
-Setting up ssh keys                                  [ [32mDONE[0m ]
-Discovering hosts' details                           [ [32mDONE[0m ]
-Adding pre install manifest entries                  [ [32mDONE[0m ]
-Preparing servers                                    [ [32mDONE[0m ]
-Adding AMQP manifest entries                         [ [32mDONE[0m ]
-Adding MariaDB manifest entries                      [ [32mDONE[0m ]
-Fixing Keystone LDAP config parameters to be undef if empty[ [32mDONE[0m ]
-Adding Keystone manifest entries                     [ [32mDONE[0m ]
-Adding Glance Keystone manifest entries              [ [32mDONE[0m ]
-Adding Glance manifest entries                       [ [32mDONE[0m ]
-Adding Cinder Keystone manifest entries              [ [32mDONE[0m ]
-Checking if the Cinder server has a cinder-volumes vg[ [32mDONE[0m ]
-Adding Cinder manifest entries                       [ [32mDONE[0m ]
-Adding Nova API manifest entries                     [ [32mDONE[0m ]
-Adding Nova Keystone manifest entries                [ [32mDONE[0m ]
-Adding Nova Cert manifest entries                    [ [32mDONE[0m ]
-Adding Nova Conductor manifest entries               [ [32mDONE[0m ]
-Creating ssh keys for Nova migration                 [ [32mDONE[0m ]
-Gathering ssh host keys for Nova migration           [ [32mDONE[0m ]
-Adding Nova Compute manifest entries                 [ [32mDONE[0m ]
-Adding Nova Scheduler manifest entries               [ [32mDONE[0m ]
-Adding Nova VNC Proxy manifest entries               [ [32mDONE[0m ]
-Adding OpenStack Network-related Nova manifest entries[ [32mDONE[0m ]
-Adding Nova Common manifest entries                  [ [32mDONE[0m ]
-Adding Neutron API manifest entries                  [ [32mDONE[0m ]
-Adding Neutron Keystone manifest entries             [ [32mDONE[0m ]
-Adding Neutron L3 manifest entries                   [ [32mDONE[0m ]
-Adding Neutron L2 Agent manifest entries             [ [32mDONE[0m ]
-Adding Neutron DHCP Agent manifest entries           [ [32mDONE[0m ]
-Adding Neutron LBaaS Agent manifest entries          [ [32mDONE[0m ]
-Adding Neutron Metering Agent manifest entries       [ [32mDONE[0m ]
-Adding Neutron Metadata Agent manifest entries       [ [32mDONE[0m ]
-Checking if NetworkManager is enabled and running    [ [32mDONE[0m ]
-Adding OpenStack Client manifest entries             [ [32mDONE[0m ]
-Adding Swift Keystone manifest entries               [ [32mDONE[0m ]
-Adding Swift builder manifest entries                [ [32mDONE[0m ]
-Adding Swift proxy manifest entries                  [ [32mDONE[0m ]
-Adding Swift storage manifest entries                [ [32mDONE[0m ]
-Adding Swift common manifest entries                 [ [32mDONE[0m ]
-Adding Heat manifest entries                         [ [32mDONE[0m ]
-Adding Provisioning Demo manifest entries            [ [32mDONE[0m ]
-Adding Provisioning Tempest manifest entries         [ [32mDONE[0m ]
-Adding Provisioning Glance manifest entries          [ [32mDONE[0m ]
-Adding MongoDB manifest entries                      [ [32mDONE[0m ]
-Adding Redis manifest entries                        [ [32mDONE[0m ]
-Adding Ceilometer manifest entries                   [ [32mDONE[0m ]
-Adding Ceilometer Keystone manifest entries          [ [32mDONE[0m ]
-Adding Sahara Keystone manifest entries              [ [32mDONE[0m ]
-Adding Sahara manifest entries                       [ [32mDONE[0m ]
-Adding Nagios server manifest entries                [ [32mDONE[0m ]
-Adding Nagios host manifest entries                  [ [32mDONE[0m ]
-Adding post install manifest entries                 [ [32mDONE[0m ]
-Installing Dependencies                              [ [32mDONE[0m ]
-Copying Puppet modules and manifests                 [ [32mDONE[0m ]
-Applying 10.145.96.11_prescript.pp
-Applying 10.145.96.13_prescript.pp
-Applying 10.145.96.12_prescript.pp
-10.145.96.13_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.11_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.12_prescript.pp:                           [ [32mDONE[0m ]
-Applying 10.145.96.11_amqp.pp
-Applying 10.145.96.11_mariadb.pp
-10.145.96.11_amqp.pp:                                [ [32mDONE[0m ]
-10.145.96.11_mariadb.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_keystone.pp
-Applying 10.145.96.11_glance.pp
-Applying 10.145.96.11_cinder.pp
-10.145.96.11_keystone.pp:                            [ [32mDONE[0m ]
-10.145.96.11_glance.pp:                              [ [32mDONE[0m ]
-10.145.96.11_cinder.pp:                              [ [32mDONE[0m ]
-Applying 10.145.96.11_api_nova.pp
-10.145.96.11_api_nova.pp:                            [ [32mDONE[0m ]
-Applying 10.145.96.11_nova.pp
-Applying 10.145.96.13_nova.pp
-Applying 10.145.96.12_nova.pp
-10.145.96.12_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.11_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.13_nova.pp:                                [ [32mDONE[0m ]
-Applying 10.145.96.11_neutron.pp
-Applying 10.145.96.13_neutron.pp
-Applying 10.145.96.12_neutron.pp
-10.145.96.13_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.11_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.12_neutron.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_osclient.pp
-10.145.96.11_osclient.pp:                            [ [32mDONE[0m ]
-Applying 10.145.96.11_ring_swift.pp
-10.145.96.11_ring_swift.pp:                          [ [32mDONE[0m ]
-Applying 10.145.96.11_swift.pp
-10.145.96.11_swift.pp:                               [ [32mDONE[0m ]
-Applying 10.145.96.11_heat.pp
-10.145.96.11_heat.pp:                                [ [32mDONE[0m ]
-Applying 10.145.96.11_provision_demo.pp
-Applying 10.145.96.11_provision_tempest.pp
-Applying 10.145.96.11_provision_glance
-10.145.96.11_provision_demo.pp:                   [ [0;31mERROR[0m ]
-Applying Puppet manifests                         [ [0;31mERROR[0m ]
-
-[0;31mERROR : Error appeared during Puppet run: 10.145.96.11_provision_demo.pp
-Error: Execution of '/usr/bin/neutron net-create --format=shell --tenant_id=f207ef4b24a64502b9b6c19fc1cd5006 --router:external=True public' returned 1: Service Unavailable (HTTP 503) (Request-ID: req-213cd643-d829-409d-97f9-72f1a54fdb46)[0m
-You will find full trace in log /var/tmp/packstack/20150403-160539-BWMdV5/manifests/10.145.96.11_provision_demo.pp.log[0m
-Please check log file /var/tmp/packstack/20150403-160539-BWMdV5/openstack-setup.log for more information
-Additional information:
- * Time synchronization installation was skipped. Please note that unsynchronized time on server instances might be problem for some OpenStack components.
- * File /root/keystonerc_admin has been created on OpenStack client host 10.145.96.11. To use the command line tools you need to source the file.
- * To use Nagios, browse to http://10.145.96.11/nagios username: nagiosadmin, password: Huawei!@#
-Welcome to the Packstack setup utility
-
-The installation log file is available at: /var/tmp/packstack/20150403-165615-zLyxyc/openstack-setup.log
-
-Installing:
-Clean Up                                             [ [32mDONE[0m ]
-Setting up ssh keys                                  [ [32mDONE[0m ]
-Discovering hosts' details                           [ [32mDONE[0m ]
-Adding pre install manifest entries                  [ [32mDONE[0m ]
-Preparing servers                                    [ [32mDONE[0m ]
-Adding AMQP manifest entries                         [ [32mDONE[0m ]
-Adding MariaDB manifest entries                      [ [32mDONE[0m ]
-Fixing Keystone LDAP config parameters to be undef if empty[ [32mDONE[0m ]
-Adding Keystone manifest entries                     [ [32mDONE[0m ]
-Adding Glance Keystone manifest entries              [ [32mDONE[0m ]
-Adding Glance manifest entries                       [ [32mDONE[0m ]
-Adding Cinder Keystone manifest entries              [ [32mDONE[0m ]
-Checking if the Cinder server has a cinder-volumes vg[ [32mDONE[0m ]
-Adding Cinder manifest entries                       [ [32mDONE[0m ]
-Adding Nova API manifest entries                     [ [32mDONE[0m ]
-Adding Nova Keystone manifest entries                [ [32mDONE[0m ]
-Adding Nova Cert manifest entries                    [ [32mDONE[0m ]
-Adding Nova Conductor manifest entries               [ [32mDONE[0m ]
-Creating ssh keys for Nova migration                 [ [32mDONE[0m ]
-Gathering ssh host keys for Nova migration           [ [32mDONE[0m ]
-Adding Nova Compute manifest entries                 [ [32mDONE[0m ]
-Adding Nova Scheduler manifest entries               [ [32mDONE[0m ]
-Adding Nova VNC Proxy manifest entries               [ [32mDONE[0m ]
-Adding OpenStack Network-related Nova manifest entries[ [32mDONE[0m ]
-Adding Nova Common manifest entries                  [ [32mDONE[0m ]
-Adding Neutron API manifest entries                  [ [32mDONE[0m ]
-Adding Neutron Keystone manifest entries             [ [32mDONE[0m ]
-Adding Neutron L3 manifest entries                   [ [32mDONE[0m ]
-Adding Neutron L2 Agent manifest entries             [ [32mDONE[0m ]
-Adding Neutron DHCP Agent manifest entries           [ [32mDONE[0m ]
-Adding Neutron LBaaS Agent manifest entries          [ [32mDONE[0m ]
-Adding Neutron Metering Agent manifest entries       [ [32mDONE[0m ]
-Adding Neutron Metadata Agent manifest entries       [ [32mDONE[0m ]
-Checking if NetworkManager is enabled and running    [ [32mDONE[0m ]
-Adding OpenStack Client manifest entries             [ [32mDONE[0m ]
-Adding Horizon manifest entries                      [ [32mDONE[0m ]
-Adding Swift Keystone manifest entries               [ [32mDONE[0m ]
-Adding Swift builder manifest entries                [ [32mDONE[0m ]
-Adding Swift proxy manifest entries                  [ [32mDONE[0m ]
-Adding Swift storage manifest entries                [ [32mDONE[0m ]
-Adding Swift common manifest entries                 [ [32mDONE[0m ]
-Adding Heat manifest entries                         [ [32mDONE[0m ]
-Adding Provisioning Demo manifest entries            [ [32mDONE[0m ]
-Adding Provisioning Tempest manifest entries         [ [32mDONE[0m ]
-Adding Provisioning Glance manifest entries          [ [32mDONE[0m ]
-Adding MongoDB manifest entries                      [ [32mDONE[0m ]
-Adding Redis manifest entries                        [ [32mDONE[0m ]
-Adding Ceilometer manifest entries                   [ [32mDONE[0m ]
-Adding Ceilometer Keystone manifest entries          [ [32mDONE[0m ]
-Adding Sahara Keystone manifest entries              [ [32mDONE[0m ]
-Adding Sahara manifest entries                       [ [32mDONE[0m ]
-Adding Nagios server manifest entries                [ [32mDONE[0m ]
-Adding Nagios host manifest entries                  [ [32mDONE[0m ]
-Adding post install manifest entries                 [ [32mDONE[0m ]
-Installing Dependencies                              [ [32mDONE[0m ]
-Copying Puppet modules and manifests                 [ [32mDONE[0m ]
-Applying 10.145.96.11_prescript.pp
-Applying 10.145.96.13_prescript.pp
-Applying 10.145.96.12_prescript.pp
-10.145.96.11_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.12_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.13_prescript.pp:                           [ [32mDONE[0m ]
-Applying 10.145.96.11_amqp.pp
-Applying 10.145.96.11_mariadb.pp
-10.145.96.11_amqp.pp:                                [ [32mDONE[0m ]
-10.145.96.11_mariadb.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_keystone.pp
-Applying 10.145.96.11_glance.pp
-Applying 10.145.96.11_cinder.pp
-10.145.96.11_keystone.pp:                            [ [32mDONE[0m ]
-10.145.96.11_cinder.pp:                              [ [32mDONE[0m ]
-10.145.96.11_glance.pp:                              [ [32mDONE[0m ]
-Applying 10.145.96.11_api_nova.pp
-10.145.96.11_api_nova.pp:                            [ [32mDONE[0m ]
-Applying 10.145.96.11_nova.pp
-Applying 10.145.96.13_nova.pp
-Applying 10.145.96.12_nova.pp
-10.145.96.11_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.12_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.13_nova.pp:                                [ [32mDONE[0m ]
-Applying 10.145.96.11_neutron.pp
-Applying 10.145.96.13_neutron.pp
-Applying 10.145.96.12_neutron.pp
-10.145.96.13_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.11_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.12_neutron.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_osclient.pp
-Applying 10.145.96.11_horizon.pp
-10.145.96.11_osclient.pp:                            [ [32mDONE[0m ]
-10.145.96.11_horizon.pp:                          [ [0;31mERROR[0m ]
-Applying Puppet manifests                         [ [0;31mERROR[0m ]
-
-[0;31mERROR : Error appeared during Puppet run: 10.145.96.11_horizon.pp
-Error: Could not start Service[httpd]: Execution of '/usr/bin/systemctl start httpd' returned 1: Job for httpd.service failed. See 'systemctl status httpd.service' and 'journalctl -xn' for details.
-You will find full trace in log /var/tmp/packstack/20150403-165615-zLyxyc/manifests/10.145.96.11_horizon.pp.log[0m
-Please check log file /var/tmp/packstack/20150403-165615-zLyxyc/openstack-setup.log for more information
-Additional information:
- * Time synchronization installation was skipped. Please note that unsynchronized time on server instances might be problem for some OpenStack components.
- * File /root/keystonerc_admin has been created on OpenStack client host 10.145.96.11. To use the command line tools you need to source the file.
- * To access the OpenStack Dashboard browse to http://10.145.96.11/dashboard .
-Please, find your login credentials stored in the keystonerc_admin in your home directory.
- * To use Nagios, browse to http://10.145.96.11/nagios username: nagiosadmin, password: Huawei!@#
-Welcome to the Packstack setup utility
-
-The installation log file is available at: /var/tmp/packstack/20150403-173208-_wReSZ/openstack-setup.log
-
-Installing:
-Clean Up                                             [ [32mDONE[0m ]
-Setting up ssh keys                                  [ [32mDONE[0m ]
-Discovering hosts' details                           [ [32mDONE[0m ]
-Adding pre install manifest entries                  [ [32mDONE[0m ]
-Preparing servers                                    [ [32mDONE[0m ]
-Adding AMQP manifest entries                         [ [32mDONE[0m ]
-Adding MariaDB manifest entries                      [ [32mDONE[0m ]
-Fixing Keystone LDAP config parameters to be undef if empty[ [32mDONE[0m ]
-Adding Keystone manifest entries                     [ [32mDONE[0m ]
-Adding Glance Keystone manifest entries              [ [32mDONE[0m ]
-Adding Glance manifest entries                       [ [32mDONE[0m ]
-Adding Cinder Keystone manifest entries              [ [32mDONE[0m ]
-Checking if the Cinder server has a cinder-volumes vg[ [32mDONE[0m ]
-Adding Cinder manifest entries                       [ [32mDONE[0m ]
-Adding Nova API manifest entries                     [ [32mDONE[0m ]
-Adding Nova Keystone manifest entries                [ [32mDONE[0m ]
-Adding Nova Cert manifest entries                    [ [32mDONE[0m ]
-Adding Nova Conductor manifest entries               [ [32mDONE[0m ]
-Creating ssh keys for Nova migration                 [ [32mDONE[0m ]
-Gathering ssh host keys for Nova migration           [ [32mDONE[0m ]
-Adding Nova Compute manifest entries                 [ [32mDONE[0m ]
-Adding Nova Scheduler manifest entries               [ [32mDONE[0m ]
-Adding Nova VNC Proxy manifest entries               [ [32mDONE[0m ]
-Adding OpenStack Network-related Nova manifest entries[ [32mDONE[0m ]
-Adding Nova Common manifest entries                  [ [32mDONE[0m ]
-Adding Neutron API manifest entries                  [ [32mDONE[0m ]
-Adding Neutron Keystone manifest entries             [ [32mDONE[0m ]
-Adding Neutron L3 manifest entries                   [ [32mDONE[0m ]
-Adding Neutron L2 Agent manifest entries             [ [32mDONE[0m ]
-Adding Neutron DHCP Agent manifest entries           [ [32mDONE[0m ]
-Adding Neutron LBaaS Agent manifest entries          [ [32mDONE[0m ]
-Adding Neutron Metering Agent manifest entries       [ [32mDONE[0m ]
-Adding Neutron Metadata Agent manifest entries       [ [32mDONE[0m ]
-Checking if NetworkManager is enabled and running    [ [32mDONE[0m ]
-Adding OpenStack Client manifest entries             [ [32mDONE[0m ]
-Adding Swift Keystone manifest entries               [ [32mDONE[0m ]
-Adding Swift builder manifest entries                [ [32mDONE[0m ]
-Adding Swift proxy manifest entries                  [ [32mDONE[0m ]
-Adding Swift storage manifest entries                [ [32mDONE[0m ]
-Adding Swift common manifest entries                 [ [32mDONE[0m ]
-Adding Heat manifest entries                         [ [32mDONE[0m ]
-Adding Provisioning Tempest manifest entries         [ [32mDONE[0m ]
-Adding Provisioning Glance manifest entries          [ [32mDONE[0m ]
-Adding MongoDB manifest entries                      [ [32mDONE[0m ]
-Adding Redis manifest entries                        [ [32mDONE[0m ]
-Adding Ceilometer manifest entries                   [ [32mDONE[0m ]
-Adding Ceilometer Keystone manifest entries          [ [32mDONE[0m ]
-Adding Sahara Keystone manifest entries              [ [32mDONE[0m ]
-Adding Sahara manifest entries                       [ [32mDONE[0m ]
-Adding Nagios server manifest entries                [ [32mDONE[0m ]
-Adding Nagios host manifest entries                  [ [32mDONE[0m ]
-Adding post install manifest entries                 [ [32mDONE[0m ]
-Installing Dependencies                              [ [32mDONE[0m ]
-Copying Puppet modules and manifests                 [ [32mDONE[0m ]
-Applying 10.145.96.11_prescript.pp
-Applying 10.145.96.13_prescript.pp
-Applying 10.145.96.12_prescript.pp
-10.145.96.13_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.11_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.12_prescript.pp:                           [ [32mDONE[0m ]
-Applying 10.145.96.11_amqp.pp
-Applying 10.145.96.11_mariadb.pp
-10.145.96.11_amqp.pp:                                [ [32mDONE[0m ]
-10.145.96.11_mariadb.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_keystone.pp
-Applying 10.145.96.11_glance.pp
-Applying 10.145.96.11_cinder.pp
-10.145.96.11_keystone.pp:                            [ [32mDONE[0m ]
-10.145.96.11_cinder.pp:                              [ [32mDONE[0m ]
-10.145.96.11_glance.pp:                              [ [32mDONE[0m ]
-Applying 10.145.96.11_api_nova.pp
-10.145.96.11_api_nova.pp:                            [ [32mDONE[0m ]
-Applying 10.145.96.11_nova.pp
-Applying 10.145.96.13_nova.pp
-Applying 10.145.96.12_nova.pp
-10.145.96.11_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.12_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.13_nova.pp:                                [ [32mDONE[0m ]
-Applying 10.145.96.11_neutron.pp
-Applying 10.145.96.13_neutron.pp
-Applying 10.145.96.12_neutron.pp
-10.145.96.12_neutron.pp:                          [ [0;31mERROR[0m ]
-Applying Puppet manifests                         [ [0;31mERROR[0m ]
-
-[0;31mERROR : Error appeared during Puppet run: 10.145.96.12_neutron.pp
-Error: Execution of '/usr/bin/ovs-vsctl list-ports physnet1' returned 1: ovs-vsctl: no bridge named physnet1[0m
-You will find full trace in log /var/tmp/packstack/20150403-173208-_wReSZ/manifests/10.145.96.12_neutron.pp.log[0m
-Please check log file /var/tmp/packstack/20150403-173208-_wReSZ/openstack-setup.log for more information
-Additional information:
- * Time synchronization installation was skipped. Please note that unsynchronized time on server instances might be problem for some OpenStack components.
- * File /root/keystonerc_admin has been created on OpenStack client host 10.145.96.11. To use the command line tools you need to source the file.
- * To use Nagios, browse to http://10.145.96.11/nagios username: nagiosadmin, password: Huawei!@#
-Welcome to the Packstack setup utility
-
-The installation log file is available at: /var/tmp/packstack/20150403-175610-4BNEbJ/openstack-setup.log
-
-Installing:
-Clean Up                                             [ [32mDONE[0m ]
-Setting up ssh keys                                  [ [32mDONE[0m ]
-Discovering hosts' details                           [ [32mDONE[0m ]
-Adding pre install manifest entries                  [ [32mDONE[0m ]
-Preparing servers                                    [ [32mDONE[0m ]
-Adding AMQP manifest entries                         [ [32mDONE[0m ]
-Adding MariaDB manifest entries                      [ [32mDONE[0m ]
-Fixing Keystone LDAP config parameters to be undef if empty[ [32mDONE[0m ]
-Adding Keystone manifest entries                     [ [32mDONE[0m ]
-Adding Glance Keystone manifest entries              [ [32mDONE[0m ]
-Adding Glance manifest entries                       [ [32mDONE[0m ]
-Adding Cinder Keystone manifest entries              [ [32mDONE[0m ]
-Checking if the Cinder server has a cinder-volumes vg[ [32mDONE[0m ]
-Adding Cinder manifest entries                       [ [32mDONE[0m ]
-Adding Nova API manifest entries                     [ [32mDONE[0m ]
-Adding Nova Keystone manifest entries                [ [32mDONE[0m ]
-Adding Nova Cert manifest entries                    [ [32mDONE[0m ]
-Adding Nova Conductor manifest entries               [ [32mDONE[0m ]
-Creating ssh keys for Nova migration                 [ [32mDONE[0m ]
-Gathering ssh host keys for Nova migration           [ [32mDONE[0m ]
-Adding Nova Compute manifest entries                 [ [32mDONE[0m ]
-Adding Nova Scheduler manifest entries               [ [32mDONE[0m ]
-Adding Nova VNC Proxy manifest entries               [ [32mDONE[0m ]
-Adding OpenStack Network-related Nova manifest entries[ [32mDONE[0m ]
-Adding Nova Common manifest entries                  [ [32mDONE[0m ]
-Adding Neutron API manifest entries                  [ [32mDONE[0m ]
-Adding Neutron Keystone manifest entries             [ [32mDONE[0m ]
-Adding Neutron L3 manifest entries                   [ [32mDONE[0m ]
-Adding Neutron L2 Agent manifest entries             [ [32mDONE[0m ]
-Adding Neutron DHCP Agent manifest entries           [ [32mDONE[0m ]
-Adding Neutron LBaaS Agent manifest entries          [ [32mDONE[0m ]
-Adding Neutron Metering Agent manifest entries       [ [32mDONE[0m ]
-Adding Neutron Metadata Agent manifest entries       [ [32mDONE[0m ]
-Checking if NetworkManager is enabled and running    [ [32mDONE[0m ]
-Adding OpenStack Client manifest entries             [ [32mDONE[0m ]
-Adding Swift Keystone manifest entries               [ [32mDONE[0m ]
-Adding Swift builder manifest entries                [ [32mDONE[0m ]
-Adding Swift proxy manifest entries                  [ [32mDONE[0m ]
-Adding Swift storage manifest entries                [ [32mDONE[0m ]
-Adding Swift common manifest entries                 [ [32mDONE[0m ]
-Adding Heat manifest entries                         [ [32mDONE[0m ]
-Adding Provisioning Tempest manifest entries         [ [32mDONE[0m ]
-Adding Provisioning Glance manifest entries          [ [32mDONE[0m ]
-Adding MongoDB manifest entries                      [ [32mDONE[0m ]
-Adding Redis manifest entries                        [ [32mDONE[0m ]
-Adding Ceilometer manifest entries                   [ [32mDONE[0m ]
-Adding Ceilometer Keystone manifest entries          [ [32mDONE[0m ]
-Adding Sahara Keystone manifest entries              [ [32mDONE[0m ]
-Adding Sahara manifest entries                       [ [32mDONE[0m ]
-Adding Nagios server manifest entries                [ [32mDONE[0m ]
-Adding Nagios host manifest entries                  [ [32mDONE[0m ]
-Adding post install manifest entries                 [ [32mDONE[0m ]
-Installing Dependencies                              [ [32mDONE[0m ]
-Copying Puppet modules and manifests                 [ [32mDONE[0m ]
-Applying 10.145.96.11_prescript.pp
-Applying 10.145.96.13_prescript.pp
-Applying 10.145.96.12_prescript.pp
-10.145.96.13_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.11_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.12_prescript.pp:                           [ [32mDONE[0m ]
-Applying 10.145.96.11_amqp.pp
-Applying 10.145.96.11_mariadb.pp
-10.145.96.11_amqp.pp:                                [ [32mDONE[0m ]
-10.145.96.11_mariadb.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_keystone.pp
-Applying 10.145.96.11_glance.pp
-Applying 10.145.96.11_cinder.pp
-10.145.96.11_keystone.pp:                            [ [32mDONE[0m ]
-10.145.96.11_glance.pp:                              [ [32mDONE[0m ]
-10.145.96.11_cinder.pp:                              [ [32mDONE[0m ]
-Applying 10.145.96.11_api_nova.pp
-10.145.96.11_api_nova.pp:                            [ [32mDONE[0m ]
-Applying 10.145.96.11_nova.pp
-Applying 10.145.96.13_nova.pp
-Applying 10.145.96.12_nova.pp
-10.145.96.12_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.11_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.13_nova.pp:                                [ [32mDONE[0m ]
-Applying 10.145.96.11_neutron.pp
-Applying 10.145.96.13_neutron.pp
-Applying 10.145.96.12_neutron.pp
-10.145.96.13_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.11_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.12_neutron.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_osclient.pp
-10.145.96.11_osclient.pp:                            [ [32mDONE[0m ]
-Applying 10.145.96.11_ring_swift.pp
-10.145.96.11_ring_swift.pp:                          [ [32mDONE[0m ]
-Applying 10.145.96.11_swift.pp
-10.145.96.11_swift.pp:                               [ [32mDONE[0m ]
-Applying 10.145.96.11_heat.pp
-10.145.96.11_heat.pp:                                [ [32mDONE[0m ]
-Applying 10.145.96.11_provision_tempest.pp
-Applying 10.145.96.11_provision_glance
-10.145.96.11_provision_tempest.pp:                   [ [32mDONE[0m ]
-10.145.96.11_provision_glance:                    [ [0;31mERROR[0m ]
-Applying Puppet manifests                         [ [0;31mERROR[0m ]
-
-[0;31mERROR : Error appeared during Puppet run: 10.145.96.11_provision_glance
-Error: Could not find data item CONFIG_PROVISION_CIRROS_URL in any Hiera data file and no default supplied at /var/tmp/packstack/ce77d08542c04529b67f179dc32d2fd5/manifests/10.145.96.11_provision_glance:6 on node controller[0m
-You will find full trace in log /var/tmp/packstack/20150403-175610-4BNEbJ/manifests/10.145.96.11_provision_glance.log[0m
-Please check log file /var/tmp/packstack/20150403-175610-4BNEbJ/openstack-setup.log for more information
-Additional information:
- * Time synchronization installation was skipped. Please note that unsynchronized time on server instances might be problem for some OpenStack components.
- * File /root/keystonerc_admin has been created on OpenStack client host 10.145.96.11. To use the command line tools you need to source the file.
- * To use Nagios, browse to http://10.145.96.11/nagios username: nagiosadmin, password: Huawei!@#
-Welcome to the Packstack setup utility
-
-The installation log file is available at: /var/tmp/packstack/20150403-183805-f7CqXl/openstack-setup.log
-
-Installing:
-Clean Up                                             [ [32mDONE[0m ]
-Setting up ssh keys                                  [ [32mDONE[0m ]
-Discovering hosts' details                           [ [32mDONE[0m ]
-Adding pre install manifest entries                  [ [32mDONE[0m ]
-Preparing servers                                    [ [32mDONE[0m ]
-Adding AMQP manifest entries                         [ [32mDONE[0m ]
-Adding MariaDB manifest entries                      [ [32mDONE[0m ]
-Fixing Keystone LDAP config parameters to be undef if empty[ [32mDONE[0m ]
-Adding Keystone manifest entries                     [ [32mDONE[0m ]
-Adding Glance Keystone manifest entries              [ [32mDONE[0m ]
-Adding Glance manifest entries                       [ [32mDONE[0m ]
-Adding Cinder Keystone manifest entries              [ [32mDONE[0m ]
-Checking if the Cinder server has a cinder-volumes vg[ [32mDONE[0m ]
-Adding Cinder manifest entries                       [ [32mDONE[0m ]
-Adding Nova API manifest entries                     [ [32mDONE[0m ]
-Adding Nova Keystone manifest entries                [ [32mDONE[0m ]
-Adding Nova Cert manifest entries                    [ [32mDONE[0m ]
-Adding Nova Conductor manifest entries               [ [32mDONE[0m ]
-Creating ssh keys for Nova migration                 [ [32mDONE[0m ]
-Gathering ssh host keys for Nova migration           [ [32mDONE[0m ]
-Adding Nova Compute manifest entries                 [ [32mDONE[0m ]
-Adding Nova Scheduler manifest entries               [ [32mDONE[0m ]
-Adding Nova VNC Proxy manifest entries               [ [32mDONE[0m ]
-Adding OpenStack Network-related Nova manifest entries[ [32mDONE[0m ]
-Adding Nova Common manifest entries                  [ [32mDONE[0m ]
-Adding Neutron API manifest entries                  [ [32mDONE[0m ]
-Adding Neutron Keystone manifest entries             [ [32mDONE[0m ]
-Adding Neutron L3 manifest entries                   [ [32mDONE[0m ]
-Adding Neutron L2 Agent manifest entries             [ [32mDONE[0m ]
-Adding Neutron DHCP Agent manifest entries           [ [32mDONE[0m ]
-Adding Neutron LBaaS Agent manifest entries          [ [32mDONE[0m ]
-Adding Neutron Metering Agent manifest entries       [ [32mDONE[0m ]
-Adding Neutron Metadata Agent manifest entries       [ [32mDONE[0m ]
-Checking if NetworkManager is enabled and running    [ [32mDONE[0m ]
-Adding OpenStack Client manifest entries             [ [32mDONE[0m ]
-Adding Swift Keystone manifest entries               [ [32mDONE[0m ]
-Adding Swift builder manifest entries                [ [32mDONE[0m ]
-Adding Swift proxy manifest entries                  [ [32mDONE[0m ]
-Adding Swift storage manifest entries                [ [32mDONE[0m ]
-Adding Swift common manifest entries                 [ [32mDONE[0m ]
-Adding Heat manifest entries                         [ [32mDONE[0m ]
-Adding Provisioning Tempest manifest entries         [ [32mDONE[0m ]
-Adding Provisioning Glance manifest entries          [ [32mDONE[0m ]
-Adding MongoDB manifest entries                      [ [32mDONE[0m ]
-Adding Redis manifest entries                        [ [32mDONE[0m ]
-Adding Ceilometer manifest entries                   [ [32mDONE[0m ]
-Adding Ceilometer Keystone manifest entries          [ [32mDONE[0m ]
-Adding Sahara Keystone manifest entries              [ [32mDONE[0m ]
-Adding Sahara manifest entries                       [ [32mDONE[0m ]
-Adding Nagios server manifest entries                [ [32mDONE[0m ]
-Adding Nagios host manifest entries                  [ [32mDONE[0m ]
-Adding post install manifest entries                 [ [32mDONE[0m ]
-Installing Dependencies                              [ [32mDONE[0m ]
-Copying Puppet modules and manifests                 [ [32mDONE[0m ]
-Applying 10.145.96.11_prescript.pp
-Applying 10.145.96.13_prescript.pp
-Applying 10.145.96.12_prescript.pp
-10.145.96.13_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.11_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.12_prescript.pp:                           [ [32mDONE[0m ]
-Applying 10.145.96.11_amqp.pp
-Applying 10.145.96.11_mariadb.pp
-10.145.96.11_amqp.pp:                                [ [32mDONE[0m ]
-10.145.96.11_mariadb.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_keystone.pp
-Applying 10.145.96.11_glance.pp
-Applying 10.145.96.11_cinder.pp
-10.145.96.11_keystone.pp:                            [ [32mDONE[0m ]
-10.145.96.11_cinder.pp:                              [ [32mDONE[0m ]
-10.145.96.11_glance.pp:                              [ [32mDONE[0m ]
-Applying 10.145.96.11_api_nova.pp
-10.145.96.11_api_nova.pp:                            [ [32mDONE[0m ]
-Applying 10.145.96.11_nova.pp
-Applying 10.145.96.13_nova.pp
-Applying 10.145.96.12_nova.pp
-10.145.96.11_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.12_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.13_nova.pp:                                [ [32mDONE[0m ]
-Applying 10.145.96.11_neutron.pp
-Applying 10.145.96.13_neutron.pp
-Applying 10.145.96.12_neutron.pp
-10.145.96.13_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.11_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.12_neutron.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_osclient.pp
-10.145.96.11_osclient.pp:                            [ [32mDONE[0m ]
-Applying 10.145.96.11_ring_swift.pp
-10.145.96.11_ring_swift.pp:                          [ [32mDONE[0m ]
-Applying 10.145.96.11_swift.pp
-10.145.96.11_swift.pp:                               [ [32mDONE[0m ]
-Applying 10.145.96.11_heat.pp
-10.145.96.11_heat.pp:                                [ [32mDONE[0m ]
-Applying 10.145.96.11_provision_tempest.pp
-Applying 10.145.96.11_provision_glance
-10.145.96.11_provision_tempest.pp:                   [ [32mDONE[0m ]
-10.145.96.11_provision_glance:                    [ [0;31mERROR[0m ]
-Applying Puppet manifests                         [ [0;31mERROR[0m ]
-
-[0;31mERROR : Error appeared during Puppet run: 10.145.96.11_provision_glance
-Error: Could not find data item CONFIG_PROVISION_CIRROS_URL in any Hiera data file and no default supplied at /var/tmp/packstack/b0605e7597ea41f29ee5100163be703e/manifests/10.145.96.11_provision_glance:6 on node controller[0m
-You will find full trace in log /var/tmp/packstack/20150403-183805-f7CqXl/manifests/10.145.96.11_provision_glance.log[0m
-Please check log file /var/tmp/packstack/20150403-183805-f7CqXl/openstack-setup.log for more information
-Additional information:
- * Time synchronization installation was skipped. Please note that unsynchronized time on server instances might be problem for some OpenStack components.
- * File /root/keystonerc_admin has been created on OpenStack client host 10.145.96.11. To use the command line tools you need to source the file.
- * To use Nagios, browse to http://10.145.96.11/nagios username: nagiosadmin, password: Huawei!@#
-Welcome to the Packstack setup utility
-
-The installation log file is available at: /var/tmp/packstack/20150403-191602-OfgEEd/openstack-setup.log
-
-Installing:
-Clean Up                                             [ [32mDONE[0m ]
-Setting up ssh keys                                  [ [32mDONE[0m ]
-Discovering hosts' details                           [ [32mDONE[0m ]
-Adding pre install manifest entries                  [ [32mDONE[0m ]
-Preparing servers                                    [ [32mDONE[0m ]
-Adding AMQP manifest entries                         [ [32mDONE[0m ]
-Adding MariaDB manifest entries                      [ [32mDONE[0m ]
-Fixing Keystone LDAP config parameters to be undef if empty[ [32mDONE[0m ]
-Adding Keystone manifest entries                     [ [32mDONE[0m ]
-Adding Glance Keystone manifest entries              [ [32mDONE[0m ]
-Adding Glance manifest entries                       [ [32mDONE[0m ]
-Adding Cinder Keystone manifest entries              [ [32mDONE[0m ]
-Checking if the Cinder server has a cinder-volumes vg[ [32mDONE[0m ]
-Adding Cinder manifest entries                       [ [32mDONE[0m ]
-Adding Nova API manifest entries                     [ [32mDONE[0m ]
-Adding Nova Keystone manifest entries                [ [32mDONE[0m ]
-Adding Nova Cert manifest entries                    [ [32mDONE[0m ]
-Adding Nova Conductor manifest entries               [ [32mDONE[0m ]
-Creating ssh keys for Nova migration                 [ [32mDONE[0m ]
-Gathering ssh host keys for Nova migration           [ [32mDONE[0m ]
-Adding Nova Compute manifest entries                 [ [32mDONE[0m ]
-Adding Nova Scheduler manifest entries               [ [32mDONE[0m ]
-Adding Nova VNC Proxy manifest entries               [ [32mDONE[0m ]
-Adding OpenStack Network-related Nova manifest entries[ [32mDONE[0m ]
-Adding Nova Common manifest entries                  [ [32mDONE[0m ]
-Adding Neutron API manifest entries                  [ [32mDONE[0m ]
-Adding Neutron Keystone manifest entries             [ [32mDONE[0m ]
-Adding Neutron L3 manifest entries                   [ [32mDONE[0m ]
-Adding Neutron L2 Agent manifest entries             [ [32mDONE[0m ]
-Adding Neutron DHCP Agent manifest entries           [ [32mDONE[0m ]
-Adding Neutron LBaaS Agent manifest entries          [ [32mDONE[0m ]
-Adding Neutron Metering Agent manifest entries       [ [32mDONE[0m ]
-Adding Neutron Metadata Agent manifest entries       [ [32mDONE[0m ]
-Checking if NetworkManager is enabled and running    [ [32mDONE[0m ]
-Adding OpenStack Client manifest entries             [ [32mDONE[0m ]
-Adding Swift Keystone manifest entries               [ [32mDONE[0m ]
-Adding Swift builder manifest entries                [ [32mDONE[0m ]
-Adding Swift proxy manifest entries                  [ [32mDONE[0m ]
-Adding Swift storage manifest entries                [ [32mDONE[0m ]
-Adding Swift common manifest entries                 [ [32mDONE[0m ]
-Adding Heat manifest entries                         [ [32mDONE[0m ]
-Adding Provisioning Tempest manifest entries         [ [32mDONE[0m ]
-Adding Provisioning Glance manifest entries          [ [32mDONE[0m ]
-Adding MongoDB manifest entries                      [ [32mDONE[0m ]
-Adding Redis manifest entries                        [ [32mDONE[0m ]
-Adding Ceilometer manifest entries                   [ [32mDONE[0m ]
-Adding Ceilometer Keystone manifest entries          [ [32mDONE[0m ]
-Adding Sahara Keystone manifest entries              [ [32mDONE[0m ]
-Adding Sahara manifest entries                       [ [32mDONE[0m ]
-Adding Nagios server manifest entries                [ [32mDONE[0m ]
-Adding Nagios host manifest entries                  [ [32mDONE[0m ]
-Adding post install manifest entries                 [ [32mDONE[0m ]
-Installing Dependencies                              [ [32mDONE[0m ]
-Copying Puppet modules and manifests                 [ [32mDONE[0m ]
-Applying 10.145.96.11_prescript.pp
-Applying 10.145.96.13_prescript.pp
-Applying 10.145.96.12_prescript.pp
-10.145.96.13_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.11_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.12_prescript.pp:                           [ [32mDONE[0m ]
-Applying 10.145.96.11_amqp.pp
-Applying 10.145.96.11_mariadb.pp
-10.145.96.11_amqp.pp:                                [ [32mDONE[0m ]
-10.145.96.11_mariadb.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_keystone.pp
-Applying 10.145.96.11_glance.pp
-Applying 10.145.96.11_cinder.pp
-10.145.96.11_keystone.pp:                            [ [32mDONE[0m ]
-10.145.96.11_cinder.pp:                              [ [32mDONE[0m ]
-10.145.96.11_glance.pp:                              [ [32mDONE[0m ]
-Applying 10.145.96.11_api_nova.pp
-10.145.96.11_api_nova.pp:                            [ [32mDONE[0m ]
-Applying 10.145.96.11_nova.pp
-Applying 10.145.96.13_nova.pp
-Applying 10.145.96.12_nova.pp
-10.145.96.11_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.12_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.13_nova.pp:                                [ [32mDONE[0m ]
-Applying 10.145.96.11_neutron.pp
-Applying 10.145.96.13_neutron.pp
-Applying 10.145.96.12_neutron.pp
-10.145.96.13_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.11_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.12_neutron.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_osclient.pp
-10.145.96.11_osclient.pp:                            [ [32mDONE[0m ]
-Applying 10.145.96.11_ring_swift.pp
-10.145.96.11_ring_swift.pp:                          [ [32mDONE[0m ]
-Applying 10.145.96.11_swift.pp
-10.145.96.11_swift.pp:                               [ [32mDONE[0m ]
-Applying 10.145.96.11_heat.pp
-10.145.96.11_heat.pp:                                [ [32mDONE[0m ]
-Applying 10.145.96.11_provision_tempest.pp
-Applying 10.145.96.11_provision_glance
-10.145.96.11_provision_tempest.pp:                   [ [32mDONE[0m ]
-10.145.96.11_provision_glance:                    [ [0;31mERROR[0m ]
-Applying Puppet manifests                         [ [0;31mERROR[0m ]
-
-[0;31mERROR : Error appeared during Puppet run: 10.145.96.11_provision_glance
-Error: Could not find data item CONFIG_PROVISION_CIRROS_URL in any Hiera data file and no default supplied at /var/tmp/packstack/b210c6078fdb4f01a9ae53ffdf7b3831/manifests/10.145.96.11_provision_glance:6 on node controller[0m
-You will find full trace in log /var/tmp/packstack/20150403-191602-OfgEEd/manifests/10.145.96.11_provision_glance.log[0m
-Please check log file /var/tmp/packstack/20150403-191602-OfgEEd/openstack-setup.log for more information
-Additional information:
- * Time synchronization installation was skipped. Please note that unsynchronized time on server instances might be problem for some OpenStack components.
- * File /root/keystonerc_admin has been created on OpenStack client host 10.145.96.11. To use the command line tools you need to source the file.
- * To use Nagios, browse to http://10.145.96.11/nagios username: nagiosadmin, password: Huawei!@#
-Welcome to the Packstack setup utility
-
-The installation log file is available at: /var/tmp/packstack/20150403-194906-lMs5rN/openstack-setup.log
-
-Installing:
-Clean Up                                             [ [32mDONE[0m ]
-Setting up ssh keys                                  [ [32mDONE[0m ]
-Discovering hosts' details                           [ [32mDONE[0m ]
-Adding pre install manifest entries                  [ [32mDONE[0m ]
-Traceback (most recent call last):
-  File "/usr/bin/packstack", line 15, in <module>
-    run_setup.main()
-  File "/usr/lib/python2.7/site-packages/packstack/installer/run_setup.py", line 1024, in main
-    remove_remote_var_dirs(options, controller.CONF, controller.MESSAGES)
-  File "/usr/lib/python2.7/site-packages/packstack/installer/run_setup.py", line 687, in remove_remote_var_dirs
-    server.execute()
-  File "/usr/lib/python2.7/site-packages/packstack/installer/utils/shell.py", line 109, in execute
-    out, err = obj.communicate(script)
-  File "/usr/lib64/python2.7/subprocess.py", line 806, in communicate
-    return self._communicate(input)
-  File "/usr/lib64/python2.7/subprocess.py", line 1382, in _communicate
-    stdout, stderr = self._communicate_with_poll(input)
-  File "/usr/lib64/python2.7/subprocess.py", line 1436, in _communicate_with_poll
-    ready = poller.poll()
-KeyboardInterrupt
-Welcome to the Packstack setup utility
-
-The installation log file is available at: /var/tmp/packstack/20150403-195123-rBO_5m/openstack-setup.log
-
-Installing:
-Clean Up                                             [ [32mDONE[0m ]
-Setting up ssh keys                                  [ [32mDONE[0m ]
-Discovering hosts' details                           [ [32mDONE[0m ]
-Adding pre install manifest entries                  [ [32mDONE[0m ]
-Preparing servers                                    [ [32mDONE[0m ]
-Adding AMQP manifest entries                         [ [32mDONE[0m ]
-Adding MariaDB manifest entries                      [ [32mDONE[0m ]
-Fixing Keystone LDAP config parameters to be undef if empty[ [32mDONE[0m ]
-Adding Keystone manifest entries                     [ [32mDONE[0m ]
-Adding Glance Keystone manifest entries              [ [32mDONE[0m ]
-Adding Glance manifest entries                       [ [32mDONE[0m ]
-Adding Cinder Keystone manifest entries              [ [32mDONE[0m ]
-Checking if the Cinder server has a cinder-volumes vg[ [32mDONE[0m ]
-Adding Cinder manifest entries                       [ [32mDONE[0m ]
-Adding Nova API manifest entries                     [ [32mDONE[0m ]
-Adding Nova Keystone manifest entries                [ [32mDONE[0m ]
-Adding Nova Cert manifest entries                    [ [32mDONE[0m ]
-Adding Nova Conductor manifest entries               [ [32mDONE[0m ]
-Creating ssh keys for Nova migration                 [ [32mDONE[0m ]
-Gathering ssh host keys for Nova migration           [ [32mDONE[0m ]
-Adding Nova Compute manifest entries                 [ [32mDONE[0m ]
-Adding Nova Scheduler manifest entries               [ [32mDONE[0m ]
-Adding Nova VNC Proxy manifest entries               [ [32mDONE[0m ]
-Adding OpenStack Network-related Nova manifest entries[ [32mDONE[0m ]
-Adding Nova Common manifest entries                  [ [32mDONE[0m ]
-Adding Neutron API manifest entries                  [ [32mDONE[0m ]
-Adding Neutron Keystone manifest entries             [ [32mDONE[0m ]
-Adding Neutron L3 manifest entries                   [ [32mDONE[0m ]
-Adding Neutron L2 Agent manifest entries             [ [32mDONE[0m ]
-Adding Neutron DHCP Agent manifest entries           [ [32mDONE[0m ]
-Adding Neutron LBaaS Agent manifest entries          [ [32mDONE[0m ]
-Adding Neutron Metering Agent manifest entries       [ [32mDONE[0m ]
-Adding Neutron Metadata Agent manifest entries       [ [32mDONE[0m ]
-Checking if NetworkManager is enabled and running    [ [32mDONE[0m ]
-Adding OpenStack Client manifest entries             [ [32mDONE[0m ]
-Adding Swift Keystone manifest entries               [ [32mDONE[0m ]
-Adding Swift builder manifest entries                [ [32mDONE[0m ]
-Adding Swift proxy manifest entries                  [ [32mDONE[0m ]
-Adding Swift storage manifest entries                [ [32mDONE[0m ]
-Adding Swift common manifest entries                 [ [32mDONE[0m ]
-Adding Heat manifest entries                         [ [32mDONE[0m ]
-Adding MongoDB manifest entries                      [ [32mDONE[0m ]
-Adding Redis manifest entries                        [ [32mDONE[0m ]
-Adding Ceilometer manifest entries                   [ [32mDONE[0m ]
-Adding Ceilometer Keystone manifest entries          [ [32mDONE[0m ]
-Adding Sahara Keystone manifest entries              [ [32mDONE[0m ]
-Adding Sahara manifest entries                       [ [32mDONE[0m ]
-Adding Nagios server manifest entries                [ [32mDONE[0m ]
-Adding Nagios host manifest entries                  [ [32mDONE[0m ]
-Adding post install manifest entries                 [ [32mDONE[0m ]
-Installing Dependencies                              [ [32mDONE[0m ]
-Copying Puppet modules and manifests                 [ [32mDONE[0m ]
-Applying 10.145.96.11_prescript.pp
-Applying 10.145.96.13_prescript.pp
-Applying 10.145.96.12_prescript.pp
-10.145.96.13_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.11_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.12_prescript.pp:                           [ [32mDONE[0m ]
-Applying 10.145.96.11_amqp.pp
-Applying 10.145.96.11_mariadb.pp
-10.145.96.11_amqp.pp:                                [ [32mDONE[0m ]
-10.145.96.11_mariadb.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_keystone.pp
-Applying 10.145.96.11_glance.pp
-Applying 10.145.96.11_cinder.pp
-10.145.96.11_keystone.pp:                            [ [32mDONE[0m ]
-10.145.96.11_glance.pp:                              [ [32mDONE[0m ]
-10.145.96.11_cinder.pp:                              [ [32mDONE[0m ]
-Applying 10.145.96.11_api_nova.pp
-10.145.96.11_api_nova.pp:                            [ [32mDONE[0m ]
-Applying 10.145.96.11_nova.pp
-Applying 10.145.96.13_nova.pp
-Applying 10.145.96.12_nova.pp
-10.145.96.11_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.12_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.13_nova.pp:                                [ [32mDONE[0m ]
-Applying 10.145.96.11_neutron.pp
-Applying 10.145.96.13_neutron.pp
-Applying 10.145.96.12_neutron.pp
-10.145.96.13_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.11_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.12_neutron.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_osclient.pp
-10.145.96.11_osclient.pp:                            [ [32mDONE[0m ]
+10.145.96.11_horizon.pp:                             [ [32mDONE[0m ]
 Applying 10.145.96.11_ring_swift.pp
 10.145.96.11_ring_swift.pp:                          [ [32mDONE[0m ]
 Applying 10.145.96.11_swift.pp
@@ -1268,122 +100,26 @@ Applying 10.145.96.11_sahara.pp
 10.145.96.11_sahara.pp:                              [ [32mDONE[0m ]
 Applying 10.145.96.11_nagios.pp
 Applying 10.145.96.11_nagios_nrpe.pp
-Applying 10.145.96.13_nagios_nrpe.pp
 Applying 10.145.96.12_nagios_nrpe.pp
-10.145.96.13_nagios_nrpe.pp:                         [ [32mDONE[0m ]
 10.145.96.12_nagios_nrpe.pp:                         [ [32mDONE[0m ]
-10.145.96.11_nagios.pp:                           [ [0;31mERROR[0m ]
-Applying Puppet manifests                         [ [0;31mERROR[0m ]
+10.145.96.11_nagios.pp:                              [ [32mDONE[0m ]
+10.145.96.11_nagios_nrpe.pp:                         [ [32mDONE[0m ]
+Applying 10.145.96.11_postscript.pp
+Applying 10.145.96.12_postscript.pp
+10.145.96.12_postscript.pp:                          [ [32mDONE[0m ]
+10.145.96.11_postscript.pp:                          [ [32mDONE[0m ]
+Applying Puppet manifests                            [ [32mDONE[0m ]
+Finalizing                                           [ [32mDONE[0m ]
 
-[0;31mERROR : Error appeared during Puppet run: 10.145.96.11_nagios.pp
-Error: Could not start Service[httpd]: Execution of '/usr/bin/systemctl start httpd' returned 1: Job for httpd.service failed. See 'systemctl status httpd.service' and 'journalctl -xn' for details.
-You will find full trace in log /var/tmp/packstack/20150403-195123-rBO_5m/manifests/10.145.96.11_nagios.pp.log[0m
-Please check log file /var/tmp/packstack/20150403-195123-rBO_5m/openstack-setup.log for more information
-Additional information:
- * Time synchronization installation was skipped. Please note that unsynchronized time on server instances might be problem for some OpenStack components.
- * File /root/keystonerc_admin has been created on OpenStack client host 10.145.96.11. To use the command line tools you need to source the file.
- * To use Nagios, browse to http://10.145.96.11/nagios username: nagiosadmin, password: Huawei!@#
-Welcome to the Packstack setup utility
+ **** Installation completed successfully ******
 
-The installation log file is available at: /var/tmp/packstack/20150403-203044-0mFr4P/openstack-setup.log
-
-Installing:
-Clean Up                                             [ [32mDONE[0m ]
-Setting up ssh keys                                  [ [32mDONE[0m ]
-Discovering hosts' details                           [ [32mDONE[0m ]
-Adding pre install manifest entries                  [ [32mDONE[0m ]
-Preparing servers                                    [ [32mDONE[0m ]
-Adding AMQP manifest entries                         [ [32mDONE[0m ]
-Adding MariaDB manifest entries                      [ [32mDONE[0m ]
-Fixing Keystone LDAP config parameters to be undef if empty[ [32mDONE[0m ]
-Adding Keystone manifest entries                     [ [32mDONE[0m ]
-Adding Glance Keystone manifest entries              [ [32mDONE[0m ]
-Adding Glance manifest entries                       [ [32mDONE[0m ]
-Adding Cinder Keystone manifest entries              [ [32mDONE[0m ]
-Checking if the Cinder server has a cinder-volumes vg[ [32mDONE[0m ]
-Adding Cinder manifest entries                       [ [32mDONE[0m ]
-Adding Nova API manifest entries                     [ [32mDONE[0m ]
-Adding Nova Keystone manifest entries                [ [32mDONE[0m ]
-Adding Nova Cert manifest entries                    [ [32mDONE[0m ]
-Adding Nova Conductor manifest entries               [ [32mDONE[0m ]
-Creating ssh keys for Nova migration                 [ [32mDONE[0m ]
-Gathering ssh host keys for Nova migration           [ [32mDONE[0m ]
-Adding Nova Compute manifest entries                 [ [32mDONE[0m ]
-Adding Nova Scheduler manifest entries               [ [32mDONE[0m ]
-Adding Nova VNC Proxy manifest entries               [ [32mDONE[0m ]
-Adding OpenStack Network-related Nova manifest entries[ [32mDONE[0m ]
-Adding Nova Common manifest entries                  [ [32mDONE[0m ]
-Adding Neutron API manifest entries                  [ [32mDONE[0m ]
-Adding Neutron Keystone manifest entries             [ [32mDONE[0m ]
-Adding Neutron L3 manifest entries                   [ [32mDONE[0m ]
-Adding Neutron L2 Agent manifest entries             [ [32mDONE[0m ]
-Adding Neutron DHCP Agent manifest entries           [ [32mDONE[0m ]
-Adding Neutron LBaaS Agent manifest entries          [ [32mDONE[0m ]
-Adding Neutron Metering Agent manifest entries       [ [32mDONE[0m ]
-Adding Neutron Metadata Agent manifest entries       [ [32mDONE[0m ]
-Checking if NetworkManager is enabled and running    [ [32mDONE[0m ]
-Adding OpenStack Client manifest entries             [ [32mDONE[0m ]
-Adding Horizon manifest entries                      [ [32mDONE[0m ]
-Adding Swift Keystone manifest entries               [ [32mDONE[0m ]
-Adding Swift builder manifest entries                [ [32mDONE[0m ]
-Adding Swift proxy manifest entries                  [ [32mDONE[0m ]
-Adding Swift storage manifest entries                [ [32mDONE[0m ]
-Adding Swift common manifest entries                 [ [32mDONE[0m ]
-Adding Heat manifest entries                         [ [32mDONE[0m ]
-Adding MongoDB manifest entries                      [ [32mDONE[0m ]
-Adding Redis manifest entries                        [ [32mDONE[0m ]
-Adding Ceilometer manifest entries                   [ [32mDONE[0m ]
-Adding Ceilometer Keystone manifest entries          [ [32mDONE[0m ]
-Adding Sahara Keystone manifest entries              [ [32mDONE[0m ]
-Adding Sahara manifest entries                       [ [32mDONE[0m ]
-Adding Nagios server manifest entries                [ [32mDONE[0m ]
-Adding Nagios host manifest entries                  [ [32mDONE[0m ]
-Adding post install manifest entries                 [ [32mDONE[0m ]
-Installing Dependencies                              [ [32mDONE[0m ]
-Copying Puppet modules and manifests                 [ [32mDONE[0m ]
-Applying 10.145.96.11_prescript.pp
-Applying 10.145.96.13_prescript.pp
-Applying 10.145.96.12_prescript.pp
-10.145.96.13_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.11_prescript.pp:                           [ [32mDONE[0m ]
-10.145.96.12_prescript.pp:                           [ [32mDONE[0m ]
-Applying 10.145.96.11_amqp.pp
-Applying 10.145.96.11_mariadb.pp
-10.145.96.11_amqp.pp:                                [ [32mDONE[0m ]
-10.145.96.11_mariadb.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_keystone.pp
-Applying 10.145.96.11_glance.pp
-Applying 10.145.96.11_cinder.pp
-10.145.96.11_keystone.pp:                            [ [32mDONE[0m ]
-10.145.96.11_cinder.pp:                              [ [32mDONE[0m ]
-10.145.96.11_glance.pp:                              [ [32mDONE[0m ]
-Applying 10.145.96.11_api_nova.pp
-10.145.96.11_api_nova.pp:                            [ [32mDONE[0m ]
-Applying 10.145.96.11_nova.pp
-Applying 10.145.96.13_nova.pp
-Applying 10.145.96.12_nova.pp
-10.145.96.11_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.12_nova.pp:                                [ [32mDONE[0m ]
-10.145.96.13_nova.pp:                                [ [32mDONE[0m ]
-Applying 10.145.96.11_neutron.pp
-Applying 10.145.96.13_neutron.pp
-Applying 10.145.96.12_neutron.pp
-10.145.96.13_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.11_neutron.pp:                             [ [32mDONE[0m ]
-10.145.96.12_neutron.pp:                             [ [32mDONE[0m ]
-Applying 10.145.96.11_osclient.pp
-Applying 10.145.96.11_horizon.pp
-10.145.96.11_osclient.pp:                            [ [32mDONE[0m ]
-10.145.96.11_horizon.pp:                          [ [0;31mERROR[0m ]
-Applying Puppet manifests                         [ [0;31mERROR[0m ]
-
-[0;31mERROR : Error appeared during Puppet run: 10.145.96.11_horizon.pp
-Error: Could not start Service[httpd]: Execution of '/usr/bin/systemctl start httpd' returned 1: Job for httpd.service failed. See 'systemctl status httpd.service' and 'journalctl -xn' for details.
-You will find full trace in log /var/tmp/packstack/20150403-203044-0mFr4P/manifests/10.145.96.11_horizon.pp.log[0m
-Please check log file /var/tmp/packstack/20150403-203044-0mFr4P/openstack-setup.log for more information
 Additional information:
  * Time synchronization installation was skipped. Please note that unsynchronized time on server instances might be problem for some OpenStack components.
  * File /root/keystonerc_admin has been created on OpenStack client host 10.145.96.11. To use the command line tools you need to source the file.
  * To access the OpenStack Dashboard browse to http://10.145.96.11/dashboard .
 Please, find your login credentials stored in the keystonerc_admin in your home directory.
- * To use Nagios, browse to http://10.145.96.11/nagios username: nagiosadmin, password: Huawei!@#
+ * To use Nagios, browse to http://10.145.96.11/nagios username: nagiosadmin, password: Test!@#!@#
+ * Because of the kernel update the host 10.145.96.11 requires reboot.
+ * Because of the kernel update the host 10.145.96.12 requires reboot.
+ * The installation log file is available at: /var/tmp/packstack/20150406-180206-inVKEi/openstack-setup.log
+ * The generated manifests are available at: /var/tmp/packstack/20150406-180206-inVKEi/manifests
