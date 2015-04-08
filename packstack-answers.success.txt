@@ -670,7 +670,7 @@ CONFIG_NEUTRON_ML2_FLAT_NETWORKS=*
 # VLAN provider and tenant networks, as well as ranges of VLAN tags on
 # each available for allocation to tenant networks.
 #CONFIG_NEUTRON_ML2_VLAN_RANGES=physnet1:10:20
-CONFIG_NEUTRON_ML2_VLAN_RANGES=
+CONFIG_NEUTRON_ML2_VLAN_RANGES=pyhsnet1:10:100
 
 # A comma separated list of <tun_min>:<tun_max> tuples enumerating
 # ranges of GRE tunnel IDs that are available for tenant network
@@ -693,18 +693,18 @@ CONFIG_NEUTRON_L2_AGENT=openvswitch
 
 # A comma separated list of interface mappings for the Neutron
 # linuxbridge plugin (eg. physnet1:eth1,physnet2:eth2,physnet3:eth3)
-CONFIG_NEUTRON_LB_INTERFACE_MAPPINGS=
+CONFIG_NEUTRON_LB_INTERFACE_MAPPINGS=physnet1:em3
 
 # A comma separated list of bridge mappings for the Neutron
 # openvswitch plugin (eg. physnet1:br-eth1,physnet2:br-eth2,physnet3
 # :br-eth3)
 #CONFIG_NEUTRON_OVS_BRIDGE_MAPPINGS=physnet1:br-eth2
-CONFIG_NEUTRON_OVS_BRIDGE_MAPPINGS=
+CONFIG_NEUTRON_OVS_BRIDGE_MAPPINGS=physnet1:br-ex
 
 # A comma separated list of colon-separated OVS bridge:interface
 # pairs. The interface will be added to the associated bridge.
 #CONFIG_NEUTRON_OVS_BRIDGE_IFACES=physnet1:br-eth2
-CONFIG_NEUTRON_OVS_BRIDGE_IFACES=
+CONFIG_NEUTRON_OVS_BRIDGE_IFACES=physnet1:br-ex
 
 # The interface for the OVS tunnel. Packstack will override the IP
 # address used for tunnels on this hypervisor to the IP found on the
